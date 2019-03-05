@@ -1,0 +1,67 @@
+<svg id="vest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.12 80.81">
+	<defs>
+		<style>
+			.cls-1,.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;}
+			.cls-1{stroke-width:1.42px;}.cls-2{stroke-width:0.94px;}
+			.cls-3{fill:#136a81;}
+
+			#vest_bg:hover { fill:#46C9B3; transition: 0.3s ease; cursor: pointer;}
+
+			#vest_zipper, #angler_small_pocket_left_top, #angler_small_pocket_right_top, #angler_large_pocket_right_top1, #angler_large_pocket_right_top2, #angler_large_pocket_left_top1, #angler_large_pocket_left_top2 { display: none; }
+
+				@media screen and (min-width: 100px) {
+				#vest_zipper { display: block; }
+			}
+
+				@media screen and (min-width: 150px) {
+				#angler_small_pocket_left_top, #angler_small_pocket_right_top, #angler_large_pocket_right_top1, #angler_large_pocket_right_top2, #angler_large_pocket_left_top1, #angler_large_pocket_left_top2 { display: block; }
+			}
+		</style>
+
+	</defs>
+
+	<defs>
+		<script>
+			let icon_vest = document.querySelector("#vest");
+
+			function logId() {
+				console.log(this.id);
+			}
+
+			icon_vest.addEventListener("click", logId);
+		</script>
+	</defs>
+
+	<title>icon</title>
+	<g id="vest">
+		<path id="vest_bg" class="cls-3" d="
+			M61.77,16.87a41.67,41.67,0,0,1,.81-8.25,4.48,4.48,0,0,0-3.16-5.18L47.82,0h-.2A12.6,12.6,0,0,1,35.71,7.87,12.6,12.6,0,0,1,23.8,0h-.5L12,3.35A4.49,4.49,0,0,0,8.82,8.54a41.65,41.65,0,0,1,.82,8.33c0,9.8-3.23,18.18-7.81,21.71A4.59,4.59,0,0,0,0,42.21V76.28a4.53,4.53,0,0,0,4.53,4.53H66.59a4.53,4.53,0,0,0,4.53-4.53V42a4.58,4.58,0,0,0-1.72-3.54C64.91,34.81,61.77,26.53,61.77,16.87Z"/>
+		<g id="angler_small_pocket_left">
+			<rect id="angler_small_pocket_left_bg" class="cls-1" x="15.16" y="22.96" width="15.41" height="16.83" rx="2.94"/>
+			<path id="angler_small_pocket_left_top" class="cls-1" d="
+				M15.16,27.45a6.12,6.12,0,0,0,6.12,6.12h3.17a6.12,6.12,0,0,0,6.12-6.12"/>
+		</g>
+		<g id="angler_small_pocket_right">
+			<rect id="angler_small_pocket_right_bg" class="cls-1" x="40.17" y="22.96" width="15.41" height="16.83" rx="2.94"/>
+			<path id="angler_small_pocket_right_top" class="cls-1" d="
+				M40.17,27.45a6.12,6.12,0,0,0,6.12,6.12h3.17a6.12,6.12,0,0,0,6.12-6.12"/>
+		</g>
+		<g id="angler_large_pocket_left">
+			<rect id="angler_large_pocket_left_bg" class="cls-1" x="7.46" y="51.66" width="23.11" height="16.83" rx="3.6"/>
+			<path id="angler_large_pocket_left_top2" class="cls-1" d="
+				M22.38,50.09h.84A5.78,5.78,0,0,1,29,55.87v0a5.78,5.78,0,0,1-5.78,5.78h-.84a1.8,1.8,0,0,1-1.8-1.8v-8A1.8,1.8,0,0,1,22.38,50.09Z" transform="translate(80.66 31.08) rotate(90)"/>
+			<path id="angler_large_pocket_left_top1" class="cls-1" d="
+				M10.83,50.09h.84a5.78,5.78,0,0,1,5.78,5.78v0a5.78,5.78,0,0,1-5.78,5.78h-.84A1.8,1.8,0,0,1,9,59.85v-8A1.8,1.8,0,0,1,10.83,50.09Z" transform="translate(69.11 42.63) rotate(90)"/>
+			<line id="angler_large_pocket_left_line" class="cls-1" x1="19.01" y1="51.66" x2="19.01" y2="68.49"/>
+		</g>
+		<g id="angler_large_pocket_right">
+			<rect id="angler_large_pocket_right_bg" class="cls-1" x="40.17" y="51.54" width="23.11" height="16.83" rx="3.6"/>
+			<path id="angler_large_pocket_right_top2" class="cls-1" d="
+				M55.09,50h.84a5.78,5.78,0,0,1,5.78,5.78v0a5.78,5.78,0,0,1-5.78,5.78h-.84a1.8,1.8,0,0,1-1.8-1.8v-8a1.8,1.8,0,0,1,1.8-1.8Z" transform="translate(113.25 -1.76) rotate(90)"/>
+			<path id="angler_large_pocket_right_top1" class="cls-1" d="
+				M43.54,50h.84a5.78,5.78,0,0,1,5.78,5.78v0a5.78,5.78,0,0,1-5.78,5.78h-.84a1.8,1.8,0,0,1-1.8-1.8v-8A1.8,1.8,0,0,1,43.54,50Z" transform="translate(101.69 9.8) rotate(90)"/>
+			<line id="angler_large_pocket_right_line" class="cls-1" x1="51.72" y1="51.54" x2="51.72" y2="68.37"/>
+		</g>
+		<line id="vest_zipper" class="cls-2" x1="35.24" y1="7.87" x2="35.24" y2="80.81"/>
+	</g>
+</svg>
