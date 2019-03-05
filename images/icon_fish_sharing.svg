@@ -1,0 +1,85 @@
+<svg id="fish_sharing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 66.34 93.19">
+	<defs>
+		<style>
+			.cls-1,.cls-6{fill:none;}
+			.cls-2,.cls-4{fill:#fff;}
+			.cls-3,.cls-4,.cls-7{stroke:#fff;}
+			.cls-3,.cls-4,.cls-6,.cls-7{stroke-miterlimit:10;}
+			.cls-3{stroke-width:0.78px;}
+			.cls-4,.cls-6{stroke-width:1.04px;}
+			.cls-5{clip-path:url(#clip-path);}
+			.cls-6{stroke:#136a81;stroke-linecap:round;}
+			.cls-7{stroke-width:1.14px;}
+			.cls-8,.cls-3,.cls-7{fill:#136a81;}
+
+			#fish_sharing:hover {fill: #46C9B3; transition: 0.3s ease; cursor: pointer;}
+			#fish_sharing:hover .cls-6 {stroke: #46C9B3; transition: 0.3s ease; cursor: pointer;}
+
+			#sharing_fish_stripes, #sharing_fish_eye, #sharing_fish_fin_bottom, #sharing_fish_fin_top { display: none; }
+
+				@media screen and (min-width: 150px) {
+				#sharing_fish_stripes, #sharing_fish_eye, #sharing_fish_fin_bottom, #sharing_fish_fin_top { display: block; }
+		</style>
+		<clipPath id="clip-path">
+			<path id="sharing_fish_tail" class="cls-1" d="M10.24,39.21a27.92,27.92,0,0,0,8.85-5.54.34.34,0,0,0,0-.48,31.37,31.37,0,0,0-9.2-6.9,1.59,1.59,0,0,0-2.13.85,15.64,15.64,0,0,0-1,5.23,14,14,0,0,0,1.59,6.17A1.57,1.57,0,0,0,10.24,39.21Z"/>
+		</clipPath>
+	</defs>
+
+	<defs>
+		<script>
+			let icon_fish_sharing = document.querySelector("#fish_sharing");
+
+			function logId() {
+				console.log(this.id);
+			}
+
+			icon_fish_sharing.addEventListener("click", logId);
+		</script>
+	</defs>
+
+	<title>icon</title>
+	<g id="fish_sharing">
+		<g id="sharing_person2">
+			<circle id="sharing_person2_head" class="cls-8" cx="54.06" cy="9.51" r="9.51"/>
+			<rect id="sharing_person2_leg_left" class="cls-8" x="56.83" y="50.05" width="9.51" height="43.14" rx="4.48" transform="translate(123.17 143.23) rotate(180)"/>
+			<rect id="sharing_person2_leg_right" class="cls-8" x="41.77" y="49.46" width="9.51" height="43.73" rx="4.51" transform="translate(93.05 142.65) rotate(-180)"/>
+			<path id="sharing_person2_body" class="cls-8" d="
+				M54.06,21.32A12.68,12.68,0,0,0,63.6,17h0a2.73,2.73,0,0,1,2.74,2.74V57.94H56.82a2.57,2.57,0,0,0-2.56-2.38h-.41a2.55,2.55,0,0,0-2.55,2.38H41.77V19.73A2.74,2.74,0,0,1,44.51,17h0A12.68,12.68,0,0,0,54.06,21.32Z"/>
+		</g>
+		<g id="sharing_person1">
+			<circle id="sharing_person1_head" class="cls-8" cx="12.29" cy="9.51" r="9.51"/>
+			<rect id="sharing_person1_leg_left" class="cls-8" y="50.05" width="9.51" height="43.14" rx="4.48"/>
+			<rect id="sharing_person1_leg_right" class="cls-8" x="15.06" y="49.46" width="9.51" height="43.73" rx="4.51"/>
+			<path id="sharing_person1_body" class="cls-8" d="
+				M12.29,21.32A12.68,12.68,0,0,1,2.74,17h0A2.73,2.73,0,0,0,0,19.73V57.94H9.52a2.57,2.57,0,0,1,2.56-2.38h.41a2.57,2.57,0,0,1,2.56,2.38h9.52V19.73A2.73,2.73,0,0,0,21.83,17h0A12.68,12.68,0,0,1,12.29,21.32Z"/>
+		</g>
+		<g id="sharing_fish">
+			<path id="sharing_fish_tail-2" data-name="sharing_fish_tail" class="cls-2" d="
+				M9.43,39.21a27.92,27.92,0,0,0,8.85-5.54.35.35,0,0,0,0-.48,31.32,31.32,0,0,0-9.21-6.9A1.58,1.58,0,0,0,7,27.14a15.66,15.66,0,0,0-1,5.23,14,14,0,0,0,1.59,6.17A1.58,1.58,0,0,0,9.43,39.21Z"/>
+			<path id="sharing_fish_body" class="cls-3" d="
+				M49.07,32.37a7.68,7.68,0,0,1,1.56-4.66.35.35,0,0,0-.15-.53,38,38,0,0,0-13.9-2.83c-12.31,0-22.54,7.17-24.67,8.77a.35.35,0,0,0,0,.58c2.21,1.27,12.4,6.75,24.64,6.75a47.9,47.9,0,0,0,14.35-2.33.34.34,0,0,0,.15-.56A7.67,7.67,0,0,1,49.07,32.37Z"/>
+			<path id="sharing_fish_head" class="cls-4" d="
+				M60.8,33.18,61,33a.35.35,0,0,0,0-.57,49.26,49.26,0,0,0-9.09-4.94.36.36,0,0,0-.41.1,7.71,7.71,0,0,0,.56,10.24.34.34,0,0,0,.36.09,56.13,56.13,0,0,0,8.42-3.57.35.35,0,0,0,0-.61h0A.35.35,0,0,1,60.8,33.18Z"/>
+			<g id="sharing_fish_stripes">
+				<g class="cls-5">
+					<line id="sharing_fish_stripe4" class="cls-6" x1="6.2" y1="30.05" x2="9.48" y2="30.05"/>
+					<line id="sharing_fish_stripe3" class="cls-6" x1="6.2" y1="31.84" x2="9.48" y2="31.84"/>
+					<line id="sharing__fish_stripe2" class="cls-6" x1="6.2" y1="33.62" x2="9.48" y2="33.62"/>
+					<line id="sharing_fish_stripe1" class="cls-6" x1="6.2" y1="35.4" x2="9.48" y2="35.4"/>
+				</g>
+			</g>
+			<circle id="sharing_fish_eye" cx="55.72" cy="33.39" r="0.93"/>
+			<path id="sharing_fish_fin_bottom" d="
+				M30,40.6a2.39,2.39,0,0,1-1.43.64l-1.73.25a.34.34,0,0,1-.38-.22l-.28-.73a.35.35,0,0,1,.41-.46A17.73,17.73,0,0,0,30,40.6Z"/>
+			<path id="sharing_fish_fin_top" d="
+				M34,23.64a.35.35,0,0,0,.16-.65A5.8,5.8,0,0,0,32,22.31l-3.73-.56a.35.35,0,0,0-.38.22L27,24.33a.35.35,0,0,0,.42.46A35.78,35.78,0,0,1,34,23.64Z"/>
+		</g>
+		<path id="sharing_person2_arm_left" class="cls-7" d="
+			M54.35,36.4H60a1.95,1.95,0,0,1,1.95,1.95v1.45a4.75,4.75,0,0,1-4.75,4.75h0a4.75,4.75,0,0,1-4.75-4.75V38.35A1.95,1.95,0,0,1,54.35,36.4Z" transform="translate(114.3 80.96) rotate(-180)"/>
+		<path id="sharing_person2_arm_right" class="cls-7" d="
+			M42.06,36.35h5.58a2,2,0,0,1,2,2v1.55a4.75,4.75,0,0,1-4.75,4.75h0a4.75,4.75,0,0,1-4.75-4.75V38.31a2,2,0,0,1,2-2Z" transform="translate(89.7 80.96) rotate(-180)"/>
+		<path id="sharing_person1_arm_left" class="cls-7" d="M9.19,36.4h0a4.75,4.75,0,0,1,4.75,4.75v1.45A1.95,1.95,0,0,1,12,44.56H6.39a1.95,1.95,0,0,1-1.95-1.95V41.15A4.75,4.75,0,0,1,9.19,36.4Z"/>
+		<path id="sharing_person1_arm_right" class="cls-7" d="
+			M21.49,36.35h0a4.75,4.75,0,0,1,4.75,4.75v1.55a2,2,0,0,1-2,2H18.7a2,2,0,0,1-2-2V41.1a4.75,4.75,0,0,1,4.75-4.75Z"/>
+	</g>
+</svg>
