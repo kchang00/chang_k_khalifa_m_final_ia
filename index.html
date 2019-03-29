@@ -65,13 +65,11 @@
 		</header>
 
 		<div id="carousel">
-			<img src="images/home_hero.jpg" alt="River Image">
-			<div id="carousel-arrows">
-				<img src="images/arrow_left.svg" height="47" width="30" alt="Carousel Left Arrow">
-				<img src="images/arrow_right.svg" height="47" width="30" alt="Carousel Right Arrow">
+			<div id="carouselArrows">
+				<div class="arrowCircleLeft"><i class="fa fa-angle-left carouselArrow"></i></div>
+				<div class="arrowCircleRight"><i class="fa fa-angle-right carouselArrow"></i></div>
 			</div>
-			<div id="activityDesc">
-				<h4><a href="#">Activity Description</a></h4>
+			<div id="carouselPickerCon">
 				<div id="carouselPicker">
 					<div class="carouselOption"></div>
 					<div class="carouselOption"></div>
@@ -89,76 +87,80 @@
 				</p>
 			</div>
 		</section>
+	</div>
 
-		<section id="eventsWidget">
-		<h2>UPCOMING EVENTS</h2>
+	<section id="eventsWidget">
+	<h2>UPCOMING EVENTS</h2>
 
-			<div id="scrollWrap">
-				<!-- add JS to make arrows scroll?  -->
-				<img src="images/arrow_left_events.svg" alt="Left Arrow">
-				<section id="events">
-					<h3 class="hidden">Events Widget</h3>
-					<div class="event">
-						<div class="dateTitleCon">
-							<div class="date">
-								<p class="day">JAN</p>
-								<p class="month">09</p>
-							</div>
-							<p class="title">General Meeting</p>
+		<div id="scrollWrap">
+			<!-- add JS to make arrows scroll?  -->
+			<i class="fa fa-angle-left carouselArrow"></i>
+			<section id="events">
+				<h3 class="hidden">Events Widget</h3>
+				<div class="event">
+					<div class="dateTitleCon">
+						<div class="date">
+							<p class="day">JAN</p>
+							<p class="month">09</p>
 						</div>
-						<p class="eventDesc">
-							Happy New Year! We are meeting at 7:00pm at 790 Southdale Road to do awesome things.
-						</p>
+						<p class="title">General Meeting</p>
 					</div>
-					<div class="event">
-						<div class="dateTitleCon">
-							<div class="date">
-								<p class="day">FEB</p>
-								<p class="month">06</p>
-							</div>
-							<p class="title">Visit the hatchery</p>
+					<p class="eventDesc">
+						Happy New Year! We are meeting at 7:00pm at 790 Southdale Road to do awesome things.
+					</p>
+				</div>
+				<div class="event">
+					<div class="dateTitleCon">
+						<div class="date">
+							<p class="day">FEB</p>
+							<p class="month">06</p>
 						</div>
-						<p class="eventDesc">
-							Come visit the hatchery from 10:00am to 3pm at 123 Fish Rd. and see our brown trout.
-						</p>
+						<p class="title">Visit the hatchery</p>
 					</div>
-					<div class="event">
-						<div class="dateTitleCon">
-							<div class="date">
-								<p class="day">MAR</p>
-								<p class="month">08</p>
-							</div>
-							<p class="title">Brown Trout Program</p>
+					<p class="eventDesc">
+						Come visit the hatchery from 10:00am to 3pm at 123 Fish Rd. and see our brown trout.
+					</p>
+				</div>
+				<div class="event">
+					<div class="dateTitleCon">
+						<div class="date">
+							<p class="day">MAR</p>
+							<p class="month">08</p>
 						</div>
-						<p class="eventDesc">
-							We are proud to announce our newest project: the release of our brown trout.
-						</p>
+						<p class="title">Brown Trout Program</p>
 					</div>
-					<div class="event">
-						<div class="dateTitleCon">
-							<div class="date">
-								<p class="day">MAR</p>
-								<p class="month">26</p>
-							</div>
-							<p class="title">Salmon Release</p>
+					<p class="eventDesc">
+						We are proud to announce our newest project: the release of our brown trout.
+					</p>
+				</div>
+				<div class="event">
+					<div class="dateTitleCon">
+						<div class="date">
+							<p class="day">MAR</p>
+							<p class="month">26</p>
 						</div>
-						<p class="eventDesc">
-							Did you know that the average size of the salmon we release is 40cm large?
-						</p>
+						<p class="title">Salmon Release</p>
 					</div>
-				</section>
-				<!-- add JS to make arrows scroll?  -->
-				<img src="images/arrow_right_events.svg" alt="Right Arrow">
-			</div>
+					<p class="eventDesc">
+						Did you know that the average size of the salmon we release is 40cm large?
+					</p>
+				</div>
+			</section>
+			<!-- add JS to make arrows scroll?  -->
+			<i class="fa fa-angle-right carouselArrow"></i>
+		</div>
 
-			<div class="btnCon">
-				<a href="#" class="btnSmall dark">View Calendar</a>
-			</div>
-
-		</section> <!-- end events widget -->
-
+		<div class="btnCon">
+			<a href="#" class="btnSmall dark">View Calendar</a>
+		</div>
+	</section> <!-- end events widget -->
+	
+	<div class="container">
 		<section id="about">
-			<img id="aboutImg" src="images/home_about.jpg" alt="River Image">
+			<picture>
+				<source media="(min-width: 321px)" srcset="images/home_about.jpg">
+				<img src="images/home_about_small.jpg" alt="River Image">
+			</picture>
 			<div id="aboutCon">
 				<h2>ABOUT THE TRAA</h2>
 				<p id="aboutDesc">
@@ -188,18 +190,21 @@
 				</div>
 			</div>
 		</section> <!-- end about section -->
+	</div>
 
-		<section id="impact">
-		<h2>OUR IMPACT</h2>
-			<p>
-				Our work is what sets the TRAA apart from other clubs and organizations. You’ll find us right in the water clearing obstructions from streams, measuring returning salmonids & taking scale samples for DNA analysis, educating through trout hatchery tours & stream walks, being a voice for the Thames River watershed inhabitants...<br>The list goes on.
-			</p>
-			<div class="btnCon">
-				<a href="#" class="btnSmall dark">DONATE</a>
-				<a href="projects.html" class="btnSmall light">LEARN MORE</a>
-			</div>
-		</section> <!-- end impact section -->
+	<section id="impact">
+	<h2>OUR IMPACT</h2>
+		<p>
+			Our work is what sets the TRAA apart from other clubs and organizations. You’ll find us right in the water clearing obstructions from streams, measuring returning salmonids & taking scale samples for DNA analysis, educating through trout hatchery tours & stream walks, being a voice for the Thames River watershed inhabitants...
+		</p>
+		<p>The list goes on.</p>
+		<div class="btnCon">
+			<a href="#" class="btnSmall dark">DONATE</a>
+			<a href="projects.html" class="btnSmall light">LEARN MORE</a>
+		</div>
+	</section> <!-- end impact section -->
 
+	<div class="container">
 		<section id="latestNews">
 		<h2>LATEST NEWS</h2>
 			<p id="latestNewsDesc">
@@ -318,28 +323,31 @@
 				<a href="blog.html" class="btnSmall light">SEE BLOG</a>
 			</div>
 		</section> <!-- end latestNews section -->
+	</div>
 
-		<section id="sponsors">
-		<h2>SPONSORS</h2>
-			<p>
-				The support of the following local area businesses is much appreciated:
-			</p>
-			<div class="sponRow">
-				<img src="images/home_sponsor_melchers.jpg" alt="Melchers Logo" width="187">
-				<img src="images/home_sponsor_muma.jpg" alt="Muma Logo" width="194">
-				<img src="images/home_sponsor_guillevin.jpg" alt="Guillevin Logo" width="202">
-			</div>
-			<div class="sponRow">
-				<img class="tryRecycling" src="images/home_sponsor_tryRecycling.jpg" alt="Try Recycling Logo" width="195">
-				<img src="images/home_sponsor_angling.jpg" alt="Angling Logo" width="95">
-			</div>			
-		</section> <!-- end sponsors section -->
+	<section id="sponsors">
+	<h2>SPONSORS</h2>
+		<p>
+			The support of the following local area businesses is much appreciated:
+		</p>
+		<div class="sponRow">
+			<img src="images/home_sponsor_melchers.jpg" alt="Melchers Logo" width="187">
+			<img src="images/home_sponsor_muma.jpg" alt="Muma Logo" width="194">
+			<img src="images/home_sponsor_guillevin.jpg" alt="Guillevin Logo" width="202">
+		</div>
+		<div class="sponRow">
+			<img class="tryRecycling" src="images/home_sponsor_tryRecycling.jpg" alt="Try Recycling Logo" width="195">
+			<img src="images/home_sponsor_angling.jpg" alt="Angling Logo" width="95">
+		</div>			
+	</section> <!-- end sponsors section -->
 
+	<div class="container">
 		<div class="btnTop">
-			<a href="#"><div class="btnTopBg"><img src="images/back_to_top.svg" alt="Back to Top"></div>
+			<a href="#"><div class="btnTopBg"><i class="fa fa-angle-up"></i></div>
 			<p>TOP</p></a>
 		</div>
 	</div>
+
 	<footer id="mainFooter">
 		<h2 class="hidden">Footer Navigation</h2>
 		<div id="mainFooterCon">
@@ -348,7 +356,7 @@
 				<h3>Keep In Touch</h3>
 					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
 					<form action="form.php" method="POST" autocomplete="off">
-	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" size="30" name="email"/>
+	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
 	                    <input class="subBut" type="submit" name="submit" value=">"/>
 	                </form><!--end form-->
 				</section>

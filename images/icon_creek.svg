@@ -2,12 +2,12 @@
 	<defs>
 		<style>
 			.cls-1{fill:#fff;}
-			.cls-2{fill:#136a81;}
+			.cls-2{fill:#587021;}
 			#creek:hover {fill: #46C9B3; transition: 0.3s ease; cursor: pointer;}
 
 			#creek_stones { display: none; }
 
-				@media screen and (min-width: 150px) {
+				@media screen and (min-width: 321px) {
 				#creek_stones { display: block; }
 			}
 
