@@ -36,16 +36,26 @@ img, embed, object, video {
 	display: none;
 }
 
-#container {
+#mainContainer {
 	display: flex;
 	flex-direction: column;
 	max-width: 1200px;
 	min-width: 320px;
 	/*set top margin to avoid content overlay*/
-	margin-top: 81px;
+	margin-top: 200px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	min-width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 /*  === BUTTONS === */
 
@@ -89,6 +99,35 @@ img, embed, object, video {
 .light {
 	background-color: #666;
 	color: #fff;
+}
+
+
+.btnTop {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 60px 40px auto;
+/*	background-color: gold;*/
+}
+
+.btnTop p {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #136a81;
+	font-weight: bold;
+	text-align: center;
+}
+
+.btnTopBg {
+	
+	/*let svg define height and width
+	height: 60px;
+	width: 75px;*/
+	padding: 21px 11px;
+	border-radius: 75px;
+	margin-bottom: 10px;
+/*	background-color: tomato;*/
 }
 
 #btnJoin {
@@ -634,7 +673,7 @@ img, embed, object, video {
 		right: 0;
 		left: 0;
 		margin: 0 auto;
-		max-width: 1200px;
+/*		max-width: 1200px;*/
 		transition: all .5s ease;
 		transition-delay: top .3s ease;
 	}
@@ -652,7 +691,7 @@ img, embed, object, video {
 
 		/*resets coded values for mobile*/
 		margin: 0 auto;
-		max-width: 1200px;
+/*		max-width: 1200px;*/
 		top: 48px;
 		transition: top .8s ease;
 	}
@@ -680,7 +719,7 @@ img, embed, object, video {
 		right: 0;
 		left: 0;
 		margin: 0 auto;
-		max-width: 1200px;
+/*		max-width: 1200px;*/
 	}
 
 	#headerSocialMedia ul li{
@@ -862,7 +901,6 @@ img, embed, object, video {
 		display: none;
 	}
 
-
 	#donateBanner a{
 		/* value very close to large button width*/
 		flex: 1 1 145px;
@@ -878,6 +916,439 @@ img, embed, object, video {
 	transition: all .3s ease;
 	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
 	cursor: pointer;
+	}
+	
+	/* === HOME === */
+
+	#traaWelcome {
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Abolition', sans-serif;
+	color: #136a81;
+	margin-top: 60px;
+	}
+
+	p {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #136a81;
+	}
+
+	h4 {
+	font-size: 20px;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'Abolition', sans-serif;
+	color: #136a81;
+	}
+
+	/* Carousel */
+
+	#carousel {
+	  	display: flex;
+	  	flex-direction: column;
+	  	justify-content: flex-end;
+	  	position: relative;
+	}
+
+	#carousel img {
+		height: 408px;
+	}
+
+	#carousel-arrows {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		z-index: 1;
+	}
+
+	#carousel-arrows img:last-child{
+		position: absolute;
+		left: 930px;
+	}
+
+	#activityDesc {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		width: 960px;
+		height: 368px;
+		position: absolute;
+		padding-bottom: 40px;
+		background-color: rgba(152, 226, 244, 0.29);
+	}
+
+	#activityDesc h4 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	#activityDesc a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	#carouselPicker {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100px;
+	}
+
+	.carouselOption {
+		padding: 8px;
+		border-radius: 8px;
+		background-color: #fff;
+	}
+
+	/* === HOME- WELCOME SECTION=== */
+
+	#welcome {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#welcomeDesc {
+		text-align: center;
+		vertical-align: middle;
+		width: 840px;
+		/*let content dictate height*/
+		padding: 60px 0px;
+	}
+
+	#welcomeDesc p{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: bold;
+		color: #136a81;
+	}
+
+
+	/* === EVENTS === */
+
+	#eventsWidget {
+		display: flex;
+		flex-direction: column;
+		background-color: #136a81;
+		padding: 20px;
+		margin-bottom: 40px;
+	}
+
+	#eventsWidget h2 {
+		color: #fff;
+	}
+
+	#scrollWrap {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#events {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.event {
+		flex: 0 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 184px;
+		height: 137px;
+		margin: 20px 10px 20px 0px;
+		padding: 24px;
+		background-color: #fff;
+		box-shadow: 0px 7px 4px 0px rgba(31, 29, 30, 0.35);
+	}
+
+	.event:hover {
+		/*add javascript to link events to proper pages*/
+		cursor: pointer;
+	}
+
+	.dateTitleCon {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.date p {
+		text-transform: uppercase;
+	  	text-align: left;
+	  	border-right: 3px solid #136a81;
+	  	padding-right: 10px;
+	  	margin-right: 10px;
+	  	color: #0e4d5e;
+	  	font-family: Abolition, sans-serif;
+	}
+
+	.day {
+	  font-size: 24px;
+	}
+
+	.month {
+	  font-size: 36px;
+	}
+
+	.title {
+	  font-size: 18px;
+	  text-align: left;
+	  font-family: Lato, sans-serif;
+
+	}
+
+	.eventDesc {
+	  font-size: 14px;
+	  line-height: 16px;
+	  color: rgb(102, 102, 102);
+	  text-align: left;
+	  color: #136a81;
+	}
+
+	/* === HOME - ABOUT SECTION === */
+
+	#about {
+		display: flex;
+		flex-direction: column;
+		width: 840px;
+		margin: 0 auto;
+	}
+
+	#aboutImg {
+		width: 840px;
+		height: 250px;
+	}
+
+	#aboutCon {
+		width: 760px;
+		/*let content dictate height*/
+		padding: 40px;
+		background-color: #fff;
+		text-align: center;
+		margin-bottom: 40px;
+		box-shadow: 0px 4px 7.68px 0.32px rgba(31, 29, 30, 0.34);
+	}
+
+
+	#aboutDesc {
+		margin: 40px 0px;
+	}
+
+	#statements {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-bottom: 40px;
+	}
+
+	.statement {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 190px;
+	}
+
+	.statement p{
+		line-height: 16px;
+	}
+
+	.statement:nth-child(3) {
+		border-right: 3px solid #136a81;
+		border-left: 3px solid #136a81;
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+	/*replaced with icon*/
+	/*.statementIcon {
+		width: 110px;
+		height: 110px;
+		background-color: #666;
+	}*/
+
+	#homeAboutIconProtect {
+		width: 88px;
+	}
+
+	#homeAboutIconPromote {
+		width: 95px;
+	}
+
+	#homeAboutIconParticipate {
+		width: 68px;
+	}
+
+	.statementTitle {
+		font-weight: bold;
+		margin: 15px 0px 20px 0px;
+	}
+
+	/* === HOME - IMPACT SECTION === */
+
+	#impact {
+		background-color: #0e4d5e;
+		padding: 40px;
+	}
+
+	#impact h2 {
+		margin-bottom: 40px;
+		color: #fff;
+	}
+
+	#impact p {
+		text-align: center;
+		margin-bottom: 40px;
+		line-height: 18px;
+		color: #fff;
+	}
+
+	/* === HOME - LATEST NEWS SECTION === */
+
+	#latestNews {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		padding: 40px;
+	}
+
+	#latestNews h2 {
+		margin-bottom: 40px;
+		color: #136a81;
+	}
+
+	#latestNewsDesc {
+		text-align: center;
+		margin-bottom: 40px;
+		color: #136a81;
+	}
+
+	#newsCon {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#newsCon .newsConColumn:nth-child(2){
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.newsConColumn {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*replaced all newsImgs with images*/
+	/*.newsImg1 {
+		width: 227px;
+		height: 185px;
+		background-color: #999;
+	}
+
+	.newsImg2 {
+		width: 227px;
+		height: 251px;
+		background-color: #999;
+	}
+
+	.newsImg3 {
+		width: 227px;
+		height: 166px;
+		background-color: #999;
+	}
+
+	.newsImg4 {
+		width: 227px;
+		height: 217px;
+		background-color: #999;
+	}*/
+
+	.newsImg {
+		width: 230px;
+	}
+
+	.newsDesc {
+		width: 200px;
+		height: 60px;
+		padding: 15px;
+		color: #136a81;
+		margin-bottom: 20px;
+		box-shadow: 0px 3px 3.84px 0.16px rgba(31, 29, 30, 0.34);
+	}
+
+	.newsIcon {
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		background-image: url(../images/blog_date.svg);
+	}
+	.newsDate {
+		font-family: Lato, sans-serif;
+		font-size: 14px;
+	}
+
+	.newsTitle {
+		font-family: Abolition, sans-serif;
+		font-size: 24px;
+	/*	font-weight: bold;*/
+		text-transform: uppercase;
+		color: #136a81;
+		margin-top: 5px;
+	}
+
+	.newsSubtitle {
+		font-size: 14px;
+		font-style: italic;
+		margin-top: 5px;
+		color: #136a81;
+	}
+
+	/* === HOME - SPONSORS SECTION === */
+
+	#sponsors {
+		display: flex;
+		flex-direction: column;
+		width: 880px;
+		margin: 0 auto;
+		padding: 40px;
+		background-color: #fff;
+	  	box-shadow: 0px 0px 4.65px 0.35px rgba(31, 29, 30, 0.34);
+
+	}
+
+	#sponsors h2 {
+		margin-bottom: 40px;
+	}
+
+	#sponsors p {
+		text-align: center;
+		margin-bottom: 40px;
+		line-height: 18px;
+	}
+
+	.sponRow {
+		display: flex;
+		flex-direction: row;
+		margin: 0px auto 40px auto;
+		align-items: center;
+	/*	background-color: tomato;*/
+	}
+
+	.sponRow img:nth-child(2) {
+		margin-left: 40px;
+	}
+
+	.sponRow img:nth-child(3) {
+		margin-left: 40px;
+	}
+
+	.tryRecycling {
+		max-height: 73px;
 	}
 
 	/* === PROJECTS PAGE === */
