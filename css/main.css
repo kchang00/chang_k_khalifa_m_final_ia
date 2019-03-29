@@ -42,7 +42,7 @@ img, embed, object, video {
 	max-width: 1200px;
 	min-width: 320px;
 	/*set top margin to avoid content overlay*/
-	margin-top: 200px;
+	margin-top: 81px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -645,7 +645,7 @@ img, embed, object, video {
 
 @media screen and (min-width: 768px) {
 
-	#container {
+	#mainContainer {
 		margin-top: 200px;
 	}
 
