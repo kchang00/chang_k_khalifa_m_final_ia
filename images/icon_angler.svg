@@ -2,7 +2,7 @@
 	<defs>
 		<style>
 			.cls-1,.cls-4,.cls-5,.cls-6,.cls-7{fill:none;}
-			.cls-1,.cls-6,.cls-7{stroke:#136a81;}
+			.cls-1,.cls-6,.cls-7{stroke:#587021;}
 			.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke-miterlimit:10;}
 			.cls-1,.cls-2,.cls-6{stroke-width:1.3px;}
 			.cls-2,.cls-3,.cls-4,.cls-5{stroke:#fff;}
@@ -10,19 +10,19 @@
 			.cls-5{stroke-width:0.37px;}
 			.cls-6{stroke-linecap:round;}
 			.cls-7{stroke-width:3.43px;}
-			.cls-8,.cls-2,.cls-3 {fill:#136a81;}
+			.cls-8,.cls-2,.cls-3 {fill:#587021;}
 
 
-			#angler:hover {fill:#46C9B3; transition: 0.3s ease; cursor: pointer;}
-			#angler:hover .cls-1, #angler:hover .cls-7, #angler:hover .cls-6 {stroke: #46C9B3; transition: 0.3s ease; cursor: pointer;}
+<!-- 			#angler:hover {fill:#46C9B3; transition: 0.3s ease; cursor: pointer;}
+			#angler:hover .cls-1, #angler:hover .cls-7, #angler:hover .cls-6 {stroke: #46C9B3; transition: 0.3s ease; cursor: pointer;} -->
 			
 			#angler_small_pocket_left, #angler_small_pocket_right, #angler_large_pocket_right, #angler_large_pocket_left, #vest_zipper, #angler_small_pocket_left_top, #angler_small_pocket_right_top, #angler_large_pocket_right_top1, #angler_large_pocket_right_top2, #angler_large_pocket_left_top1, #angler_large_pocket_left_top2 { display: none; }
 
-				@media screen and (min-width: 100px) {
+				@media screen and (min-width: 149px) {
 				#angler_small_pocket_left, #angler_small_pocket_right, #angler_large_pocket_right, #angler_large_pocket_left, #vest_zipper { display: block; }
 			}
 
-				@media screen and (min-width: 130px) {
+				@media screen and (min-width: 151px) {
 				#angler_small_pocket_left_top, #angler_small_pocket_right_top, #angler_large_pocket_right_top1, #angler_large_pocket_right_top2, #angler_large_pocket_left_top1, #angler_large_pocket_left_top2 { display: block; }
 			}
 
