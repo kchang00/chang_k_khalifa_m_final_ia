@@ -3,17 +3,16 @@
 		<style>
 			.cls-1,
 			.cls-2{fill:none;stroke-miterlimit:10;}
-			.cls-1{stroke:#136a81;stroke-width:2.66px;}
+			.cls-1{stroke:#587021;stroke-width:2.66px;}
 			.cls-2{stroke:#fff;stroke-linecap:round;stroke-width:1.99px;}
 			.cls-3{fill:#fff;}
-			.cls-4{fill:#136a81;}
+			.cls-4{fill:#587021;}
 
-			#fish_protect:hover {fill: #46C9B3; transition: 0.3s ease; cursor: pointer;}
-			#fish_protect:hover #shield {stroke: #46C9B3; transition: 0.3s ease; cursor: pointer;}
+			#fish_protect {fill: #587021;}
 
 			#fin_back, #fin_belly1, #fin_belly2 { display: none; }
 
-				@media screen and (min-width: 100px) {
+				@media screen and (min-width: 88px) {
 				#fin_back, #fin_belly1, #fin_belly2 { display: block; }
 			}
 		</style>

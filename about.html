@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>TRAA | About</title>
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.typekit.net/zvq7kqj.css">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TRAA | About</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/zvq7kqj.css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<div id="container">
+	<div id="mainContainer">
 		<h1 class="hidden">TRAA About</h1>
 
-		<header id="mainHeader">
-			<div id="mainHeaderCon">
-				<a href="index.html" id="headerLogo"><img src="images/logo.svg" alt="logo"></a>
-				<nav id="headerSocialMedia">
+			<header id="mainHeader">
+			<nav id="headerSocialMedia">
 				<h2 class="hidden">Header Social Media Navigation</h2>
 					<ul>
 						<li><a href="https://www.facebook.com/groups/4TRAA/about/" target="_blank"><img src="images/social_facebook.svg" alt="Facebook"></a></li>
@@ -24,43 +27,51 @@
 						<li><a href="https://twitter.com/" target="_blank"><img src="images/social_twitter.svg" alt="Twitter"></a></li>
 						<li><a href="https://ca.linkedin.com/" target="_blank"><img src="images/social_linkedIn.svg" alt="LinkedIn"></a></li>
 					</ul>
-				</nav>
+			</nav>
 
+			<div id="mainHeaderCon">
+				<a href="index.html"><img src="images/logo.svg" id="headerLogo" alt="TRAA Logo"></a>
+				<i class="fa fa-bars hamburger"></i>
 				<nav id="mainNav">
 				<h2 class="hidden">Main Navigation</h2>
 					<ul>
+						<li><a id="navJoin" href="join.html">MEMBERSHIP</a></li>
 						<li id="whoMainNav"><a href="about.html">WHO WE ARE</a></li>
 						<li id="workMainNav"><a href="projects.html">OUR WORK</a></li>
 						<li><a href="contact.html">CONTACT</a></li>
-						<li><a id="navJoin" href="join.html">JOIN US</a></li>
 					</ul>
+				<div class="navOverlay"></div>
 				</nav>
-			</div>
-			<div id="dropdown">
-				<nav id="whoNav" class="subNav">
-					<h3 class="hidden">Our Work Links</h3>
-					<ul>
-						<li><a href="blog.html">BLOG</a></li>
-					</ul>
-				</nav>
-				<nav id="workNav" class="subNav">
-					<h3 class="hidden">Who We Are Links</h3>
-					<ul>
-						<li><a href="#">PRODUCTS</a></li>
-						<li><a href="#">EVENTS</a></li>
-						<li><a href="#">EDUCATION</a></li>
-					</ul>
-				</nav>
+
+				<div id="dropdown">
+					<img src="images/logo.svg" class="logoPositioning" alt="Logo">
+					<nav id="whoNav" class="subNav">
+						<h3 class="hidden">Our Work Links</h3>
+						<ul>
+							<li><a href="blog.html">BLOG</a></li>
+						</ul>
+					</nav>
+					<nav id="workNav" class="subNav">
+						<h3 class="hidden">Who We Are Links</h3>
+						<ul>
+							<li><a href="#">PRODUCTS</a></li>
+							<li><a href="#">EVENTS</a></li>
+							<li><a href="#">EDUCATION</a></li>
+						</ul>
+					</nav>
+					<div class="subNavPositioning"></div>
+					<div class="subNavPositioning"></div>
+				</div>
 			</div>
 		</header>
+	</div>
 		
-		<section class="hero">
-			<img class="heroImage" src="images/about_hero.jpg" alt="River Image">
-			<div class="heroOverlay"></div>
-			<h2>WHO IS THE TRAA?</h2>
-			<div class="downArrow"></div>
-		</section>
-		
+	<section class="hero heroAbout">
+		<h2>Who is the TRAA?</h2>
+		<i class="fa fa-angle-down downArrow"></i>
+	</section>
+
+	<div class="container">
 		<div id="tagline">
 			<p>Hands-on Environmentalism is what we do.</p>
 		</div>
@@ -68,14 +79,10 @@
 		<section id="mission">
 		<h2>OUR MISSION</h2>
 
-			<div class="statementsRow">
+			<div class="statementsCon">
 				<div class="missionStatement">
-<!-- 				<div id="test"> -->
 					<img id="missionStatementIcon1" src="images/icon_fish_protect.svg" alt="Protect the Fishery">
-					<!-- remove missionStatementOverlay if animation doesn't work -->
-<!-- 					<div class="missionStatementOverlay"> -->
-						<p>Protect, enhance and regenerate a viable, multi-species, year-round fishery.</p>
-<!-- 					</div> -->
+					<p>Protect, enhance and regenerate a viable, multi-species, year-round fishery.</p>
 				</div>
 				<div class="missionStatement">
 					<img id="missionStatementIcon2" src="images/icon_vest.svg" alt="Environmental Clean Up">
@@ -85,9 +92,7 @@
 					<img id="missionStatementIcon3" src="images/icon_give_back.svg" alt="Relocate Fish">
 					<p>Breed, relocate and stock to re-establish or augment appropriate species of fish.</p>
 				</div>					
-			</div>
 
-			<div class="statementsRow">
 				<div class="missionStatement">
 					<img id="missionStatementIcon4" src="images/icon_fish_sharing.svg" alt="Form Partnerships">
 					<p>Form partnerships with community businesses, government agencies, special interest groups, landowners, and other stakeholders in the Thames River Watershed.</p>
@@ -102,204 +107,211 @@
 				</div>					
 			</div>
 		</section> <!-- end about section -->
+	</div>
 
-		<section id="history">
-		<h2>HISTORY</h2>
-			<div id="historyCon">
-				<div class="historyColumn1">
+	<section id="history">
+	<h2>HISTORY</h2>
+		<div id="historyCon">
+			<div class="historyEntry">
+				<div class="historyYear">
 					<div class="yearCircle">1986</div>
-					<div class="descBox">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. et dolore magna aliqua.
-					</div>
-					<div class="yearCircle">2010</div>
-					<div class="descBox">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. et dolore magna aliqua.
-					</div>
+					<div class="yearLine"></div>
 				</div>
-
-				<div id="timeline"></div>
-
-				<div class="historyColumn2">
-					<div class="descBox">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. et dolore magna aliqua.
-					</div>
-					<div class="yearCircle">2001</div>
-					<div class="descBox">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. et dolore magna aliqua.
-					</div>
-					<div class="yearCircle">2018</div>
+				<div class="descBox">
+					<p>The TRAA was formed by anglers concerned with the state of the fishery in the Thames River watershed, particularly the dwindling smallmouth bass population in the North Thames River. We began rearing rainbow trout in an outdoor upwelling incubation box.</p>
 				</div>
 			</div>
-		</section>
-		
+
+			<div class="historyEntry">
+				<div class="historyYear">
+					<div class="yearCircle">1999</div>
+					<div class="yearLine"></div>
+				</div>
+				<div class="descBox">
+					<p>The TRAA and the Upper Thames River Conservation Authority (UTRCA), with the blessing of the Ministry of Natural Resources (MNR), agreed to the operation of a walleye hatchery in Fanshawe Conservation Area, just north-east of London, Ontario.</p>
+				</div>
+			</div>
+
+			<div class="historyEntry">
+				<div class="historyYear">
+					<div class="yearCircle">2010</div>
+					<div class="yearLine"></div>
+				</div>
+				<div class="descBox">
+					<p>TRAA members start a 5-year Salmonid Tagging and Monitoring Program with personnel from the Upper Thames River Conservation Authority (UTRCA) and Jon George, an MNR biologist from Thunder Bay.</p>
+				</div>
+			</div>
+
+			<div class="historyEntry">
+				<div class="historyYear">
+					<div class="yearCircle">2019</div>
+					<div class="yearLine"></div>
+				</div>
+				<div class="descBox">
+					<p>We continue to celebrate over 30 years of operation and are still very involved in our community through educational tours of our trout hatchery, release programs, removing deadfalls from Komoka Creek, working towards our Brook Trout program and the decommissioning of the Spring Bank dam.</p>
+				</div>
+			</div>
+	</section>
+	
+	<div class="container">
 		<section id="team">
 		<h2>MEET THE TEAM</h2>
+			<p id="teamStatement">The TRAA has a history of always having a core group of active members supported by those who just want to be part of the solution. Either way, every member of the TRAA is active in their advocacy for the health of the Thames River watershed and its inhabitants.</p>
 			
 			<section id="executives">
-				<div class="teamRow">
-					<div class="memberTitle">
+					<div class="membersCard">
 						<h3>Executives</h3>
 					</div>
 
 					<div class="member">
-						<img class="memberImg" src="images/about_team_1.jpg" alt="Executive Headshot">
-						<div class="memberName">
+						<div class="memberName"><p>Rob Huber</p></div>
+						<div class="memberTitle">
 							<h4>PRESIDENT</h4>
-							<p>Rob Huber</p>
 						</div>
 					</div>
 
 					<div class="member">
-						<img class="memberImg" src="images/about_team_2.jpg" alt="Executive Headshot" height="166">
-						<!-- delete height when actual image is placed -->
-						<div class="memberName">
+						<div class="memberName"><p>Paul Holmes</p></div>
+						<div class="memberTitle">
 							<h4>VICE-PRESIDENT</h4>
-							<p>Paul Holmes</p>
 						</div>
 					</div>
-				</div>
-				<div class="teamRow">
+
 					<div class="member">
-						<img class="memberImg" src="images/about_team_3.jpg" alt="Executive Headshot">
-						<div class="memberName">
+						<div class="memberName"><p>Jeremy Beaton</p></div>
+						<div class="memberTitle">
 							<h4>SECRETARY</h4>
-							<p>Jeremy Beaton</p>
 						</div>
 					</div>
 
 					<div class="member">
-						<img class="memberImg" src="images/about_team_4.jpg" alt="Executive Headshot">
-						<div class="memberName">
+						<div class="memberName"><p>Randy Bailey</p></div>
+						<div class="memberTitle">
 							<h4>TREASURER</h4>
-							<p>Randy Bailey</p>
 						</div>
 					</div>
 
 					<div class="member">
-						<img class="memberImg" src="images/about_team_5.jpg" alt="Executive Headshot">
-						<div class="memberName">
+						<div class="memberName"><p>Adam Bengen</p></div>
+						<div class="memberTitle">
 							<h4>CHAIRPERSON</h4>
-							<p>Adam Bengen</p>
 						</div>
 					</div>
-				</div>
 			</section>
 
 			<section id="volunteers">
-				<div class="teamRow">
-					<div class="memberTitle">
+					<div class="membersCard">
 						<h3>Volunteers</h3>
 					</div>
 
 					<div class="member">
-						<img class="memberImg" src="images/about_team_v1.jpg" alt="Volunteer photo">
-						<div class="memberName">
+						<div class="memberName"><p>Rob Huber, Paul Noble, Randy Bailey</p></div>
+						<div class="memberTitle">
 							<h4>PUBLIC RELATIONS</h4>
-							<p>Rob Huber, Paul Noble, Randy Bailey</p>
 						</div>
 					</div>
 
 					<div class="member">
-						<img class="memberImg" src="images/about_team_v2.jpg" alt="Volunteer photo">
-						<div class="memberName">
+						<div class="memberName"><p>Adam Bengen, Randy Bailey</p></div>
+						<div class="memberTitle">
 							<h4>HATCHERY MANAGEMENT</h4>
-							<p>Adam Bengen, Randy Bailey</p>
 						</div>
 					</div>
-				</div>
-				<div class="teamRow">
 					<div class="member">
-						<img class="memberImg" src="images/about_team_v3.jpg" alt="Volunteer photo">
-						<div class="memberName">
+						<div class="memberName"><p>Dan Schinkelshoek</p></div>
+						<div class="memberTitle">
 							<h4>TROUT</h4>
-							<p>Dan Schinkelshoek</p>
 						</div>
 					</div>
 
 					<div class="member">
-						<img class="memberImg" src="images/about_team_v4.jpg" alt="Volunteer photo">
-						<div class="memberName">
+						<div class="memberName"><p>Pud Hunter</p></div>
+						<div class="memberTitle">
 							<h4>WARMWATER</h4>
-							<p>Pud Hunter</p>
 						</div>
 					</div>
 
 					<div class="member">
-						<img class="memberImg" src="images/about_team_v5.jpg" alt="Volunteer photo">
-						<div class="memberName">
+						<div class="memberName"><p>Jeremy Beaton, Paul Holmes, Randy Bailey</p></div>
+						<div class="memberTitle">
 							<h4>HABITAT</h4>
-							<p>Jeremy Beaton, Paul Holmes, Randy Bailey</p>
 						</div>
 					</div>
-				</div>
 			</section>
 		</section>
 
 		<div class="btnTop">
-			<a href="#"><div class="btnTopBg"><img src="images/back_to_top.svg" alt="Back to Top"></div>
+			<a href="#"><div class="btnTopBg"><i class="fa fa-angle-up"></i></div>
 			<p>TOP</p></a>
 		</div>
-			
+	</div>
+
 		<footer id="mainFooter">
-			<h2 class="hidden">Footer Navigation</h2>
-			<div id="mainFooterCon">
-				<div id="newsSocCon">
-					<section id="newsletter">
-					<h3>Keep In Touch</h3>
-						<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
-						<form action="form.php" method="POST" autocomplete="off">
-		                    <input class="text" type="text" required id="name" placeholder="Enter your Email" size="30" name="email"/>
-		                    <input class="subBut" type="submit" name="submit" value=">"/>
-		                </form><!--end form-->
-					</section>
-
-					<nav id="mainFooterSocialNav">
-					<h3 class="hidden">Footer Social Media Navigation</h3>
-						<ul>
-							<li><a href="https://www.facebook.com/groups/4TRAA/about/" target="_blank"><img src="images/social_facebook.svg" alt="Facebook"></a></li>
-							<li><a href="https://www.youtube.com/channel/UCAvK4qanj0dnwiMxB8wNraw/videos" target="_blank"><img src="images/social_youtube.svg" alt="Youtube"></a></li>
-							<li><a href="https://twitter.com/" target="_blank"><img src="images/social_twitter.svg" alt="Twitter"></a></li>
-							<li><a href="https://ca.linkedin.com/" target="_blank"><img src="images/social_linkedIn.svg" alt="LinkedIn"></a></li>
-		              	</ul>
-					</nav>
-				</div>
-
-				<section id="mainFooterContact">
-				<h3>Contact Us</h3>
-					<p> We meet every second Wednesday at 790 Southdale Road East<br> London, ON N6E 1A8 </p>
-					<p>Phone: (519) 681-2370</p>
-					<p><a href="contact.html">Send Us a Message ></a></p>
+		<h2 class="hidden">Footer Navigation</h2>
+		<div id="mainFooterCon">
+			<div id="newsSocCon">
+				<section id="newsletter">
+				<h3>Keep In Touch</h3>
+					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
+					<form action="form.php" method="POST" autocomplete="off">
+	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
+	                    <input class="subBut" type="submit" name="submit" value=">"/>
+	                </form><!--end form-->
 				</section>
 
-				<nav id="mainFooterNav">
-				<h3>Navigation</h3>
+				<nav id="mainFooterSocialNav">
+				<h3 class="hidden">Footer Social Media Navigation</h3>
 					<ul>
-						<li><a href="about.html">Who We Are</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="projects.html">Our Work</a></li>
-						<li><a href="#">Events</a></li>
-						<li><a href="#">Education</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
+						<li><a href="https://www.facebook.com/groups/4TRAA/about/" target="_blank"><img src="images/social_facebook.svg" alt="Facebook"></a></li>
+						<li><a href="https://www.youtube.com/channel/UCAvK4qanj0dnwiMxB8wNraw/videos" target="_blank"><img src="images/social_youtube.svg" alt="Youtube"></a></li>
+						<li><a href="https://twitter.com/" target="_blank"><img src="images/social_twitter.svg" alt="Twitter"></a></li>
+						<li><a href="https://ca.linkedin.com/" target="_blank"><img src="images/social_linkedIn.svg" alt="LinkedIn"></a></li>
+	              	</ul>
 				</nav>
-
-				<section id="mainFooterJoin">
-				<h3 class="hidden">Join Us Button</h3>
-					<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
-					<a href="join.html" id="btnJoin">JOIN NOW</a>
-				</section>
 			</div>
-			<nav id="mainFooterBottom">
-				<h3 class="hidden">Footer Bottom Links</h3>
+
+			<section id="mainFooterContact">
+			<h3>Contact Us</h3>
+				<p> We meet every second Wednesday at 790 Southdale Road East<br> London, ON N6E 1A8 </p>
+				<p>Phone: <a href="tel:519-681-2370">(519) 681-2370<a></p>
+				<p><a href="contact.html">Send Us a Message ></a></p>
+			</section>
+
+			<nav id="mainFooterNav">
+			<h3>Navigation</h3>
 				<ul>
-					<li>Copyright © Thames River Anglers Association</li>
-					<li><a href="#"></a>Sitemap</li>
-					<li><a href="#"></a>Terms and Conditions</li>
-					<li><a href="#"></a>Privacy Policy</li>
+					<li><a href="about.html">Who We Are</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="projects.html">Our Work</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Education</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
-		</footer>
-	</div>
+			
+			<section id ="actionBtns" class="btnCon">
+				<h3 class="hidden">Call to Action Buttons</h3>
+				<a href="join.html" class="btnLarge dark">MEMBERSHIP</a>
+				<a href="tel:519-681-2370" class="btnLarge dark">CALL US (519) 681-2370</a>
+				<a href="contact.html" class="btnLarge dark">SEND US A MESSAGE ></a>
+			</section>
+			
+			<section id="mainFooterJoin">
+			<h3 class="hidden">Join Us Button</h3>
+				<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
+				<a href="join.html" id="btnJoin">MEMBERSHIP</a>
+			</section>
+		</div>
+		<nav id="mainFooterBottom">
+			<h3 class="hidden">Footer Bottom Links</h3>
+			<ul>
+				<li>Copyright © Thames River Anglers Association</li>
+				<li><a href="#"></a>Sitemap</li>
+				<li><a href="#"></a>Terms and Conditions</li>
+				<li><a href="#"></a>Privacy Policy</li>
+			</ul>
+		</nav>
+	</footer>
 	<!-- JavaScript -->
 	<script src="js/main.js"></script>
 </body>
