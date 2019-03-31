@@ -397,6 +397,10 @@ img, embed, object, video {
 	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero_small.jpg);
 }
 
+.heroJoin {
+	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/join_hero_small.jpg);
+}
+
 .heroImage {
 	position: absolute;
 	top: 0;
@@ -1196,6 +1200,114 @@ img, embed, object, video {
 	display: none;
 }
 
+/* === JOIN PAGE - MOBILE === */
+
+#mainJoin h2 {
+	margin-top: 40px;
+}
+
+#mainJoin p {
+	padding: 40px 10px;
+}
+
+#membershipPrice {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background-color: #4f641d;
+	margin: 40px auto;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+	line-height: 100px;
+	font-family: 'Abolition', sans-serif;
+	position: relative;
+	z-index: 1;
+}
+
+#joinInfo {
+	background-color: #92bd2f;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	top: -80px;
+	z-index: 0;
+}
+
+#joinInfo p {
+	font-family: 'Abolition', sans-serif;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 30px;
+	padding: 40px;
+}
+
+#joinInfo ul {
+	list-style-image: 
+}
+
+#joinInfo ul li {
+	color: #fff;
+	padding: 3px 50px;
+}
+
+#joinInfo li:last-child {
+	margin-bottom: 50px;
+}
+
+#joinProcess {
+	display: flex;
+	width: 80%;
+	margin: 20px auto;
+}
+
+.processOrder {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+
+.circle {
+	margin: 0 auto;
+	background-color: #4f641d;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 2px;
+	font-family: 'Abolition', sans-serif;   
+}
+
+.processOrder p {
+	font-family: 'Abolition', sans-serif;
+	color: #4f641d;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.connector {
+	width: 20%;
+	height: 2px;
+	background-color: #666;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#joinInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+#joinForm {
+	display: flex;
+	flex-direction: column;
+}
+
 /* === MAIN FOOTER === */
 
 #mainFooter {
@@ -1341,6 +1453,10 @@ img, embed, object, video {
 
 	.heroContact {
 	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero.jpg);
+	}
+
+	.heroJoin {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/join_hero.jpg);
 	}
 		
 	.project {

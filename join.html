@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>TRAA | Join Us</title>
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.typekit.net/zvq7kqj.css">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TRAA | Membership</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/zvq7kqj.css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 
 <body>
-	<div id="container">
-		<h1 class="hidden">TRAA Join</h1>
-
+	<div id="mainContainer">
+		<h1 class="hidden">TRAA Membership</h1>
 		<header id="mainHeader">
-			<div id="mainHeaderCon">
-				<a href="index.html" id="headerLogo"><img src="images/logo.svg" alt="logo"></a>
-				<nav id="headerSocialMedia">
+			<nav id="headerSocialMedia">
 				<h2 class="hidden">Header Social Media Navigation</h2>
 					<ul>
 						<li><a href="https://www.facebook.com/groups/4TRAA/about/" target="_blank"><img src="images/social_facebook.svg" alt="Facebook"></a></li>
@@ -25,39 +26,46 @@
 						<li><a href="https://twitter.com/" target="_blank"><img src="images/social_twitter.svg" alt="Twitter"></a></li>
 						<li><a href="https://ca.linkedin.com/" target="_blank"><img src="images/social_linkedIn.svg" alt="LinkedIn"></a></li>
 					</ul>
-				</nav>
+			</nav>
 
+			<div id="mainHeaderCon">
+				<a href="index.html"><img src="images/logo.svg" id="headerLogo" alt="TRAA Logo"></a>
+				<i class="fa fa-bars hamburger"></i>
 				<nav id="mainNav">
 				<h2 class="hidden">Main Navigation</h2>
 					<ul>
+						<li><a id="navJoin" href="join.html">MEMBERSHIP</a></li>
 						<li id="whoMainNav"><a href="about.html">WHO WE ARE</a></li>
 						<li id="workMainNav"><a href="projects.html">OUR WORK</a></li>
 						<li><a href="contact.html">CONTACT</a></li>
-						<li><a id="navJoin" href="join.html">JOIN US</a></li>
 					</ul>
+				<div class="navOverlay"></div>
 				</nav>
-			</div>
-			<div id="dropdown">
-				<nav id="whoNav" class="subNav">
-					<h3 class="hidden">Our Work Links</h3>
-					<ul>
-						<li><a href="blog.html">BLOG</a></li>
-					</ul>
-				</nav>
-				<nav id="workNav" class="subNav">
-					<h3 class="hidden">Who We Are Links</h3>
-					<ul>
-						<li><a href="#">PRODUCTS</a></li>
-						<li><a href="#">EVENTS</a></li>
-						<li><a href="#">EDUCATION</a></li>
-					</ul>
-				</nav>
+
+				<div id="dropdown">
+					<img src="images/logo.svg" class="logoPositioning" alt="Logo">
+					<nav id="whoNav" class="subNav">
+						<h3 class="hidden">Our Work Links</h3>
+						<ul>
+							<li><a href="blog.html">BLOG</a></li>
+						</ul>
+					</nav>
+					<nav id="workNav" class="subNav">
+						<h3 class="hidden">Who We Are Links</h3>
+						<ul>
+							<li><a href="#">PRODUCTS</a></li>
+							<li><a href="#">EVENTS</a></li>
+							<li><a href="#">EDUCATION</a></li>
+						</ul>
+					</nav>
+					<div class="subNavPositioning"></div>
+					<div class="subNavPositioning"></div>
+				</div>
 			</div>
 		</header>
+	</div>
 
-		<section class="hero">
-			<img class="heroImage" src="images/join_hero.jpg" alt="River Image">
-			<div class="heroOverlay"></div>
+		<section class="hero heroJoin">
 			<h2 id="join-h2">JOIN THE TRAA</h2>
 			<div class="downArrow"></div>
 		</section>
@@ -65,44 +73,54 @@
 		<section id="mainJoin">
 			<h2>TRAA MEMBERSHIP</h2>
 			<p>Participate, help out, have fun and give a little bit back to the Thames River watershed! <br>Join at the <span>next TRAA meeting</span> or fill out the application below.</p>
-			<div id="joinProcess">
-				<p>1</p>
-				<p>PERSONAL INFO</p>
-				<P>2</P>
-				<p>PAYMENT</p>
-				<P>3</P>
-				<p>SUBMIT</p>
-			</div>
-			<div id="joinInfoAndForm">
-				<div id="membershipPrice"><p>$25</p></div>
-				<div id="joinInfo">
-					<p>BEST VALUE DEAL!</p>
-					<ul>
-						<li>Annual plan</li>
-						<li>TRAA membership card</li>
-						<li>Share your membership with your family</li>
-						<li>Good standing as a TRAA member</li>
-						<li>Periodic updates about TRAA activities</li>
-					</ul>
-				</div>
-				<div id="joinForm">
-					<p>required fields *</p>
-					<form id="membershipForm" action="contact-form.php" method="post">
-						<label>Name:*</label>
-						<input type="text" required id="nameContact" placeholder="e.g. John Smith" size="30">
-						<label>Email:*</label>
-						<input type="email" required id="email" placeholder="example@email.com" size="30">
-						<label>Confirm Email:*</label>
-						<input type="text" required id="subject" placeholder="example@email.com" size="30">
-						<label>Date of Birth:*</label>
-						<input type="text" required id="dateBirth" placeholder="yyyy-mm-dd" size="30">
-						<label>Phone:</label>
-						<input type="tel" id="phone" placeholder="555-555-5555" size="30" >
-						<input type="submit" value="NEXT">
-					</form>
-				</div>
-			</div>
 		</section>
+
+		<div id="membershipPrice">$25</div>
+		
+		<div id="joinInfo">
+			<p>BEST VALUE DEAL!</p>
+			<ul>
+				<li>Annual plan</li>
+				<li>TRAA membership card</li>
+				<li>Share your membership with your family</li>
+				<li>Good standing as a TRAA member</li>
+				<li>Periodic updates about TRAA activities</li>
+			</ul>
+		</div>
+
+		<div id="joinProcess">
+			<div class="processOrder">
+				<div class="circle">1</div>
+				<p>PERSONAL INFO</p>
+			</div>
+			<div class="connector"></div>
+			<div class="processOrder">
+				<div class="circle">2</div>
+				<p>PAYMENT</p>
+			</div>
+			<div class="connector"></div>
+			<div class="processOrder">
+				<div class="circle">3</div>
+				<p>SUBMIT</p>	
+			</div>
+		</div>
+
+		<div id="joinForm">
+			<p>required fields *</p>
+			<form id="membershipForm" action="contact-form.php" method="post">
+				<label>Name:*</label>
+				<input type="text" required id="nameContact" placeholder="e.g. John Smith" size="30">
+				<label>Email:*</label>
+				<input type="email" required id="email" placeholder="example@email.com" size="30">
+				<label>Confirm Email:*</label>
+				<input type="text" required id="subject" placeholder="example@email.com" size="30">
+				<label>Date of Birth:*</label>
+				<input type="text" required id="dateBirth" placeholder="yyyy-mm-dd" size="30">
+				<label>Phone:</label>
+				<input type="tel" id="phone" placeholder="555-555-5555" size="30" >
+				<input type="submit" value="NEXT">
+			</form>
+		</div>
 
 		<section id="charts">
 			<h3>OUR DATA SPEAKS FOR ITSELF</h3>
@@ -120,7 +138,6 @@
 				<img class="chartImgSingle" src="images/data_members.png" alt="Members Chart">
 				<p>Our members across the years</p>
 			</div>
-			
 		</section>
 
 		<section id="paperForm">
@@ -135,65 +152,71 @@
 		</section>
 
 		<footer id="mainFooter">
-			<h2 class="hidden">Footer Navigation</h2>
-			<div id="mainFooterCon">
-				<div id="newsSocCon">
-					<section id="newsletter">
-					<h3>Keep In Touch</h3>
-						<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
-						<form action="form.php" method="POST" autocomplete="off">
-		                    <input class="text" type="text" required id="name" placeholder="Enter your Email" size="30" name="email"/>
-		                    <input class="subBut" type="submit" name="submit" value=">"/>
-		                </form><!--end form-->
-					</section>
-
-					<nav id="mainFooterSocialNav">
-					<h3 class="hidden">Footer Social Media Navigation</h3>
-						<ul>
-							<li><a href="https://www.facebook.com/groups/4TRAA/about/" target="_blank"><img src="images/social_facebook.svg" alt="Facebook"></a></li>
-							<li><a href="https://www.youtube.com/channel/UCAvK4qanj0dnwiMxB8wNraw/videos" target="_blank"><img src="images/social_youtube.svg" alt="Youtube"></a></li>
-							<li><a href="https://twitter.com/" target="_blank"><img src="images/social_twitter.svg" alt="Twitter"></a></li>
-							<li><a href="https://ca.linkedin.com/" target="_blank"><img src="images/social_linkedIn.svg" alt="LinkedIn"></a></li>
-		              	</ul>
-					</nav>
-				</div>
-
-				<section id="mainFooterContact">
-				<h3>Contact Us</h3>
-					<p> We meet every second Wednesday at 790 Southdale Road East<br> London, ON N6E 1A8 </p>
-					<p>Phone: (519) 681-2370</p>
-					<p><a href="contact.html">Send Us a Message ></a></p>
+		<h2 class="hidden">Footer Navigation</h2>
+		<div id="mainFooterCon">
+			<div id="newsSocCon">
+				<section id="newsletter">
+				<h3>Keep In Touch</h3>
+					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
+					<form action="form.php" method="POST" autocomplete="off">
+	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
+	                    <input class="subBut" type="submit" name="submit" value=">"/>
+	                </form><!--end form-->
 				</section>
 
-				<nav id="mainFooterNav">
-				<h3>Navigation</h3>
+				<nav id="mainFooterSocialNav">
+				<h3 class="hidden">Footer Social Media Navigation</h3>
 					<ul>
-						<li><a href="about.html">Who We Are</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="projects.html">Our Work</a></li>
-						<li><a href="#">Events</a></li>
-						<li><a href="#">Education</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
+						<li><a href="https://www.facebook.com/groups/4TRAA/about/" target="_blank"><img src="images/social_facebook.svg" alt="Facebook"></a></li>
+						<li><a href="https://www.youtube.com/channel/UCAvK4qanj0dnwiMxB8wNraw/videos" target="_blank"><img src="images/social_youtube.svg" alt="Youtube"></a></li>
+						<li><a href="https://twitter.com/" target="_blank"><img src="images/social_twitter.svg" alt="Twitter"></a></li>
+						<li><a href="https://ca.linkedin.com/" target="_blank"><img src="images/social_linkedIn.svg" alt="LinkedIn"></a></li>
+	              	</ul>
 				</nav>
-
-				<section id="mainFooterJoin">
-				<h3 class="hidden">Join Us Button</h3>
-					<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
-					<a href="join.html" id="btnJoin">JOIN NOW</a>
-				</section>
 			</div>
-			<nav id="mainFooterBottom">
-				<h3 class="hidden">Footer Bottom Links</h3>
+
+			<section id="mainFooterContact">
+			<h3>Contact Us</h3>
+				<p> We meet every second Wednesday at 790 Southdale Road East<br> London, ON N6E 1A8 </p>
+				<p>Phone: <a href="tel:519-681-2370">(519) 681-2370<a></p>
+				<p><a href="contact.html">Send Us a Message ></a></p>
+			</section>
+
+			<nav id="mainFooterNav">
+			<h3>Navigation</h3>
 				<ul>
-					<li>Copyright © Thames River Anglers Association</li>
-					<li><a href="#"></a>Sitemap</li>
-					<li><a href="#"></a>Terms and Conditions</li>
-					<li><a href="#"></a>Privacy Policy</li>
+					<li><a href="about.html">Who We Are</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="projects.html">Our Work</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Education</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
-		</footer>
-	</div>
+			
+			<section id ="actionBtns" class="btnCon">
+				<h3 class="hidden">Call to Action Buttons</h3>
+				<a href="join.html" class="btnLarge dark">MEMBERSHIP</a>
+				<a href="tel:519-681-2370" class="btnLarge dark">CALL US (519) 681-2370</a>
+				<a href="contact.html" class="btnLarge dark">SEND US A MESSAGE ></a>
+			</section>
+			
+			<section id="mainFooterJoin">
+			<h3 class="hidden">Join Us Button</h3>
+				<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
+				<a href="join.html" id="btnJoin">MEMBERSHIP</a>
+			</section>
+		</div>
+		<nav id="mainFooterBottom">
+			<h3 class="hidden">Footer Bottom Links</h3>
+			<ul>
+				<li>Copyright © Thames River Anglers Association</li>
+				<li><a href="#"></a>Sitemap</li>
+				<li><a href="#"></a>Terms and Conditions</li>
+				<li><a href="#"></a>Privacy Policy</li>
+			</ul>
+		</nav>
+	</footer>
 	<!-- JavaScript -->
 	<script src="js/main.js"></script>
 </body>
