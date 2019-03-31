@@ -3,9 +3,9 @@
 		<style>
 			.cls-1,.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;}
 			.cls-1{stroke-width:1.42px;}.cls-2{stroke-width:0.94px;}
-			.cls-3{fill:#136a81;}
+			.cls-3{fill:#587021;}
 
-			#vest_bg:hover { fill:#46C9B3; transition: 0.3s ease; cursor: pointer;}
+			#vest_bg { fill:#587021;}
 
 			#vest_zipper, #angler_small_pocket_left_top, #angler_small_pocket_right_top, #angler_large_pocket_right_top1, #angler_large_pocket_right_top2, #angler_large_pocket_left_top1, #angler_large_pocket_left_top2 { display: none; }
 

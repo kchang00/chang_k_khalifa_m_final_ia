@@ -8,12 +8,11 @@
 			.cls-3{stroke-width:0.78px;}
 			.cls-4,.cls-6{stroke-width:1.04px;}
 			.cls-5{clip-path:url(#clip-path);}
-			.cls-6{stroke:#136a81;stroke-linecap:round;}
+			.cls-6{stroke:#587021;stroke-linecap:round;}
 			.cls-7{stroke-width:1.14px;}
-			.cls-8,.cls-3,.cls-7{fill:#136a81;}
+			.cls-8,.cls-3,.cls-7{fill:#587021;}
 
-			#fish_sharing:hover {fill: #46C9B3; transition: 0.3s ease; cursor: pointer;}
-			#fish_sharing:hover .cls-6 {stroke: #46C9B3; transition: 0.3s ease; cursor: pointer;}
+			#fish_sharing {fill: #587021;}
 
 			#sharing_fish_stripes, #sharing_fish_eye, #sharing_fish_fin_bottom, #sharing_fish_fin_top { display: none; }
 

@@ -4,13 +4,13 @@
 			.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.68px;}
 			.cls-2{fill:#fff;}
 
-			.cls-3{fill:#136a81;}
+			.cls-3{fill:#587021;}
 
 			#fish_circle:hover {fill: #46C9B3; transition: 0.3s ease; cursor: pointer;}
 
 			#circle_fish2_bottom_fin, #circle_fish2_top_fin, #circle_fish1_bottom_fin, #circle_fish1_top_fin { display: none; }
 
-				@media screen and (min-width: 150px) {
+				@media screen and (min-width: 321px) {
 				#circle_fish2_bottom_fin, #circle_fish2_top_fin, #circle_fish1_bottom_fin, #circle_fish1_top_fin { display: block; }
 		</style>
 	</defs>
