@@ -59,7 +59,7 @@
 			</div>
 		</header>
 
-		<section class="hero">
+		<section class="hero heroContact">
 			<!-- <img class="heroImage" src="images/contact_hero.jpg" alt="River Image">
 			<div class="heroOverlay"></div> -->
 			<h2 id="contact-h2">CONTACT US</h2>
@@ -70,15 +70,28 @@
 			<h3>THE TRAA WOULD LIKE TO HEAR FROM YOU</h3>
 			<p>Need more information? Want to get involved? Please don't hesitate to contact us.</p>
 			<div id="announcement">
-				<div id="circle"></div>
+				<div id="close"><div id="circle">X</div></div>
 				<a href="#">Get in touch with us at the next meeting. Check the events page for the next meeting location.</a>
+			</div>
+
+			<div id="addresses">
+				<div class="addressesCon">
+					<h4><span><img class="contactIcon" src="images/contact_location.svg" alt="Location Icon"></span>GENERAL MEETINGS</h4>
+					<p>Come to our meetings every second Wednesday of the month at 7:00pm at WOFGPA.</p>
+	        
+				</div>
+
+				<div class="addressesCon">
+					<h4><span><img class="contactIcon" src="images/contact_mail.svg" alt="Mail Icon"></span>MAILINGS ADDRESS ONLY</h4>
+					<p>Thames River Anglers Association 2202 Coronation Drive London, ON N6G 0B9</p>
+				</div>
 			</div>
       
 			<div id="form">
 				<form id="contactForm" action="contact-form.php" method="post">
-					<input type="text" required id="nameContact" placeholder="NAME" size="30">
-					<input type="email" required id="email" placeholder="EMAIL" size="30">
-					<input type="text" required id="subject" placeholder="SUBJECT" size="30" list="subjectOptions">
+					<input type="text" required id="nameContact" placeholder="name" size="30">
+					<input type="email" required id="email" placeholder="email" size="30">
+					<input type="text" required id="subject" placeholder="subject" size="30" list="subjectOptions">
 
 					<datalist id="subjectOptions">
 					    <option value="Fundraising"></option>
@@ -87,7 +100,7 @@
 					    <option value="General Inquiry"></option>
 					</datalist>
 
-					<textarea id="message" required placeholder="LEAVE A MESSAGE" cols="30" rows="8"></textarea>
+					<textarea id="message" required placeholder="leave a message" cols="32" rows="8"></textarea>
 					<input type="submit" value="SEND">
 				</form>
 			</div>
@@ -96,24 +109,9 @@
 		<div id="mapArea">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.5518557793494!2d-81.22157848473451!3d42.94557367915192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef3b01c9e9983%3A0x84558efdb9f3a3a1!2s790+Southdale+Rd+E%2C+London%2C+ON+N6E+1A8!5e0!3m2!1sen!2sca!4v1549222596410" width="960" height="260" allowfullscreen></iframe>
 		</div>
-		<div id="addresses">
-
-			<div class="addressesCon">
-				<h4><span><img class="contactIcon" src="images/contact_location.svg" alt="Location Icon"></span>GENERAL MEETINGS</h4>
-				<p>Come to our meetings every second Wednesday of the month at 7:00pm at WOFGPA.</p>
-        
-			</div>
-
-			<div class="addressesCon">
-				<h4><span><img class="contactIcon" src="images/contact_mail.svg" alt="Mail Icon"></span>MAILINGS ADDRESS ONLY</h4>
-				<p>Thames River Anglers Association 2202 Coronation Drive London, ON N6G 0B9</p>
-			</div>
-		</div>
 
 		<section id="eventsWidget">
 		<h2>UPCOMING EVENTS</h2>
-
-
 			<section id="events">
 			<h3 class="hidden">Events Widget</h3>
 				<img src="images/arrow_left_events.svg" alt="Left Arrow">
