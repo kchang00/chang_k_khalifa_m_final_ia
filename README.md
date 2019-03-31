@@ -15,15 +15,14 @@ Remaking the Thames River Anglers Association site. The old version can be found
 ## Built With: 
 
 ```
-- Basic CSS and HTML (Flexbox layout)
-- Some CSS3 Animation (more to be added!)
+- Basic CSS and HTML (Responsive Flexbox Layout)
+- Some CSS3 Animation
 - Basic JavaScript
 - Graphs generated using Python3 and Matplotlib
 
 ```
 ## Design Elements :fish:
 
-- [ ] Replace place holder images
-- [ ] Tweak custom icons
-- [ ] Implement more design and CSS3 :+1:
+- [ ] Created custom icons
+- [ ] SVG Tiled Background Pattern that can be found at https://www.heropatterns.com/
 

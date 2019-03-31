@@ -85,7 +85,7 @@ img, embed, object, video {
 	font-family: 'Abolition', sans-serif;
 	color: #fff;
 	height: 60px;
-	margin: 10px 0px;
+	margin: 10px;
 	font-size: 24px;
 }
 
@@ -182,7 +182,7 @@ img, embed, object, video {
 	margin: 20px 0px;
 }
 
-.btnLarge:active, .btnSmall:active, #btnJoin:active, .btnTopBg:active, .subBut:active{
+.btnLarge:focus, .btnSmall:focus, #btnJoin:focus, .btnTopBg:focus, .subBut:focus{
 	transition: ease;
 	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
 	cursor: pointer;
@@ -258,7 +258,7 @@ img, embed, object, video {
 }
 
 
-/* === HEADER === */
+/* === HEADER - MOBILE === */
 
 #mainHeaderCon {
 	/* remember: fixed takes items out of normal flow*/
@@ -340,7 +340,7 @@ img, embed, object, video {
 	transition: all ease;
 }
 
-#mainNav.slideToggle a:active {
+#mainNav.slideToggle a:focus {
 	color: #92bd2f;
 }
 
@@ -353,11 +353,10 @@ img, embed, object, video {
 	right: 0;
 	z-index: -1;
 	opacity: 0.5;
-
 }
 
 
-/* === HERO CLASS === */
+/* === HERO CLASS - MOBILE === */
 
 .hero {
 	max-width: 320px;
@@ -367,7 +366,14 @@ img, embed, object, video {
 	justify-content: center;
 	align-items: center;
 	position: relative;
+}
+
+.heroProjects {
 	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero_small.jpg);
+}
+
+.heroAbout {
+	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/about_hero_small.jpg);
 }
 
 .heroImage {
@@ -440,8 +446,10 @@ img, embed, object, video {
 		padding: 8px;
 		border-radius: 8px;
 		background-color: #fff;
-		cursor: pointer;
+	}
 
+	.carouselOption:active {
+		cursor: pointer;
 	}
 
 	/* === HOME - WELCOME SECTION - MOBILE === */
@@ -857,6 +865,238 @@ img, embed, object, video {
 	margin-bottom: 40px;
 }
 
+/* === ABOUT - MOBILE === */
+
+	#tagline {
+		margin: 35px auto;
+		text-align: center;
+		padding: 0px 30px;
+	}
+
+	#tagline p {
+		font-size: 18px;
+	}
+
+	/* Mission Statements - MOBILE */
+
+	#mission {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	#mission h2 {
+		margin-bottom: 35px;
+	}
+
+	.statementsCon {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.missionStatement {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 60px;
+		max-width: 335px;
+		background-color: #fff;
+		border-bottom: 3px #666 solid;
+	}
+
+	.missionStatement:last-child {
+		border-bottom: none;
+	}
+
+	#missionStatementIcon1 {
+		width: 110px;
+	}
+
+	#missionStatementIcon2 {
+		width: 106px;
+	}
+
+	#missionStatementIcon3 {
+		width: 144px;
+	}
+
+	#missionStatementIcon4 {
+		width: 85px;
+	}
+
+	#missionStatementIcon5 {
+		width: 118px;
+	}
+
+	#missionStatementIcon6 {
+		width: 168px;
+		margin-bottom: 30px;
+	}
+
+	.missionStatement p {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	/* History - MOBILE */
+
+	#history {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 35px 10px;
+		background-color: #587021;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%2392bd2f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+		background-attachment: fixed;
+	}
+
+	#history h2{
+		color: #fff;
+	}
+
+	#historyCon {
+		display: flex;
+		flex-direction: column;
+		margin-top: 35px;
+		justify-content: center;
+		align-items: center;
+		max-width: 1200px
+	}
+
+	.historyEntry {
+		display: flex;
+	}
+
+	.historyYear {
+		display: flex;
+		align-items: center;
+		border-right: 3px #fff solid;
+		padding: 40px 0px;
+	}
+
+	.yearCircle {
+		max-height: 65px;
+		width: 65px;
+		border-radius: 65px;
+		line-height: 65px;
+		text-align: center;
+		vertical-align: middle;
+		background-color: #ececec;
+		position: relative;
+		font-family: Abolition, sans-serif;
+		color: #587021;
+		font-size: 18px;
+	}
+
+	.yearLine {
+		width: 10px;
+		height: 3px;
+		background-color: #fff;
+	}
+
+	.descBox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		text-align: justify-all;
+		background-color: #ececec;
+		position: relative;
+		padding: 20px;
+		font-family: Lato, Arial, sans-serif;
+		color: #666;
+		margin: 30px 0px 30px 10px;
+	}
+
+	/* Team - MOBILE */
+
+	#team {
+		padding: 35px 0px;
+	}
+
+	#team h2 {
+		margin-bottom: 35px;
+	}
+
+	#teamStatement {
+		text-align: justify;
+		padding: 0px 10px;
+	}
+
+	#executives {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		/* factors in margin on cards */
+		margin-top: 25px;
+		flex-wrap: wrap;
+	}
+
+	#volunteers {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		/* factors in margin on cards */
+		margin-top: 20px;
+		flex-wrap: wrap;
+	}
+
+	.member {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		margin: 10px;
+		flex: 1 1 330px;
+	}
+
+	.membersCard {
+		display: flex;
+		max-height: 298px;
+		flex: 1 1 330px;
+		justify-content: center;
+		align-items: center;
+		background-color: #587021;
+		margin: 10px;
+		padding: 10px 0px;
+	}
+
+	.membersCard h3{
+		color: #fff;
+	}
+
+	.memberName {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 40px 20px;
+		background-color: #587021;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%2392bd2f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+		background-attachment: fixed;
+	}
+
+	.memberName p {
+		color: #fff;
+		font-family: Abolition, Arial, sans-serif;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.memberTitle {
+		padding: 20px 40px;
+		text-align: center;
+		box-sizing: border-box;
+		box-shadow: 0px 3px 3.84px 0.16px rgba(31, 29, 30, 0.34);
+	}
+
+
 /* === MAIN FOOTER - MOBILE === */
 
 #mainFooter {
@@ -990,9 +1230,17 @@ img, embed, object, video {
 
 	.hero {
 		max-width: 1200px;
+	}
+
+	.heroProjects {
 		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero.jpg);
 	}
-	
+
+
+	.heroAbout {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/about_hero.jpg);
+	}
+		
 	.project {
 		max-width: 480px;
 		min-width: 321px;
@@ -1037,6 +1285,21 @@ img, embed, object, video {
 	}
 }
 
+@media screen and (min-width: 670px) {
+	.statementsCon {
+		margin-bottom: 35px;
+	}
+
+	.missionStatement:nth-child(5) {
+		border-bottom: none;
+	}
+
+	.missionStatement:nth-child(odd) {
+		border-right: 3px #666 solid;
+	}
+
+}
+
 /* === TABLET VERSION === */
 
 @media screen and (min-width: 768px) {
@@ -1049,7 +1312,6 @@ img, embed, object, video {
 	
 	.hero {
 		height: 510px;
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero.jpg);
 	}
 
 	.hero h2 {
@@ -1288,6 +1550,94 @@ img, embed, object, video {
 		display: block;
 	}
 
+	/* === ABOUT - TABLET === */
+
+	
+	/* History - TABLET */
+
+	#history {
+		padding: 40px;
+	}
+
+	#historyCon {
+		margin-top: 40px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.historyYear {
+		padding: 40px 0px;
+	}
+
+	.yearCircle {
+		max-height: 100px;
+		width: 100px;
+		border-radius: 100px;
+		line-height: 100px;
+		font-size: 30px;
+	}
+
+	.yearLine {
+		width: 40px;
+	}
+
+	.descBox {
+		text-align: center;
+		margin: 20px 40px 20px 40px;
+		/* has flex, used inspector tools, took max-width of box without shifting*/
+		box-sizing: border-box;
+/*		min-width: 484px;*/
+		/* same as statements*/
+		width: 330px;
+	}
+
+	.historyEntry:nth-child(even) .descBox {
+		order: -1;
+		margin-left: 40px;
+		margin-right: 0px;
+	}
+
+	.historyEntry:nth-child(even) .historyYear {
+		border-right: none;
+		border-left: 3px #fff solid;
+		margin-left: 40px;
+/*		margin-right: 424px;*/
+		margin-right: 270px;
+	}
+
+/*	.historyEntry:nth-child(odd) .historyYear {
+		margin-left: 427px;
+	}*/
+
+	.historyEntry:nth-child(odd) .historyYear {
+		margin-left: 270px;
+	}
+
+	.historyEntry:nth-child(even) .yearCircle {
+		order: 2;
+	}
+
+	/* Team - TABLET */
+
+	#team {
+		/* factors in margins on cards (10px + 30px =40px)*/
+		padding: 30px;
+	}
+
+		#team p {
+		text-align: center;
+	}
+		.missionStatement {
+		margin: 20px;
+		box-shadow: 0px 4px 7.68px 0.32px rgba(31, 29, 30, 0.34);
+		border-bottom: none;
+	}
+
+	/* must select it this way to work*/
+	.missionStatement:nth-child(odd) {
+		border-right: none;
+	}
+
 		/* === HOME - SPONSORS SECTION - DESKTOP === */
 
 	#sponsors {
@@ -1463,8 +1813,10 @@ img, embed, object, video {
 		padding: 8px;
 		border-radius: 8px;
 		background-color: #fff;
-		cursor: pointer;
+	}
 
+	.carouselOption:hover {
+		cursor: pointer;
 	}
 
 	/* === HOME - WELCOME SECTION - DESKTOP === */
@@ -1644,7 +1996,7 @@ img, embed, object, video {
 	#donateBanner {
 		flex-direction: row;
 		justify-content: flex-start;
-		padding: 40px;
+		padding: 60px 40px;
 	}
 
 	#donateBanner p {
@@ -1733,7 +2085,77 @@ img, embed, object, video {
 		margin-bottom: 40px;
 	}
 
+	/* === ABOUT - DESKTOP === */
 
+	#tagline {
+		margin: 40px auto;
+		padding: 0;
+	}
+
+	#tagline p {
+		font-size: 18px;
+	}
+
+	/* Mission Statements */
+
+	#mission {
+		padding: 0px 40px;
+	}
+
+	#mission h2 {
+		margin-bottom: 40px;
+	}
+
+	.statementsCon {
+		margin-bottom: 40px;
+	}
+
+	.missionStatement:nth-child(2), .missionStatement:nth-child(5) {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.missionStatement {
+		margin: 20px;
+	}
+
+	/* Team - DESKTOP */
+
+	#team {
+		/* factors in margins on cards (10px + 50px =60px)*/
+		/* + extra added padding so it changes to 2 columns with the mission statements*/
+		padding: 58px;
+	}
+
+	#executives {
+		/* factors in margins on cards (10px + 30px =40px)*/
+		margin-top: 30px;
+	}
+
+	#volunteers {
+		margin-top: 30px;
+	}
+
+	.member {
+		flex: none;
+	}
+	
+	.membersCard {
+		background-color: #587021;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%2392bd2f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+		background-attachment: fixed;
+		flex: 0 1 330px;
+	}
+
+	.memberName {
+		background-color: #587021;
+		background-image: none;
+		width: 330px;
+	}
+
+	.memberTitle {
+		max-width: 330px;
+	}
 	/* === MAIN FOOTER - DESKTOP === */
 
 	#mainFooterCon {
@@ -1861,6 +2283,36 @@ img, embed, object, video {
 	} /* END MAIN FOOTER DESKTOP */
 }
 
+@media screen and (min-width: 1164px) {
+
+	/* History - DESKTOP */
+
+	#history {
+		padding: 73px;
+	}
+
+	.descBox {
+		min-width: 484px;
+	}
+
+	.historyEntry:nth-child(even) .historyYear {
+		margin-right: 421px;
+	}
+
+	.historyEntry:nth-child(odd) .historyYear {
+		margin-left: 427px;
+	}
+
+	/* spacing between About page statements */
+	.missionStatement:nth-child(2), .missionStatement:nth-child(5) {
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+
+	.missionStatement {
+		margin: 20px 0;
+	}
+}
 
 
 
