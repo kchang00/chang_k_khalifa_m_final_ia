@@ -397,6 +397,10 @@ img, embed, object, video {
 	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero_small.jpg);
 }
 
+.heroJoin {
+	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/join_hero_small.jpg);
+}
+
 .heroImage {
 	position: absolute;
 	top: 0;
@@ -1196,6 +1200,183 @@ img, embed, object, video {
 	display: none;
 }
 
+/* === JOIN PAGE - MOBILE === */
+
+#mainJoin h2 {
+	margin-top: 40px;
+}
+
+#mainJoin p {
+	padding: 40px 10px;
+}
+
+#membershipPrice {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background-color: #4f641d;
+	margin: 40px auto;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+	line-height: 100px;
+	font-family: 'Abolition', sans-serif;
+	position: relative;
+	z-index: 1;
+}
+
+#joinInfo {
+	background-color: #92bd2f;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	top: -80px;
+	z-index: 0;
+}
+
+#joinInfo p {
+	font-family: 'Abolition', sans-serif;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 30px;
+	padding: 40px;
+}
+
+#joinInfo ul {
+	list-style-image: 
+}
+
+#joinInfo ul li {
+	color: #fff;
+	padding: 3px 50px;
+}
+
+#joinInfo li:last-child {
+	margin-bottom: 50px;
+}
+
+#joinProcess {
+	display: flex;
+	width: 80%;
+	margin: 20px auto;
+}
+
+.processOrder {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+
+.circle {
+	margin: 0 auto;
+	background-color: #4f641d;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 2px;
+	font-family: 'Abolition', sans-serif;   
+}
+
+.processOrder p {
+	font-family: 'Abolition', sans-serif;
+	color: #4f641d;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.connector {
+	width: 20%;
+	height: 2px;
+	background-color: #666;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#joinInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+#joinForm {
+	display: flex;
+	flex-direction: column;
+}
+
+#joinForm a {
+	color: #666;
+	font-family: 'Abolition', sans-serif;
+	font-size: 18px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+#joinForm p {
+	padding: 10px;
+}
+
+#joinForm label {
+	font-family: 'Abolition', sans-serif;
+	font-size: 18px;
+	display: block;
+	color: #4f641d;
+	padding-left: 10px;
+}
+
+#joinForm input {
+	width: 90%;
+	font-size: 14px;
+	border: 1px solid #4f641d;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+#joinForm input:last-child {
+	margin-top: 40px;
+	font-size: 18px;
+}
+
+#charts {
+	display: none;
+}
+
+#paperForm {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #587021;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%2392bd2f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+	background-attachment: fixed;
+}
+
+#paperForm h3 {
+	padding: 40px 10px;
+	color: #fff;
+}
+
+#paperForm p {
+	padding: 0 10px 60px 10px;
+	color: #fff;
+}
+
+#paperForm button {
+	width: 90%;
+	margin: 0 auto 40px auto;
+	border: none;
+}
+
+
+
+
 /* === MAIN FOOTER === */
 
 #mainFooter {
@@ -1341,6 +1522,10 @@ img, embed, object, video {
 
 	.heroContact {
 	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero.jpg);
+	}
+
+	.heroJoin {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/join_hero.jpg);
 	}
 		
 	.project {
