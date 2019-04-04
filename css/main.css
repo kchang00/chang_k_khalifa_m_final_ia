@@ -1207,7 +1207,13 @@ img, embed, object, video {
 }
 
 #mainJoin p {
-	padding: 40px 10px;
+	padding: 40px 30px;
+	text-align: center;
+}
+
+#priceCon {
+	display: flex;
+	flex-direction: column;
 }
 
 #membershipPrice {
@@ -1215,7 +1221,7 @@ img, embed, object, video {
 	height: 100px;
 	border-radius: 100px;
 	background-color: #4f641d;
-	margin: 40px auto;
+	margin: 20px auto;
 	color: #fff;
 	font-size: 60px;
 	text-align: center;
@@ -1223,14 +1229,15 @@ img, embed, object, video {
 	font-family: 'Abolition', sans-serif;
 	position: relative;
 	z-index: 1;
+	top: -100px;
 }
 
 #joinInfo {
 	background-color: #92bd2f;
-	width: 80%;
+	max-width: 500px;
 	margin: 0 auto;
 	position: relative;
-	top: -80px;
+	top: -170px;
 	z-index: 0;
 }
 
@@ -1244,12 +1251,17 @@ img, embed, object, video {
 }
 
 #joinInfo ul {
-	list-style-image: 
+	 list-style-image: url(../images/check.png);
+	 /*list-style-position: inside;*/
+	 /*margin-left: 60px;*/
+	 margin: 0 auto;
+	 padding-left: 60px;
 }
 
 #joinInfo ul li {
+	margin: 0 auto;
 	color: #fff;
-	padding: 3px 50px;
+	padding: 3px 20px;
 }
 
 #joinInfo li:last-child {
@@ -1260,6 +1272,8 @@ img, embed, object, video {
 	display: flex;
 	width: 80%;
 	margin: 20px auto;
+	position: relative;
+	top: 500px;
 }
 
 .processOrder {
@@ -1273,7 +1287,7 @@ img, embed, object, video {
 	background-color: #4f641d;
 	width: 30px;
 	height: 30px;
-	border-radius: 30px;
+	border-radius: 100px;
 	color: #fff;
 	text-align: center;
 	font-size: 16px;
@@ -1306,6 +1320,8 @@ img, embed, object, video {
 #joinForm {
 	display: flex;
 	flex-direction: column;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 #joinForm a {
@@ -1321,7 +1337,7 @@ img, embed, object, video {
 }
 
 #joinForm label {
-	font-family: 'Abolition', sans-serif;
+	text-transform: uppercase;
 	font-size: 18px;
 	display: block;
 	color: #4f641d;
@@ -1351,6 +1367,7 @@ img, embed, object, video {
 
 #paperForm {
 	margin: 0 auto;
+	margin-top: 40px;
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #587021;
@@ -1364,14 +1381,12 @@ img, embed, object, video {
 }
 
 #paperForm p {
-	padding: 0 10px 60px 10px;
+	padding: 0 10px 20px 10px;
 	color: #fff;
 }
 
-#paperForm button {
-	width: 90%;
-	margin: 0 auto 40px auto;
-	border: none;
+#paperForm a {
+	margin: 0 10px 40px 10px;
 }
 
 
@@ -1552,6 +1567,12 @@ img, embed, object, video {
 
 	#projectBrownTrout button{
 		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 420px) {
+	#joinProcess {
+		top: 470px;
 	}
 }
 
@@ -1981,6 +2002,7 @@ img, embed, object, video {
 	#addresses {
 		flex-wrap: no-wrap;
 	}
+
 }
 
 
@@ -2529,7 +2551,150 @@ img, embed, object, video {
 	#eventsWidget {
 		display: block;
 	}
-  
+
+	/* === JOIN PAGE - DESKTOP === */
+
+	#joinProcess {
+		position: static;
+	}
+
+	.circle {
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		font-size: 26px;
+		line-height: 50px;
+	}
+
+	.connector {
+		width: 70%;
+	}
+
+	.processOrder p {
+		font-size: 22px;
+		padding-top: 8px;
+	}
+
+	#infoAndForm{
+		display: flex;
+		margin: 60px auto 0 40px;
+	}
+
+	#membershipPrice {
+		position: static;
+		margin: 0 auto;
+		width: 200px;
+		height: 200px;
+		border-radius: 200px;
+		font-size: 80px;
+		line-height: 200px;
+	}
+
+	#joinInfo {
+		position: relative;
+		top: -120px;
+		margin-right: 60px;
+	}
+
+	#joinInfo p {
+		margin-top: 120px;
+	}
+
+	#joinInfo ul {
+		margin-bottom: 20px;
+	}
+
+	#joinForm {
+		margin: 0 40px 0 auto;
+		width: 60%;
+		max-width: none;
+	}
+
+	#joinForm label {
+		margin-top: 20px;
+	}
+
+	#joinForm input {
+		margin-top: 15px;
+	}
+
+	#joinForm input:last-child {
+		margin-right: 18px;
+	}
+
+	#charts {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		background-color: #587021;
+}
+
+	#charts h3 {
+		color:#fff;
+		margin-top: 40px;
+	}
+
+	#chartRow {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-top: 40px;
+	}
+
+	.chartCon {
+		display: flex;
+		flex-direction: column;
+		width: 410px;
+	}
+
+	.chartRowImg {
+		width: 410px;
+	}
+
+	.chartCon p {
+		width: 410px;
+		color: #fff;
+		padding: 20px;
+		font-size: 16px;
+	}
+
+	#singleChart {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.chartImgSingle {
+		width: 641px;
+		margin: 0  auto;
+	}
+
+	#singleChart p {
+		color: #fff;
+		padding: 20px;
+		font-size: 16px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	#paperForm {
+		margin-top: 0;
+	}
+
+	#paperFormText {
+		margin: 20px auto 20px 40px;
+		width: 60%;
+		border-right: 2px #fff solid;
+	}
+
+	#paperFormText h3 {
+		text-align: left;
+	}
+
+	#paperForm a {
+		margin: auto;
+	}
+
+
 	/* === MAIN FOOTER - DESKTOP === */
 
 	#mainFooterCon {
