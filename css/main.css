@@ -385,7 +385,7 @@ img, embed, object, video {
 /* === HERO CLASS - MOBILE === */
 
 .hero {
-	max-width: 320px;
+	max-width: 600px;
 	height: 408px;
 	display: flex;
 	flex-direction: column;
@@ -395,15 +395,15 @@ img, embed, object, video {
 }
 
 .heroProjects {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/projects_hero_small.jpg);
 }
 
 .heroAbout {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/about_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/about_hero_small.jpg);
 }
 
 .heroContact {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/contact_hero_small.jpg);
 }
 
 .heroJoin {
@@ -1402,7 +1402,6 @@ img, embed, object, video {
 	margin: 0 10px 40px 10px;
 }
 
-
 /* === Blog Page - MOBILE === */
 
 	#mainBlog {
@@ -1721,34 +1720,6 @@ flex: 1 1 auto;
  /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 321px) {
-
-	#carousel {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/home_hero.jpg);
-	}
-
-	.hero {
-		max-width: 1200px;
-	}
-
-	.heroProjects {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero.jpg);
-	}
-
-	.heroAbout {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/about_hero.jpg);
-	}
-
-	.heroContact {
-	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero.jpg);
-	}
-
-	.heroJoin {
-	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/join_hero.jpg);
-	}
-
-	.heroBlog {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/blog_hero.jpg);
-	}
 		
 	.project {
 		max-width: 480px;
@@ -1823,6 +1794,38 @@ flex: 1 1 auto;
 
 	.blogPostIcon {
 		margin-left: 44%;
+	}
+}
+
+@media screen and (min-width: 601px) {
+
+	#carousel {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/home_hero.jpg);
+		max-width: 1366px;
+	}
+
+	.hero {
+		max-width: 1366px;
+	}
+
+	.heroProjects {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/projects_hero.jpg);
+	}
+
+	.heroAbout {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/about_hero.jpg);
+	}
+
+	.heroContact {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/contact_hero.jpg);
+	}
+
+	.heroJoin {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/join_hero.jpg);
+	}
+
+	.heroBlog {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/blog_hero.jpg);
 	}
 }
 
@@ -1909,6 +1912,7 @@ flex: 1 1 auto;
 	
 	.hero {
 		height: 510px;
+		width:100%;
 	}
 
 	.hero h2 {
@@ -2876,7 +2880,7 @@ flex: 1 1 auto;
 		flex-direction: column;
 		margin-top: 20px;
 		background-color: #587021;
-}
+	}
 
 	#charts h3 {
 		color:#fff;
@@ -2951,7 +2955,7 @@ flex: 1 1 auto;
 
 	#blogLinks {
 		margin-left: 60px;
-	}
+  	}
 
 	#blogPosts {
 		max-width: 682px;
