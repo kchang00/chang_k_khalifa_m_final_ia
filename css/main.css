@@ -385,7 +385,7 @@ img, embed, object, video {
 /* === HERO CLASS - MOBILE === */
 
 .hero {
-	max-width: 320px;
+	max-width: 600px;
 	height: 408px;
 	display: flex;
 	flex-direction: column;
@@ -395,15 +395,15 @@ img, embed, object, video {
 }
 
 .heroProjects {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/projects_hero_small.jpg);
 }
 
 .heroAbout {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/about_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/about_hero_small.jpg);
 }
 
 .heroContact {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/contact_hero_small.jpg);
 }
 
 .heroJoin {
@@ -1402,192 +1402,6 @@ img, embed, object, video {
 	margin: 0 10px 40px 10px;
 }
 
-
-/* === Blog Page - MOBILE === */
-
-
-	#mainBlog {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	#blogPosts {
-		display: flex;
-		flex-direction: column;
-		margin-left: 40px;
-		flex: 1 1 682px;
-		max-width: 682px;
-	}
-
-	/* post tags */
-
-	.postTags ul {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.postTags ul li {
-		font-family: Lato, sans-serif; 
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 16px;
-		margin-top: 40px;
-		color: #587021;
-	}
-
-	.blogDateIcon {
-		display: inline-block;
-		height: 20px;
-		width: 20px;
-		margin-right: 10px;
-		background-image: url(../images/blog_date.svg);
-	}
-
-	.blogCategoriesIcon {
-		display: inline-block;
-		height: 20px;
-		width: 20px;
-		margin-right: 10px;
-		background-image: url(../images/blog_category.svg);
-	}
-
-	.blogCommentsIcon {
-		display: inline-block;
-		height: 20px;
-		width: 20px;
-		margin-right: 10px;
-		background-image: url(../images/blog_comments.svg);
-	}
-
-	/*post box*/
-
-	.iconPostCon {
-		display: flex;
-		flex-direction: column;
-		position: relative;
-	}
-
-	.blogPostIcon {
-		/* put icon in div, let it define height*/
-		background-color: #587021;
-		width: 60px;
-		height: 60px;
-		border-radius: 60px;
-		position: absolute;
-		z-index: 1;
-		margin-left: 46%;
-		margin-top: 40px;
-	}
-
-	.post {
-		margin-top: 60px;
-		display: flex;
-		flex-direction: column;
-		box-shadow: 0px 4px 7.68px 0.32px rgba(31, 29, 30, 0.34);
-		background-color: #fff;
-		border-top: #587021 solid 20px;
-		padding: 40px;
-	}
-
-	.post:last-child {
-		margin-bottom: 40px;
-	}
-
-	.post a {
-		font-family: Abolition, sans-serif;
-		color: #587021;
-		font-size: 23px;
-		font-weight: bold;
-		margin-top: 20px;
-		text-decoration: none;
-	}
-
-	/*post types*/
-	/*post with only text*/
-
-	.postContent1{
-		font-size: 14px;
-		color: #999;
-		padding: 20px 0px 10px 0px;
-		line-height: 15px;
-		margin-top: 10px;
-	}
-
-	/*text and image post*/
-
-	.postContent2 {
-		display: flex;
-		justify-content: flex-start;
-		padding-top: 20px;
-		margin-top: 20px;
-		line-height: 15px;
-		font-size: 14px;
-		color: #999;
-	}
-
-	.postContent2 img {
-		width: 210px;
-	}
-
-	.postContent2Text {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin-left: 20px;
-	}
-
-	/* right side nav */
-
-	#blogLinks {
-		width: 300px;
-		display: flex;
-		flex-direction: column;
-	}
-
-	#blogLinks h4 {
-		margin-top: 70px;
-		margin-right: auto;
-	}
-
-	#blogLinks a {
-		font-family: Lato, sans-serif;
-		text-decoration: none;
-		color: #666;
-		margin-top: 10px;
-		margin-left: 20px;
-		font-size: 16px;
-	}
-
-	.categoryPosts {
-	 display: flex;
-	 flex-direction: column;
-	 width: 300px;
-	}
-
-	.postLink {
-		display: flex;
-		justify-content: flex-start;
-		margin-top: 20px;
-		width: 300px;
-	}
-
-	.postLinkImage {
-		width: 40px;
-		height: 40px;
-		background-color: #666;
-	}
-
-	#archives {
-		display: flex;
-		flex-direction: column;
-	}
-
-	#archives a {
-		text-decoration: underline;
-		margin-left: 0;
-	}
-
 /* === Blog Page - MOBILE === */
 
 
@@ -1901,34 +1715,6 @@ img, embed, object, video {
  /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 321px) {
-
-	#carousel {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/home_hero.jpg);
-	}
-
-	.hero {
-		max-width: 1200px;
-	}
-
-	.heroProjects {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero.jpg);
-	}
-
-	.heroAbout {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/about_hero.jpg);
-	}
-
-	.heroContact {
-	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero.jpg);
-	}
-
-	.heroJoin {
-	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/join_hero.jpg);
-	}
-
-	.heroBlog {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/blog_hero.jpg);
-	}
 		
 	.project {
 		max-width: 480px;
@@ -1980,6 +1766,38 @@ img, embed, object, video {
 	}
 }
 
+@media screen and (min-width: 601px) {
+
+	#carousel {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/home_hero.jpg);
+		max-width: 1366px;
+	}
+
+	.hero {
+		max-width: 1366px;
+	}
+
+	.heroProjects {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/projects_hero.jpg);
+	}
+
+	.heroAbout {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/about_hero.jpg);
+	}
+
+	.heroContact {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/contact_hero.jpg);
+	}
+
+	.heroJoin {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/join_hero.jpg);
+	}
+
+	.heroBlog {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/blog_hero.jpg);
+	}
+}
+
 @media screen and (min-width: 699px) {
 
 	.addressesCon:first-child {
@@ -2019,6 +1837,7 @@ img, embed, object, video {
 	
 	.hero {
 		height: 510px;
+		width:100%;
 	}
 
 	.hero h2 {
@@ -2979,7 +2798,7 @@ img, embed, object, video {
 		flex-direction: column;
 		margin-top: 20px;
 		background-color: #587021;
-}
+	}
 
 	#charts h3 {
 		color:#fff;
@@ -3184,9 +3003,9 @@ img, embed, object, video {
 
 	#blogLinks {
 		width: 300px;
-  }
+  	}
   
-  #blogLinks h4 {
+  	#blogLinks h4 {
 		margin-top: 70px;
 		margin-right: auto;
 	}
