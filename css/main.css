@@ -403,7 +403,7 @@ img, embed, object, video {
 }
 
 .heroContact {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/contact_hero_small.jpg);
 }
 
 .heroJoin {
