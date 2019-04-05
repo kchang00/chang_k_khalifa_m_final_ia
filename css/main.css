@@ -376,7 +376,7 @@ img, embed, object, video {
 /* === HERO CLASS - MOBILE === */
 
 .hero {
-	max-width: 320px;
+	max-width: 600px;
 	height: 408px;
 	display: flex;
 	flex-direction: column;
@@ -386,11 +386,11 @@ img, embed, object, video {
 }
 
 .heroProjects {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/projects_hero_small.jpg);
 }
 
 .heroAbout {
-	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/about_hero_small.jpg);
+	background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/about_hero_small.jpg);
 }
 
 .heroContact {
@@ -1518,30 +1518,6 @@ img, embed, object, video {
  /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 321px) {
-
-	#carousel {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/home_hero.jpg);
-	}
-
-	.hero {
-		max-width: 1200px;
-	}
-
-	.heroProjects {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hero.jpg);
-	}
-
-	.heroAbout {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/about_hero.jpg);
-	}
-
-	.heroContact {
-	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/contact_hero.jpg);
-	}
-
-	.heroJoin {
-	    background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/join_hero.jpg);
-	}
 		
 	.project {
 		max-width: 480px;
@@ -1593,6 +1569,34 @@ img, embed, object, video {
 	}
 }
 
+@media screen and (min-width: 601px) {
+
+	#carousel {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/home_hero.jpg);
+		max-width: 1366px;
+	}
+
+	.hero {
+		max-width: 1366px;
+	}
+
+	.heroProjects {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/projects_hero.jpg);
+	}
+
+	.heroAbout {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/about_hero.jpg);
+	}
+
+	.heroContact {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/contact_hero.jpg);
+	}
+
+	.heroJoin {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/join_hero.jpg);
+	}
+}
+
 @media screen and (min-width: 699px) {
 
 	.addressesCon:first-child {
@@ -1632,6 +1636,7 @@ img, embed, object, video {
 	
 	.hero {
 		height: 510px;
+		width:100%;
 	}
 
 	.hero h2 {
