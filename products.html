@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TRAA | Projects</title>
+	<title>TRAA | Products</title>
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.typekit.net/zvq7kqj.css">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
@@ -15,7 +15,7 @@
 
 <body>
 	<div id="mainContainer">
-		<h1 class="hidden">TRAA Projects</h1>
+		<h1 class="hidden">TRAA Products</h1>
 		<header id="mainHeader">
 			<nav id="headerSocialMedia">
 				<h2 class="hidden">Header Social Media Navigation</h2>
@@ -26,7 +26,8 @@
 						<li><a href="https://ca.linkedin.com/" target="_blank"><img src="images/social_linkedIn.svg" alt="LinkedIn"></a></li>
 					</ul>
 			</nav>
-			<div id="mainHeaderCon">
+
+						<div id="mainHeaderCon">
 				<a href="index.html"><img src="images/logo.svg" id="headerLogo" alt="TRAA Logo"></a>
 				<i class="fa fa-bars hamburger"></i>
 				<nav id="mainNav">
@@ -53,53 +54,52 @@
 		</header>
 	</div>
 
-	<section class="hero heroProjects">
-		<h2>Projects</h2>
-		<i class="fa fa-angle-down downArrow"></i>
-	</section>
-		
-	<section id="donateBanner">
-	<h2 class="hidden">Donate Banner</h2>
-		<p>Want to help out in TRAA's most vital projects?</p>
-		<a href="#" class="btnLarge dark btnDonate">DONATE</a>
-		<a href="contact.html" class="btnLarge dark">FUNDRAISE</a>
-	</section>
-
-	<div class="container">
-		<section id="projectArea">
-		<h2 class="hidden">Projects</h2>
-			<div class="projectRow">
-				<div class="project" id="projectHatchery">
-					<a href="#">
-						<h3>TROUT HATCHERY</h3>
-					</a>
-				</div>
-				<div class="project" id="projectSalmonid">
-					<a href="#">
-						<h3>SALMONID MONITORING PROGRAM</h3>
-					</a>
-				</div>
-			</div>
-			<div class="projectRow">
-				<div class="project" id="projectKomoka">
-					<a href="#">
-						<h3>KOMOKA CREEK HYDROLOGICAL STUDY</h3>
-					</a>
-				</div>
-				<div class="project" id="projectBrownTrout">
-					<h3>BROOK TROUT PROGRAM</h3>
-					<button class="btnLarge light swing">COMING SOON</button>
-				</div>
-			</div>
+		<section class="hero heroContact">
+			<h2 id="contact-h2">Merchandising</h2>
+			<i class="fa fa-angle-down downArrow"></i>
 		</section>
-	</div>
+			
+		<div id="merchMainCon">
+			<section id="merchGallery">
+				<h3 class="hidden">Merchandising Gallery</h3>
+				<div class="galleryImagesCon">
+					<div class="galleryArrows">
+						<i class="fa fa-angle-left galleryArrow"></i>
+						<i class="fa fa-angle-right galleryArrow"></i>
+					</div>
+					<div class="galleryImages">
+						<img src="images/merchImage1.jpg" alt="Keychain Merch">	
+						<img src="images/merchImage2.jpg" alt="Notepad Merch">	
+						<img src="images/merchImage3.jpg" alt="Sticker Merch">
+						<img src="images/merchImage4.jpg" alt="Tackle Box Merch">
+					</div>
+				</div>
+				
+				<div class="galleryThumbnails">
+					<img src="images/merchThumbnail1.jpg" alt="Keychain Merch Thumbnail">	
+					<img src="images/merchThumbnail2.jpg" alt="Notepad Merch Thumbnail">	
+					<img src="images/merchThumbnail3.jpg" alt="Sticker Merch Thumbnail">
+					<img src="images/merchThumbnail4.jpg" alt="Tackle Box Merch Thumbnail">
+				</div>
+			</section>
 
-	<section id="projectArchive">
-		<a href="#"><h2>Project Archive</h2></a>
-		<img src="images/arrow_down.svg" alt="Down Arrow">
-	</section>
+			<section id="merchDesc">
+				<h3>Keychain Merch</h3>
+				<h4>Subtitle explaining product</h4>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nemo earum odio impedit nisi omnis, ratione quis eum suscipit! Explicabo nemo pariatur consequatur placeat cumque, suscipit saepe ut dolorum enim.
+				</p>
+				<div class="priceFormCon">
+					<h5>Price: $18.00</h5>
+					<form id="merchForm" action="merch-form.php" method="post">
+						<input type="number" name="quantity" min="1" max="10" value="1">
+						<input type="submit" value="ADD TO CART" class="btnSmall light">
+					</form>
+				</div>
+			</section>
+		</div>
 
-	<footer id="mainFooter">
+		<footer id="mainFooter">
 		<h2 class="hidden">Footer Navigation</h2>
 		<div id="mainFooterCon">
 			<div id="newsSocCon">
@@ -107,7 +107,7 @@
 				<h3>Keep In Touch</h3>
 					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
 					<form action="form.php" method="POST" autocomplete="off">
-	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
+	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" size="30" name="email"/>
 	                    <input class="subBut" type="submit" name="submit" value=">"/>
 	                </form><!--end form-->
 				</section>
@@ -126,7 +126,7 @@
 			<section id="mainFooterContact">
 			<h3>Contact Us</h3>
 				<p> We meet every second Wednesday at 790 Southdale Road East<br> London, ON N6E 1A8 </p>
-				<p>Phone: <a href="tel:519-681-2370">(519) 681-2370<a></p>
+				<p>Phone: (519) 681-2370</p>
 				<p><a href="contact.html">Send Us a Message ></a></p>
 			</section>
 
@@ -155,17 +155,18 @@
 				<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
 				<a href="join.html" id="btnJoin">MEMBERSHIP</a>
 			</section>
-		</div>
-		<nav id="mainFooterBottom">
-			<h3 class="hidden">Footer Bottom Links</h3>
-			<ul>
-				<li>Copyright © Thames River Anglers Association</li>
-				<li><a href="#">Sitemap</a></li>
-				<li><a href="#">Terms and Conditions</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-			</ul>
-		</nav>
-	</footer>
+			</div>
+			<nav id="mainFooterBottom">
+				<h3 class="hidden">Footer Bottom Links</h3>
+				<ul>
+					<li>Copyright © Thames River Anglers Association</li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</nav>
+		</footer>
+	
 	<!-- JavaScript -->
 	<script src="js/main.js"></script>
 </body>
