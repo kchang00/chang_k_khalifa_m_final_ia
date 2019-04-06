@@ -22,19 +22,19 @@ h3 {
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 24px;
 	text-align: center;
 	text-transform: capitalize;
 	font-family: 'Abolition', sans-serif;
 	color: #587021;
 }
 
-h4 {
+h5 {
 	font-size: 24px;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Abolition', sans-serif; 
-	color: #4f641d;
+	font-family: 'Lato', sans-serif;
+	color: #587021;
 }
 
 p {
@@ -153,14 +153,9 @@ img, embed, object, video {
 }
 
 .btnTopBg {
-	
-	/*let svg define height and width
-	height: 60px;
-	width: 75px;*/
 	padding: 0em 1em;
 	border-radius: 75px;
 	margin-bottom: 10px;
-/*	background-color: tomato;*/
 }
 
 #btnJoin {
@@ -173,7 +168,6 @@ img, embed, object, video {
 	text-transform: uppercase;
 	cursor: pointer;
 	font-family: 'Abolition', sans-serif;
-	/*font-weight: bold;*/
 	background-color: #92bd2f;
 	color: #fff;
 }
@@ -1402,7 +1396,7 @@ img, embed, object, video {
 	margin: 0 10px 40px 10px;
 }
 
-/* === Blog Page - MOBILE === */
+/* === BLOG PAGE - MOBILE === */
 
 	#mainBlog {
 		display: flex;
@@ -1588,6 +1582,126 @@ img, embed, object, video {
 		margin-left: 0;
 	}
 
+/* === PRODUCTS PAGE - MOBILE === */
+
+	#merchMainCon {
+		display: flex;
+		padding: 40px 10px 100px 10px;
+		flex-direction: column;
+	}
+
+	#merchGallery {
+		display: flex;
+		flex-direction: column;
+		/* make it show only 1 image*/
+	}
+	.galleryArrows {
+		display: none;
+	}
+
+	.galleryImagesCon {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	.galleryImages {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+	}
+
+	.galleryImages img {
+		flex: 0 0 auto;
+		width: 600px;
+		height: 400px;
+		background-color: skyblue;
+	}
+
+
+	.galleryThumbnails {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.galleryThumbnails img {
+		margin: 0px 10px;
+		background-color: skyblue;
+		height: 100px;
+		flex: 1;
+	}
+
+	.galleryThumbnails img:first-child {
+		margin-left: 0;
+	}
+
+	.galleryThumbnails img:last-child {
+		margin-right: 0;
+	}
+
+	.galleryThumbnails img:active {
+		cursor: pointer;
+	}
+
+	#merchDesc {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#merchDesc h3 {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+
+	#merchDesc h4 {
+		margin-bottom: 30px;
+	}
+
+	#merchDesc h5 {
+		margin-right: 40px;
+	}
+
+	#merchDesc p {
+		text-align: justify;
+	}
+
+	#merchForm {
+		display: flex;
+		flex: 1;
+/*		background-color: pink;*/
+		justify-content: center;
+	}
+
+	#merchForm input {
+		align-self: center;
+	}
+
+	#merchForm input[type="submit"] {
+		flex: 1;
+		min-width: 100px;
+	}
+
+	#merchForm input[type="number"] {
+		height: 40px;
+		width: 50px;
+		border: 2px #587021 solid;
+		border-radius: 20px;
+		text-align: center;
+		font-size: 18px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.priceFormCon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 60px;
+		flex-wrap: wrap;
+	}
+
 /* === MAIN FOOTER - MOBILE === */
 
 #mainFooter {
@@ -1715,6 +1829,10 @@ flex: 1 1 auto;
 #mainFooterBottom ul li:first-child {
 	margin: 0px 15px;
 }
+
+#mainFooterBottom ul li a{
+	color: #ccc;
+}
  /* END MAIN FOOTER - MOBILE */
 
  /* === MEDIA QUERIES === */
@@ -1759,6 +1877,11 @@ flex: 1 1 auto;
 
 	.blogPostIcon {
 		margin-left: 43%;
+	}
+
+	.galleryThumbnails img {
+		margin: 0px 10px;
+		height: 100px;
 	}
 }
 
@@ -1897,6 +2020,14 @@ flex: 1 1 auto;
 	.blogCommentsIcon {
 		height: 20px;
 		width: 20px;
+	}
+
+	#merchGallery {
+		display: flex;
+		flex-direction: column;
+		/* make it show only 1 image*/
+		max-width: 618px;
+		margin: 0 auto;
 	}
 }
 
@@ -2249,12 +2380,16 @@ flex: 1 1 auto;
 		flex-wrap: no-wrap;
 	}
 
-	/* === Blog Page - TABLET === */
+	/* === BLOG PAGE - TABLET === */
 
 	#mainBlog {
 		padding: 0px 40px;
 	}
 
+	/* === PRODUCTS PAGE - TABLET === */
+	#merchMainCon {
+		padding: 40px 40px 100px 40px
+	}
 }
 
 
@@ -2947,7 +3082,7 @@ flex: 1 1 auto;
 		margin: auto;
 	}
 
-	/* === Blog Page - DESKTOP === */
+	/* === BLOG PAGE - DESKTOP === */
 
 	#mainBlog {
 		padding: 0px 60px;
@@ -2959,6 +3094,47 @@ flex: 1 1 auto;
 
 	#blogPosts {
 		max-width: 682px;
+	}
+
+	/* === PRODUCTS PAGE - DESKTOP === */
+
+	.galleryImagesCon:hover .galleryArrows {
+		opacity: 1;
+	}
+
+	.galleryArrows {
+		display: flex;
+		left: 0;
+		right: 0;
+		position: absolute;
+		justify-content: space-between;
+		padding: 0px 10px;
+		opacity: 0;
+		transition: all .5s ease;
+	}
+
+	.galleryArrow {
+		display: block;
+		font-size: 6em;
+		color: #587021;
+		cursor: pointer;
+	}
+
+	#merchMainCon {
+		flex-direction: row;
+		padding: 40px 60px 100px 60px;
+	}
+
+	#merchDesc {
+		margin-left: 40px;
+	}
+
+	#merchGallery {
+		max-width: 50%;
+	}
+
+	.galleryThumbnails img:hover {
+		cursor: pointer;
 	}
 
 	/* === MAIN FOOTER - DESKTOP === */
@@ -2995,7 +3171,7 @@ flex: 1 1 auto;
 		margin-right: 40px;
 	}
 
-		#newsletter input[type="text"]
+	#newsletter input[type="text"]
 	{
 		max-width: 300px;
 	}
@@ -3086,7 +3262,9 @@ flex: 1 1 auto;
 	#mainFooterBottom ul li:first-child {
 		margin-right: auto;
 		order: 0;
-	} /* END MAIN FOOTER DESKTOP */
+	}
+
+	/* END MAIN FOOTER DESKTOP */
 }
 
 @media screen and (min-width: 1072px) {
