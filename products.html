@@ -93,13 +93,18 @@
 					<h5>Price: $18.00</h5>
 					<form id="merchForm" action="merch-form.php" method="post">
 						<input type="number" name="quantity" min="1" max="10" value="1">
+					<div class="btnAnimateCon">
 						<input type="submit" value="ADD TO CART" class="btnSmall light">
+						<a href="#" class="btnAnimateOverlay"></a>
+						<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+					</div>
+
 					</form>
 				</div>
 			</section>
 		</div>
 
-		<footer id="mainFooter">
+	<footer id="mainFooter">
 		<h2 class="hidden">Footer Navigation</h2>
 		<div id="mainFooterCon">
 			<div id="newsSocCon">
@@ -107,8 +112,13 @@
 				<h3>Keep In Touch</h3>
 					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
 					<form action="form.php" method="POST" autocomplete="off">
-	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" size="30" name="email"/>
-	                    <input class="subBut" type="submit" name="submit" value=">"/>
+	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
+
+			            <div class="btnAnimateCon">
+							<input class="subBut dark" type="submit" name="submit" value=">"/>
+							<a href="#" class="btnAnimateOverlay"></a>
+							<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+						</div>
 	                </form><!--end form-->
 				</section>
 
@@ -126,7 +136,7 @@
 			<section id="mainFooterContact">
 			<h3>Contact Us</h3>
 				<p> We meet every second Wednesday at 790 Southdale Road East<br> London, ON N6E 1A8 </p>
-				<p>Phone: (519) 681-2370</p>
+				<p>Phone: <a href="tel:519-681-2370">(519) 681-2370<a></p>
 				<p><a href="contact.html">Send Us a Message ></a></p>
 			</section>
 
@@ -153,19 +163,24 @@
 			<section id="mainFooterJoin">
 			<h3 class="hidden">Join Us Button</h3>
 				<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
-				<a href="join.html" id="btnJoin">MEMBERSHIP</a>
+
+				<div class="btnAnimateCon">
+					<a href="join.html" class="btnLarge dark">MEMBERSHIP</a>
+					<a href="join.html" class="btnAnimateOverlay"></a>
+					<a href="join.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+				</div>
 			</section>
-			</div>
-			<nav id="mainFooterBottom">
-				<h3 class="hidden">Footer Bottom Links</h3>
-				<ul>
-					<li>Copyright © Thames River Anglers Association</li>
-					<li><a href="#">Sitemap</a></li>
-					<li><a href="#">Terms and Conditions</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-				</ul>
-			</nav>
-		</footer>
+		</div>
+		<nav id="mainFooterBottom">
+			<h3 class="hidden">Footer Bottom Links</h3>
+			<ul>
+				<li>Copyright © Thames River Anglers Association</li>
+				<li><a href="#">Sitemap</a></li>
+				<li><a href="#">Terms and Conditions</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+		</nav>
+	</footer>
 	
 	<!-- JavaScript -->
 	<script src="js/main.js"></script>

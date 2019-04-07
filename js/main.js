@@ -5,7 +5,9 @@
 			mainNav 			= document.querySelector('#mainNav'),
 			mainHeaderCon		= document.querySelector('#mainHeaderCon'),
 			mainHeader			= document.querySelector('#mainHeader'), 
-			mediaQuery1 		= window.matchMedia('(min-width: 768px)');
+			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
+			carouselOptions		= document.querySelectorAll('.carouselOption'),
+			carouselImages		= document.querySelector('.carouselImages');
 
 	function hamburgerMenu() {
 		mainNav.classList.toggle('slideToggle');
@@ -31,6 +33,16 @@
 	   scrollTop = pageScroll;
 	}
 
+	function animateCarousel() {
+		const offSet = 1200; // width of one image
+		totalOffset = this.dataset.offset * offSet;
+
+		TweenMax.to(carouselImages, 0.8, {right: totalOffset});
+	}
+
+
 	hamburger.addEventListener('click', hamburgerMenu);
+	carouselOptions.forEach(option => option.addEventListener('click', animateCarousel));
+
 
 })();

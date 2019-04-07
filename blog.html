@@ -53,12 +53,14 @@
 				</nav>
 			</div>
 		</header>
+	</div>
 
 	<section class="hero heroBlog">
 		<h2>Blog</h2>
 		<i class="fa fa-angle-down downArrow"></i>
 	</section>
-
+	
+	<div class="container">
 		<section id="mainBlog">
 			<h2 class="hidden">Blog Main</h2>
 			<div id="blogPosts">
@@ -126,7 +128,11 @@
 				</div> <!--end blog post 3-->
 
 				<div class="btnCon">
-					<a href="#" class="btnSmall light">SEE MORE</a>
+					<div class="btnAnimateCon">
+						<a href="#" class="btnSmall light">SEE MORE</a>
+						<a href="#" class="btnAnimateOverlay"></a>
+						<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+					</div>
 				</div>
 			</div>
 			<div id="blogLinks">
@@ -175,8 +181,12 @@
 
 	<div class="container">
 		<div class="btnTop">
-			<a href="#"><div class="btnTopBg"><i class="fa fa-angle-up"></i></div>
-			<p>TOP</p></a>
+			<div class="btnAnimateConTop btnAnimateCon">
+				<a href="#"><div class="btnTopBg"><i class="fa fa-angle-up"></i></div></a>
+				<a href="#" class="btnAnimateOverlay"></a>
+				<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+			</div>
+			<p>TOP</p>
 		</div>
 	</div>
 
@@ -189,7 +199,12 @@
 					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
 					<form action="form.php" method="POST" autocomplete="off">
 	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
-	                    <input class="subBut" type="submit" name="submit" value=">"/>
+
+			            <div class="btnAnimateCon">
+							<input class="subBut dark" type="submit" name="submit" value=">"/>
+							<a href="#" class="btnAnimateOverlay"></a>
+							<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+						</div>
 	                </form><!--end form-->
 				</section>
 
@@ -234,7 +249,12 @@
 			<section id="mainFooterJoin">
 			<h3 class="hidden">Join Us Button</h3>
 				<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
-				<a href="join.html" id="btnJoin">MEMBERSHIP</a>
+
+				<div class="btnAnimateCon">
+					<a href="join.html" class="btnLarge dark">MEMBERSHIP</a>
+					<a href="join.html" class="btnAnimateOverlay"></a>
+					<a href="join.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+				</div>
 			</section>
 		</div>
 		<nav id="mainFooterBottom">
