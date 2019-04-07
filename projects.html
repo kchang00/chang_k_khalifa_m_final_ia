@@ -61,34 +61,62 @@
 	<section id="donateBanner">
 	<h2 class="hidden">Donate Banner</h2>
 		<p>Want to help out in TRAA's most vital projects?</p>
-		<a href="#" class="btnLarge dark btnDonate">DONATE</a>
-		<a href="contact.html" class="btnLarge dark">FUNDRAISE</a>
+
+		<div class="btnAnimateCon btnDonate">
+			<a href="#" class="btnLarge dark">DONATE</a>
+			<a href="#" class="btnAnimateOverlay"></a>
+			<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+		</div>
+
+		<div class="btnAnimateCon btnDonate">
+			<a href="contact.html" class="btnLarge dark">FUNDRAISE</a>
+			<a href="contact.html" class="btnAnimateOverlay"></a>
+			<a href="contact.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+		</div>
 	</section>
 
 	<div class="container">
 		<section id="projectArea">
 		<h2 class="hidden">Projects</h2>
 			<div class="projectRow">
-				<div class="project" id="projectHatchery">
+				<div id="projectHatchery" class="animationCon project">
 					<a href="#">
 						<h3>TROUT HATCHERY</h3>
-					</a>
+	 					<div class="animationOverlay">
+	 					</div>
+	 					<div class="animationOverlay animationOverlay2"></div>
+	  				</a>
 				</div>
-				<div class="project" id="projectSalmonid">
+
+				<div id="projectSalmonid" class="animationCon project">
 					<a href="#">
 						<h3>SALMONID MONITORING PROGRAM</h3>
-					</a>
+	 					<div class="animationOverlay">
+	 					</div>
+	 					<div class="animationOverlay animationOverlay2"></div>
+	  				</a>
 				</div>
 			</div>
 			<div class="projectRow">
-				<div class="project" id="projectKomoka">
+				<div id="projectKomoka" class="animationCon project">
 					<a href="#">
 						<h3>KOMOKA CREEK HYDROLOGICAL STUDY</h3>
-					</a>
+	 					<div class="animationOverlay">
+	 					</div>
+	 					<div class="animationOverlay animationOverlay2"></div>
+	  				</a>
 				</div>
-				<div class="project" id="projectBrownTrout">
-					<h3>BROOK TROUT PROGRAM</h3>
-					<button class="btnLarge light swing">COMING SOON</button>
+
+
+				<div id="projectBrownTrout" class="animationCon project">
+					<a href="#">
+						<h3>BROOK TROUT PROGRAM</h3>
+						<div class="btnAnimateCon swing">
+							<a class="btnLarge light">COMING SOON</a>
+							<a class="btnAnimateOverlay"></a>
+							<a class="btnAnimateOverlay btnAnimateOverlay2"></a>
+						</div>
+	  				</a>
 				</div>
 			</div>
 		</section>
@@ -108,7 +136,12 @@
 					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
 					<form action="form.php" method="POST" autocomplete="off">
 	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
-	                    <input class="subBut" type="submit" name="submit" value=">"/>
+
+			            <div class="btnAnimateCon">
+							<input class="subBut dark" type="submit" name="submit" value=">"/>
+							<a href="#" class="btnAnimateOverlay"></a>
+							<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+						</div>
 	                </form><!--end form-->
 				</section>
 
@@ -153,7 +186,12 @@
 			<section id="mainFooterJoin">
 			<h3 class="hidden">Join Us Button</h3>
 				<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
-				<a href="join.html" id="btnJoin">MEMBERSHIP</a>
+
+				<div class="btnAnimateCon">
+					<a href="join.html" class="btnLarge dark">MEMBERSHIP</a>
+					<a href="join.html" class="btnAnimateOverlay"></a>
+					<a href="join.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+				</div>
 			</section>
 		</div>
 		<nav id="mainFooterBottom">
