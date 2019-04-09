@@ -70,30 +70,64 @@
 		<h2>OUR MISSION</h2>
 
 			<div class="statementsCon">
-				<div class="missionStatement">
-					<img id="missionStatementIcon1" src="images/icon_fish_protect.svg" alt="Protect the Fishery">
-					<p>Protect, enhance and regenerate a viable, multi-species, year-round fishery.</p>
+				<div class="animationCon missionStatement">
+  					<img id="missionStatementIcon1" class="animationIcon" src="images/icon_fish_protect.svg" alt="Protect the Fishery">
+ 					<div class="animationOverlay">
+ 						<div class="arrowUp"></div>
+ 					</div>
+ 					<div class="animationOverlay animationOverlay2"></div>
+  					<h3 class="animationTitle">Protect the Fishery</h3>
+  					<p class="animationText">Protect, enhance and regenerate a viable, multi-species, year-round fishery.</p>
 				</div>
-				<div class="missionStatement">
-					<img id="missionStatementIcon2" src="images/icon_vest.svg" alt="Environmental Clean Up">
-					<p>Promote and participate in environmental clean-up, pollution control and rehabilitation.</p>
-				</div>
-				<div class="missionStatement">
-					<img id="missionStatementIcon3" src="images/icon_give_back.svg" alt="Relocate Fish">
-					<p>Breed, relocate and stock to re-establish or augment appropriate species of fish.</p>
-				</div>					
 
-				<div class="missionStatement">
-					<img id="missionStatementIcon4" src="images/icon_fish_sharing.svg" alt="Form Partnerships">
-					<p>Form partnerships with community businesses, government agencies, special interest groups, landowners, and other stakeholders in the Thames River Watershed.</p>
+				<div class="animationCon missionStatement">
+  					<img id="missionStatementIcon2" class="animationIcon" src="images/icon_vest.svg" alt="Environmental Clean Up">
+ 					<div class="animationOverlay">
+ 						<div class="arrowUp"></div>
+ 					</div>
+ 					<div class="animationOverlay animationOverlay2"></div>
+  					<h3 class="animationTitle">Environmental Clean Up</h3>
+  					<p class="animationText">Promote and participate in environmental clean-up, pollution control and rehabilitation.</p>
 				</div>
-				<div class="missionStatement">
-					<img id="missionStatementIcon5" src="images/icon_angler.svg" alt="Promote Safe Fishing">
-					<p>Promote environmentally sound sport fishing practices.</p>
+
+				<div class="animationCon missionStatement">
+  					<img id="missionStatementIcon3" class="animationIcon" src="images/icon_give_back.svg" alt="Relocate Fish">
+ 					<div class="animationOverlay">
+ 						<div class="arrowUp"></div>
+ 					</div>
+ 					<div class="animationOverlay animationOverlay2"></div>
+  					<h3 class="animationTitle">Monitor Species</h3>
+  					<p class="animationText">Breed, relocate and stock to re-establish or augment appropriate species of fish.</p>
 				</div>
-				<div class="missionStatement">
-					<img id="missionStatementIcon6" src="images/icon_fish_circle.svg" alt="Increase Awareness">
-					<p>Increase public awareness of the unique diversity of the Thames River Watershed, its challenges, its recreational opportunities and its vital importance to our community.</p>
+
+				<div class="animationCon missionStatement">
+  					<img id="missionStatementIcon4" class="animationIcon" src="images/icon_fish_sharing.svg" alt="Form Partnerships">
+ 					<div class="animationOverlay">
+ 						<div class="arrowUp"></div>
+ 					</div>
+ 					<div class="animationOverlay animationOverlay2"></div>
+  					<h3 class="animationTitle">Form Partnerships</h3>
+  					<p class="animationText">Form partnerships with community businesses, government agencies, special interest groups, landowners, and other stakeholders in the Thames River Watershed.</p>
+				</div>		
+
+				<div class="animationCon missionStatement">
+  					<img id="missionStatementIcon5" class="animationIcon" src="images/icon_angler.svg" alt="Promote Safe Fishing">
+ 					<div class="animationOverlay">
+ 						<div class="arrowUp"></div>
+ 					</div>
+ 					<div class="animationOverlay animationOverlay2"></div>
+  					<h3 class="animationTitle">Promote Safe Fishing</h3>
+  					<p class="animationText">Promote environmentally sound sport fishing practices.</p>
+				</div>			
+
+				<div class="animationCon missionStatement">
+  					<img id="missionStatementIcon6" class="animationIcon" src="images/icon_fish_circle.svg" alt="Increase Awareness">
+ 					<div class="animationOverlay">
+ 						<div class="arrowUp"></div>
+ 					</div>
+ 					<div class="animationOverlay animationOverlay2"></div>
+  					<h3 class="animationTitle">Increase Awareness</h3>
+  					<p class="animationText">Increase public awareness of the unique diversity of the Thames River Watershed, its challenges, its recreational opportunities and its vital importance to our community.</p>
 				</div>					
 			</div>
 		</section> <!-- end about section -->
@@ -231,12 +265,16 @@
 		</section>
 
 		<div class="btnTop">
-			<a href="#"><div class="btnTopBg"><i class="fa fa-angle-up"></i></div>
-			<p>TOP</p></a>
+			<div class="btnAnimateConTop btnAnimateCon">
+				<a href="#"><div class="btnTopBg"><i class="fa fa-angle-up"></i></div></a>
+				<a href="#" class="btnAnimateOverlay"></a>
+				<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+			</div>
+			<p>TOP</p>
 		</div>
 	</div>
 
-		<footer id="mainFooter">
+	<footer id="mainFooter">
 		<h2 class="hidden">Footer Navigation</h2>
 		<div id="mainFooterCon">
 			<div id="newsSocCon">
@@ -245,7 +283,12 @@
 					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
 					<form action="form.php" method="POST" autocomplete="off">
 	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
-	                    <input class="subBut" type="submit" name="submit" value=">"/>
+
+			            <div class="btnAnimateCon">
+							<input class="subBut dark" type="submit" name="submit" value=">"/>
+							<a href="#" class="btnAnimateOverlay"></a>
+							<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+						</div>
 	                </form><!--end form-->
 				</section>
 
@@ -290,7 +333,12 @@
 			<section id="mainFooterJoin">
 			<h3 class="hidden">Join Us Button</h3>
 				<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
-				<a href="join.html" id="btnJoin">MEMBERSHIP</a>
+
+				<div class="btnAnimateCon">
+					<a href="join.html" class="btnLarge dark">MEMBERSHIP</a>
+					<a href="join.html" class="btnAnimateOverlay"></a>
+					<a href="join.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+				</div>
 			</section>
 		</div>
 		<nav id="mainFooterBottom">

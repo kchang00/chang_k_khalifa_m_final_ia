@@ -158,27 +158,12 @@ img, embed, object, video {
 	margin-bottom: 10px;
 }
 
-#btnJoin {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 0px;
-	width: 150px;
-	font-size: 24px;
-	text-transform: uppercase;
-	cursor: pointer;
-	font-family: 'Abolition', sans-serif;
-	background-color: #92bd2f;
-	color: #fff;
-}
-
 .btnDonate {
 	margin-bottom: 20px;
 }
 
 .subBut {
 	margin-left: 2px;
-	background-color: #92bd2f;
 	color: #fff;
 	height: 48px;
 	width: 48px;
@@ -193,7 +178,7 @@ img, embed, object, video {
 	margin: 20px 0px;
 }
 
-.btnLarge:focus, .btnSmall:focus, #btnJoin:focus, .btnTopBg:focus, .subBut:focus{
+.btnLarge:focus, .btnSmall:focus, .btnTopBg:focus, .subBut:focus{
 	transition: ease;
 	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
 	cursor: pointer;
@@ -211,50 +196,40 @@ img, embed, object, video {
 @-webkit-keyframes swing {
     10% {
         -webkit-transform: translateX(7px);
-        transform: translateX(7px);
     }
     30% {
         -webkit-transform: translateX(-7px);
-       transform: translateX(-7px);
     } 
     50% {
         -webkit-transform: translateX(7px);
-       transform: translateX(7px);
     } 
 
     70%
     {
         -webkit-transform: translateX(-7px);
-        transform: translateX(-7px);
     }
     100%
     {
         -webkit-transform: translateX(0);
-        transform: translateX(0);
     }
 }
 @keyframes swing {
     10% {
-        -webkit-transform: translateX(7px);
         transform: translateX(7px);
     }
     30% {
-        -webkit-transform: translateX(-7px);
        transform: translateX(-7px);
     } 
     50% {
-        -webkit-transform: translateX(7px);
        transform: translateX(7px);
     } 
 
     70%
     {
-        -webkit-transform: translateX(-7px);
         transform: translateX(-7px);
     }
     100%
     {
-        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 }
@@ -306,7 +281,7 @@ img, embed, object, video {
 
 /* Main Navigation */
 
-.logoPositioning, .subNav, .subNavPositioning, #dropdown{
+.logoPositioning, .subNav, .subNavPositioning{
 	display: none;
 }
 
@@ -444,7 +419,8 @@ img, embed, object, video {
 	  	justify-content: flex-end;
 	  	position: relative;
 	  	height: 408px;
-	  	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/home_hero_small.jpg);
+/*	  	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/home_hero_small.jpg);*/
+		overflow-x: auto;
 	}
 
 	#carouselArrows {
@@ -482,6 +458,11 @@ img, embed, object, video {
 
 	.carouselOption:active {
 		cursor: pointer;
+	}
+
+	.carouselImages {
+		display: flex;
+		overflow-x: auto;
 	}
 
 	/* === HOME - WELCOME SECTION - MOBILE === */
@@ -873,8 +854,14 @@ img, embed, object, video {
 	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery_small.jpg) no-repeat center;
 }
 
-#projectBrownTrout button{
+#projectBrownTrout a{
+	max-height: 60px;
+	min-width: 200px;
+}
+
+#projectBrownTrout .btnAnimateCon {
 	margin-top: 20px;
+	max-height: 60px;
 }
 
 #projectArchive {
@@ -974,6 +961,10 @@ img, embed, object, video {
 .missionStatement p {
 	margin-top: 20px;
 	text-align: center;
+}
+
+.animationTitle {
+	display: none;
 }
 
 /* History - MOBILE */
@@ -1373,9 +1364,11 @@ img, embed, object, video {
 }
 
 #paperForm {
+	display: flex;
+/*	justify-content: center;*/
+	align-items: center;
 	margin: 0 auto;
 	margin-top: 40px;
-	display: flex;
 	flex-wrap: wrap;
 	background-color: #587021;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%2392bd2f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
@@ -1414,7 +1407,11 @@ img, embed, object, video {
 
 	#blogPosts .btnSmall {
 		/* gets rid of default side margins of 10px*/
-		margin: 40px 0px 0px 0px;
+		margin: 0px;
+	}
+
+	#blogPosts .btnCon {
+		margin-top: 40px;
 	}
 
 	/* post tags */
@@ -1681,7 +1678,8 @@ img, embed, object, video {
 
 	#merchForm input[type="submit"] {
 		flex: 1;
-		min-width: 100px;
+		/* matches btnAnimateCon */
+		min-width: 200px;
 	}
 
 	#merchForm input[type="number"] {
@@ -1692,6 +1690,7 @@ img, embed, object, video {
 		text-align: center;
 		font-size: 18px;
 		font-family: 'Lato', sans-serif;
+		box-sizing: border-box;
 	}
 
 	.priceFormCon {
@@ -1767,6 +1766,14 @@ flex-direction: row;
 #newsletter input[type="text"]
 {
 flex: 1 1 auto;
+}
+
+#newsletter .btnAnimateCon {
+	margin-left: 2px;
+	max-width: 41px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin: 0;
 }
 
 #name {
@@ -1861,10 +1868,6 @@ flex: 1 1 auto;
 		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery.jpg);
 	}
 
-	#projectBrownTrout button{
-		margin-top: 20px;
-	}
-
 	.blogPostIcon {
 		margin-left: 42%;
 	}
@@ -1923,7 +1926,7 @@ flex: 1 1 auto;
 @media screen and (min-width: 601px) {
 
 	#carousel {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/home_hero.jpg);
+/*		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/home_hero.jpg);*/
 		max-width: 1366px;
 	}
 
@@ -2149,11 +2152,39 @@ flex: 1 1 auto;
 		color: #92bd2f;
 	}
 
+	/*
+	#mainNav .btnAnimateCon {
+		/* matches navJoin
+		margin-right: 0;
+		margin-left: 20px;
+		max-width: 142px;
+		border-radius: 60px;
+		height: 64px;
+	}
+
+	#mainNav .btnAnimateOverlay {
+		width: auto;
+		height: 0%;
+		/* resets values from mainNav anchor tags styling
+		padding: 0;
+		border-radius: 0;
+	}
+
+	.btnAnimateCon:hover .btnAnimateOverlay, #navJoin:hover .btnAnimateOverlay {
+		height: 60px;
+	}
+
+	*/
+
 	#navJoin {
 		color: #fff !important;
 		background-color: #92bd2f !important;
-		margin-left: 20px;
 		padding: 20px 30px !important;
+		margin-left: 20px;
+	}
+
+	#navJoin:hover {
+		background-color: rgba(104, 179, 0, 0.75) !important;
 	}
 
 	#mainNav ul li a {
@@ -2414,11 +2445,12 @@ flex: 1 1 auto;
 
 	/* === BUTTONS - DESKTOP === */
 
+
 	.btnSmall {
 		height: 40px;
 		flex: 1;
 		max-width: 200px;
-		margin: 0px 12px;
+		margin: 0px;
 		font-size: 24px;
 	}
 
@@ -2429,11 +2461,20 @@ flex: 1 1 auto;
 		font-size: 24px;
 	}
 
+	.dark:hover {
+		background-color: rgba(104, 179, 0, 0.75);
+	}
+
+	.light:hover {
+		background-color: rgba(0, 0, 0, 0.57);
+	}
+
 	.btnCon {
 		flex-direction: row;
 	}
 
 	.subBut {
+	margin-left: 0px;
 	height: 41px;
 	width: 41px;
 	}
@@ -2453,7 +2494,7 @@ flex: 1 1 auto;
 	margin-bottom: 0px;
 	}
 
-	.btnLarge:hover, .btnSmall:hover, #btnJoin:hover, .btnTopBg:hover, .subBut:hover, #navJoin:hover{
+	.btnLarge:hover, .btnSmall:hover, .btnTopBg:hover, .subBut:hover, #navJoin:hover{
 	transition: all .3s ease;
 	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
 	cursor: pointer;
@@ -2461,6 +2502,77 @@ flex: 1 1 auto;
 
 	.btnTop {
 	margin: 40px 60px 40px auto;
+	}
+
+	.btnTopBg {
+		margin-bottom: 0px;
+	}
+
+		/* button animations */
+
+	/* masks the background of the button */
+	.btnAnimateCon {
+		display: block;
+		overflow: hidden;
+		position: relative;
+		/* matches large button, not small button*/
+		border-radius: 25px;
+		max-width: 200px;
+		transition: all .3s ease;
+		margin: 0px 12px;
+		flex: 1;
+		/* important! puts buttons above background cards - makes sure you can see overlays underneath*/
+		z-index: 1;
+
+		/*effect works best on white background (putting it in container ensures white background)*/
+		background-color: #fff;
+	}
+
+	.btnAnimateConTop {
+		border-radius: 75px;
+		margin-bottom: 10px;
+	}
+
+	.btnAnimateOverlay {
+		background-color: #587021;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		/* positioned to btnCon */
+		position: absolute;
+		z-index: -1;
+		/* preserve width*/
+		width: 100%;
+		height: 0%;
+		transition: .3s ease;
+		/* lighter overlay on bottom so top overlay is darker*/
+		opacity: 0.5;
+	}
+
+	.btnAnimateOverlay2 {
+		background-color: #587021;
+		transition: .3s ease;
+		transition-delay: .15s;
+	}
+
+	.btnTopBg i {
+		transition: color .3s ease;
+	}
+
+	.btnAnimateCon:hover {
+		box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
+	}
+
+	.btnAnimateCon:hover .btnAnimateOverlay {
+		height: 100%;
+	}
+
+	.btnAnimateCon:hover .btnSmall, .btnAnimateCon:hover .btnLarge {
+		color: #fff;
+	}
+
+	.btnTopBg:hover > i {
+		color: #fff;
 	}
 	
 	/* === HOME - DESKTOP === */
@@ -2587,7 +2699,6 @@ flex: 1 1 auto;
 
 	.statement img {
 		margin-bottom: 30px;
-		max-height: 50%;
 		max-width: 100%;
 	}
 
@@ -2754,42 +2865,44 @@ flex: 1 1 auto;
 	.project h3 {
 		color: #fff;
 		text-align: center;
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	/* positions brook trout tile properly in relation to btn*/
+	.project h3:last-child {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	.project .animationOverlay {
+		opacity: 0.5;
+		height: 0%;
 	}
 	
 	#projectHatchery {
 		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_hatchery_large.jpg);
 	}
 
-	#projectHatchery:hover {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/projects_hatchery_large.jpg);
-	}
-
 	#projectSalmonid {
 		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_salmonid_monitoring_large.jpg);
-	}
-
-	#projectSalmonid:hover {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/projects_salmonid_monitoring_large.jpg);
 	}
 
 	#projectKomoka {
 		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_komoka_creek_large.jpg);
 	}
 
-	#projectKomoka:hover {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/projects_komoka_creek_large.jpg);
-	}
-
 	#projectBrownTrout {
 		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery_large.jpg);
-	}
-
-	#projectBrownTrout:hover {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/projects_brown_trout_hatchery_large.jpg);
-	}
-
-	#projectBrownTrout button{
-		margin-top: 20px;
 	}
 
 	#projectArchive {
@@ -2842,6 +2955,203 @@ flex: 1 1 auto;
 	.missionStatement {
 		margin: 20px;
 	}
+
+	/* Animations */
+
+ .arrowUp {
+	border: solid #fff;
+	border-width: 0 5px 5px 0;
+	border-radius: 2px;
+	display: inline-block;
+	padding: 5px;
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	margin-top: 13px;
+}
+
+.animationCon {
+	display: flex;
+	flex-direction: column;
+  	position: relative;
+	flex: 1;
+	/* hides initial height */
+	overflow: hidden;
+	min-width: 335px;
+	justify-content: center;
+}
+
+.animationOverlay {
+	position: absolute;
+	/*positions bottom of overlay*/
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #587021;
+	overflow: hidden;
+	width: 100%;
+	/* how much height to show initially */
+	height: 10%;
+	transition: 1s ease;
+	text-align: center;
+}
+
+.animationOverlay2 {
+	background-color: #92bd2f;
+	opacity: 0.7;
+	transition: 1.5s ease;
+	transition-delay: -2s;
+	height: 0%;
+}
+
+.animationTitle {
+	display: block;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	-webkit-animation: title-fade-down 1s ease-in-out forwards;
+	animation: title-fade-down 1s ease-in-out forwards;
+	font-size: 24px;
+}
+
+.animationText {
+	color: #fff;
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-animation: text-fade-down 1.5s ease forwards;
+	animation: text-fade-down 1.5s ease forwards;
+	width: 230px;
+}
+
+.animationIcon {
+	margin-bottom: 60px;
+}
+
+/*animation: [animation-name] [animation-duration] [animation-timing-function]
+[animation-delay] [animation-iteration-count] [animation-direction]*/
+.animationCon:hover .animationTitle {
+	/* forwards makes text stay at 100% on first iteration instead of reverting to 0%*/
+	-webkit-animation: title-fade-up 1s ease-in-out forwards .5s;
+	animation: title-fade-up 1s ease-in-out forwards .5s;
+}
+
+.animationCon:hover .animationText {
+	-webkit-animation: text-fade-up 1.5s ease forwards .5s;
+	animation: text-fade-up 1.5s ease forwards .5s;
+}
+
+.animationCon:hover .animationOverlay {
+	/* returns height to full (add initial height to overflow)*/
+	height: 110%;
+	transition-delay: .3s;
+}
+
+.animationCon:hover .animationIcon {
+	opacity: 0;
+	transition: 1s;
+}
+
+/* match initial values for top */
+
+@-webkit-keyframes title-fade-up {
+	0% {
+		top: 75%;
+	}
+	100% {
+		top: 30%;
+		color: #fff;
+	}
+}
+
+@keyframes title-fade-up {
+	0% {
+		top: 75%;
+	}
+	100% {
+		top: 30%;
+		color: #fff;
+	}
+}
+
+@-webkit-keyframes title-fade-down {
+	0% {
+		top: 30%;
+	}
+	100% {
+		top: 75%;
+	}
+}
+
+@keyframes title-fade-down {
+	0% {
+		top: 30%;
+	}
+	100% {
+		top: 75%;
+	}
+}
+
+@-webkit-keyframes text-fade-up {
+	0% {
+		top: 120%;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		top: 55%;
+		opacity: 1;
+	}
+}
+
+@keyframes text-fade-up {
+	0% {
+		top: 120%;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		top: 55%;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes text-fade-down {
+	0% {
+		top: 55%;
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		top: 120%;
+		opacity: 0;
+	}
+}
+
+@keyframes text-fade-down {
+	0% {
+		top: 55%;
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		top: 120%;
+		opacity: 0;
+	}
+}
 
 	/* Team - DESKTOP */
 
@@ -2918,8 +3228,9 @@ flex: 1 1 auto;
 		width: 100%;
 		vertical-align: middle;
 	}
-
-	#form input:first-child {
+	
+	/* makes sure send button isn't selected */
+	#form input[type="text"]:first-child {
 		display: inline;
 		width: 40%;
 		margin-right: 11px;
@@ -2936,8 +3247,19 @@ flex: 1 1 auto;
 		margin-right: 60px;
 	}
 
+	#form input[type="submit"] {
+		margin: 0;
+		/* matches btnAnimateCon*/
+		min-width: 200px;
+	}
+
 	#eventsWidget {
 		display: block;
+	}
+
+	#form .btnAnimateCon {
+		margin-left: auto;
+		margin-right: 60px;
 	}
 
 	/* === JOIN PAGE - DESKTOP === */
@@ -3008,6 +3330,18 @@ flex: 1 1 auto;
 
 	#joinForm input:last-child {
 		margin-right: 18px;
+	}
+
+	/* makes sure send button (submit input) isn't selected to have margins*/
+
+	#joinForm input[type="submit"] {
+		margin: 0;
+		/* same size as btnAnimateCon */
+		min-width: 200px;
+	}
+
+	#joinForm .btnAnimateCon {
+		margin-left: auto;
 	}
 
 	#charts {
@@ -3293,6 +3627,19 @@ flex: 1 1 auto;
 		padding: 8px;
 	}
 
+	#mainFooterJoin .btnAnimateCon {
+		max-height: 60px;
+		margin: 0;
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+
+	#mainFooterJoin .btnLarge {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		width: 150px;
+	}
+
 
 	/* Bottom Footer - DESKTOP */
 
@@ -3352,6 +3699,4 @@ flex: 1 1 auto;
 		margin: 20px 0;
 	}
 }
-
-
 

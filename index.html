@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-	<meta charset="utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	<title>TRAA | Home</title>
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.typekit.net/zvq7kqj.css">
@@ -35,6 +36,16 @@
 				<h2 class="hidden">Main Navigation</h2>
 					<ul>
 						<li><a id="navJoin" href="join.html">MEMBERSHIP</a></li>
+
+<!-- 							<li>	
+								<div class="btnAnimateCon">
+									<a href="#" id="navJoin">MEMBERSHIP</a>
+									<a href="#" class="btnAnimateOverlay"></a>
+									<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+								</div>
+							</li>
+ -->
+
 						<li><a href="about.html">WHO WE ARE</a>
 							<ul class="subMenu">
 								<li><a href="products.html">PRODUCTS</a></li>
@@ -53,24 +64,36 @@
 				</nav>
 			</div>
 		</header>
+	</div>
 
-		<div id="carousel">
-			<div id="carouselArrows">
-				<div class="arrowCircleLeft"><i class="fa fa-angle-left carouselArrow"></i></div>
-				<div class="arrowCircleRight"><i class="fa fa-angle-right carouselArrow"></i></div>
-			</div>
-			<div id="carouselPickerCon">
-				<div id="carouselPicker">
-					<div class="carouselOption"></div>
-					<div class="carouselOption"></div>
-					<div class="carouselOption"></div>
-					<div class="carouselOption"></div>
-				</div>
+	<div id="carousel">
+		<div id="carouselArrows">
+			<div class="arrowCircleLeft"><i class="fa fa-angle-left carouselArrow"></i></div>
+			<div class="arrowCircleRight"><i class="fa fa-angle-right carouselArrow"></i></div>
+		</div>
+		<div id="carouselPickerCon">
+			<div id="carouselPicker">
+				<div class="carouselOption" data-offset="0"></div>
+				<div class="carouselOption" data-offset="1"></div>
+				<div class="carouselOption" data-offset="2"></div>
+				<div class="carouselOption" data-offset="3"></div>
 			</div>
 		</div>
+		<picture class="carouselImages">
+			<source srcset="images/home_hero.jpg" media="(min-width: 938px)">
+    		<img src="images/home_hero_small.jpg"/>
 
+			<source srcset="images/about_hero.jpg" media="(min-width: 938px)">
+    		<img src="images/about_hero_small.jpg"/>
+			
+			<source srcset="images/contact_hero.jpg" media="(min-width: 938px)">
+    		<img src="images/contact_hero_small.jpg"/>
+		</picture>
+	</div>
+	
+	<div class="container">
 		<section id="welcome">
-		<h2 id="traaWelcome">WELCOME TO THE TRAA</h2>
+		<h2 id="traaWelcome">WELCOME TO THE THAMES RIVER ANGLERS ASSOCIATION</h2>
 			<div id="welcomeDesc">	
 				<p> 
 					"For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames River watershed. Dedication today for tomorrow.”
@@ -141,7 +164,11 @@
 		</div>
 
 		<div class="btnCon">
-			<a href="#" class="btnSmall dark">View Calendar</a>
+			<div class="btnAnimateCon">
+				<a href="#" class="btnSmall dark">View Calendar</a>
+				<a href="#" class="btnAnimateOverlay"></a>
+				<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+			</div>
 		</div>
 	</section> <!-- end events widget -->
 	
@@ -175,8 +202,16 @@
 					</div>					
 				</section>
 				<div class="btnCon">
-					<a href="join.html" class="btnSmall dark">JOIN US</a>
-					<a href="about.html" class="btnSmall light">LEARN MORE</a>
+					<div class="btnAnimateCon">
+						<a href="join.html" class="btnSmall dark">JOIN US</a>
+						<a href="join.html" class="btnAnimateOverlay"></a>
+						<a href="join.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+					</div>
+					<div class="btnAnimateCon">
+						<a href="about.html" class="btnSmall light">LEARN MORE</a>
+						<a href="about.html" class="btnAnimateOverlay"></a>
+						<a href="about.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+					</div>
 				</div>
 			</div>
 		</section> <!-- end about section -->
@@ -189,8 +224,16 @@
 		</p>
 		<p>The list goes on.</p>
 		<div class="btnCon">
-			<a href="#" class="btnSmall dark">DONATE</a>
-			<a href="projects.html" class="btnSmall light">LEARN MORE</a>
+			<div class="btnAnimateCon">
+				<a href="#" class="btnSmall dark">DONATE</a>
+				<a href="#" class="btnAnimateOverlay"></a>
+				<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+			</div>
+			<div class="btnAnimateCon">
+				<a href="projects.html" class="btnSmall light">LEARN MORE</a>
+				<a href="projects.html" class="btnAnimateOverlay"></a>
+				<a href="projects.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+			</div>
 		</div>
 	</section> <!-- end impact section -->
 
@@ -310,7 +353,12 @@
 				</div> <!-- end newsConColumn3 -->
 			</div>
 			<div class="btnCon">
-				<a href="blog.html" class="btnSmall light">SEE BLOG</a>
+<!-- 				<a href="blog.html" class="btnSmall light">SEE BLOG</a> -->
+				<div class="btnAnimateCon">
+					<a href="blog.html" class="btnSmall light">SEE BLOG</a>
+					<a href="blog.html" class="btnAnimateOverlay"></a>
+					<a href="blog.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+				</div>
 			</div>
 		</section> <!-- end latestNews section -->
 	</div>
@@ -333,8 +381,12 @@
 
 	<div class="container">
 		<div class="btnTop">
-			<a href="#"><div class="btnTopBg"><i class="fa fa-angle-up"></i></div>
-			<p>TOP</p></a>
+			<div class="btnAnimateConTop btnAnimateCon">
+				<a href="#"><div class="btnTopBg"><i class="fa fa-angle-up"></i></div></a>
+				<a href="#" class="btnAnimateOverlay"></a>
+				<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+			</div>
+			<p>TOP</p>
 		</div>
 	</div>
 
@@ -347,7 +399,12 @@
 					<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
 					<form action="form.php" method="POST" autocomplete="off">
 	                    <input class="text" type="text" required id="name" placeholder="Enter your Email" name="email"/>
-	                    <input class="subBut" type="submit" name="submit" value=">"/>
+
+			            <div class="btnAnimateCon">
+							<input class="subBut dark" type="submit" name="submit" value=">"/>
+							<a href="#" class="btnAnimateOverlay"></a>
+							<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+						</div>
 	                </form><!--end form-->
 				</section>
 
@@ -392,7 +449,12 @@
 			<section id="mainFooterJoin">
 			<h3 class="hidden">Join Us Button</h3>
 				<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
-				<a href="join.html" id="btnJoin">MEMBERSHIP</a>
+
+				<div class="btnAnimateCon">
+					<a href="join.html" class="btnLarge dark">MEMBERSHIP</a>
+					<a href="join.html" class="btnAnimateOverlay"></a>
+					<a href="join.html" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+				</div>
 			</section>
 		</div>
 		<nav id="mainFooterBottom">
