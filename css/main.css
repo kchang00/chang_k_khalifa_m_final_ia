@@ -1580,6 +1580,10 @@ img, embed, object, video {
 	}
 
 /* === PRODUCTS PAGE - MOBILE === */
+	
+	.lightBox {
+		display: none;
+	}
 
 	#merchMainCon {
 		display: flex;
@@ -1592,43 +1596,38 @@ img, embed, object, video {
 		flex-direction: column;
 		/* make it show only 1 image*/
 	}
-	.galleryArrows {
-		display: none;
-	}
 
-	.galleryImagesCon {
+	/*.galleryImagesCon {
 		display: flex;
 		flex-direction: row;
 		position: relative;
 		align-items: center;
 		margin-bottom: 40px;
-	}
+	}*/
 
-	.galleryImages {
+	/*.galleryImageCon {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		overflow-x: auto;
-	}
+	}*/
 
-	.galleryImages img {
-		flex: 0 0 auto;
-		width: 600px;
-		height: 400px;
-		background-color: skyblue;
+	.galleryImage {
+		flex: 0 1 600px;
+		width: 100%;
 	}
 
 
 	.galleryThumbnails {
+		margin-top: 20px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
 
 	.galleryThumbnails img {
 		margin: 0px 10px;
 		background-color: skyblue;
 		height: 100px;
-		flex: 1;
+		flex: 0 0 auto;
 	}
 
 	.galleryThumbnails img:first-child {
@@ -1663,6 +1662,7 @@ img, embed, object, video {
 
 	#merchDesc p {
 		text-align: justify;
+		padding: 0 10px;
 	}
 
 	#merchForm {
@@ -3432,6 +3432,54 @@ flex: 1 1 auto;
 
 	/* === PRODUCTS PAGE - DESKTOP === */
 
+	.lightBox {
+		width: 100%;
+		height: 780px;
+		background-color: rgba(0,0,0,.9);
+		position: absolute;
+		top: 700px;
+		left: 0px;
+		display: none;
+	}
+
+	.lightBoxImages {
+		margin: auto;
+		width: 700px;
+		overflow: hidden;
+	}
+
+	.active {
+		height: 350px;
+	}
+
+	.active img {
+		position: absolute;
+		top: -1800px;
+	}
+
+	.active img.currentImage {
+		position: absolute;
+		top: 200px;
+	}
+
+	.lightBox i {
+		margin: auto;
+	}
+
+	#closeLightBox {
+		font-family: 'Lato',sans-serif;
+		color: #fff;
+		font-size: 40px;
+		position: absolute;
+		top:90px;
+		right: 40px;
+		cursor: pointer;
+	}
+
+	.showLightBox {
+		display: flex;
+	}
+
 	.galleryImagesCon:hover .galleryArrows {
 		opacity: 1;
 	}
@@ -3461,10 +3509,11 @@ flex: 1 1 auto;
 
 	#merchDesc {
 		margin-left: 40px;
+		width: 45%;
 	}
 
 	#merchGallery {
-		max-width: 50%;
+		/*max-width: 55%;*/
 	}
 
 	.galleryThumbnails img:hover {
