@@ -12,24 +12,7 @@
 			.cls-7{stroke-width:3.43px;}
 			.cls-8,.cls-2,.cls-3 {fill:#587021;}
 
-
-<!-- 			#angler:hover {fill:#46C9B3; transition: 0.3s ease; cursor: pointer;}
-			#angler:hover .cls-1, #angler:hover .cls-7, #angler:hover .cls-6 {stroke: #46C9B3; transition: 0.3s ease; cursor: pointer;} -->
-			
-			#angler_small_pocket_left, #angler_small_pocket_right, #angler_large_pocket_right, #angler_large_pocket_left, #vest_zipper, #angler_small_pocket_left_top, #angler_small_pocket_right_top, #angler_large_pocket_right_top1, #angler_large_pocket_right_top2, #angler_large_pocket_left_top1, #angler_large_pocket_left_top2 { display: none; }
-
-				@media screen and (min-width: 149px) {
-				#angler_small_pocket_left, #angler_small_pocket_right, #angler_large_pocket_right, #angler_large_pocket_left, #vest_zipper { display: block; }
-			}
-
-				@media screen and (min-width: 151px) {
-				#angler_small_pocket_left_top, #angler_small_pocket_right_top, #angler_large_pocket_right_top1, #angler_large_pocket_right_top2, #angler_large_pocket_left_top1, #angler_large_pocket_left_top2 { display: block; }
-			}
-
 		</style>
-	</defs>
-
-	<defs>
 	</defs>
 
 	<title>icon</title>

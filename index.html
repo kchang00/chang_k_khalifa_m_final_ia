@@ -79,21 +79,34 @@
 				<div class="carouselOption" data-offset="3"></div>
 			</div>
 		</div>
-		<picture class="carouselImages">
-			<source srcset="images/home_hero.jpg" media="(min-width: 938px)">
-    		<img src="images/home_hero_small.jpg"/>
+		<div class="carouselImages">
+			<div id="vidCon">
+				<video controls>
+					<source src="video/traa_video.mp4" type="video/mp4" media="min-width:600px)">
+					<source src="video/traa_video_small.mp4" type="video/mp4">
+					Oops! Something went wrong. Click to view the video <a href="#">here</a>
+				</video>
+			</div>
+			<picture class="carouselImages">
+				<source srcset="images/home_hero.jpg" media="(min-width: 938px)">
+	    		<img src="images/home_hero_small.jpg"/>
 
-			<source srcset="images/about_hero.jpg" media="(min-width: 938px)">
-    		<img src="images/about_hero_small.jpg"/>
-			
-			<source srcset="images/contact_hero.jpg" media="(min-width: 938px)">
-    		<img src="images/contact_hero_small.jpg"/>
-		</picture>
-	</div>
+				<source srcset="images/about_hero.jpg" media="(min-width: 938px)">
+	    		<img src="images/about_hero_small.jpg"/>
+				
+				<source srcset="images/contact_hero.jpg" media="(min-width: 938px)">
+	    		<img src="images/contact_hero_small.jpg"/>
+			</picture>
+		</div>
+	</div> <!-- end carousel -->
 	
 	<div class="container">
 		<section id="welcome">
-		<h2 id="traaWelcome">WELCOME TO THE THAMES RIVER ANGLERS ASSOCIATION</h2>
+		<h2 id="traaWelcome">WELCOME TO THE 
+				<span><span class="welcomeGreen">T</span>HAMES
+				<span class="welcomeGreen">R</span>IVER</span>
+				<span><span class="welcomeGreen">A</span>NGLERS
+				<span class="welcomeGreen">A</span>SSOCIATION<span></h2>
 			<div id="welcomeDesc">	
 				<p> 
 					"For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames River watershed. Dedication today for tomorrow.”
