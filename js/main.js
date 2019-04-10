@@ -6,6 +6,9 @@
 			mainHeaderCon		= document.querySelector('#mainHeaderCon'),
 			mainHeader			= document.querySelector('#mainHeader'), 
 			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
+			btnTop				= document.querySelector('.btnTop'),
+			closeContactRemind	= document.querySelector('#close'),
+			contactRemind 		= document.querySelector('#announcement'),
 			lightBox			= document.querySelector('.lightBox'),
 			thumbnail			= document.querySelectorAll('.thumbnail'),
 			galleryImage		= document.querySelector('.galleryImage'),
@@ -27,6 +30,7 @@
 			merchCopyArray		= ["Decorate your rod reel with this decal sticker bearing our logo. The sticker is circular with a 30cm radius. All purchaces help fund our projects.", "Add character to your rod with this decal sticker bearing our logo. The sticker is circular with a radius of 10cm. All purchaces help fund our projects.", "A notepad for all your quick notes as well as important lists and reminders. The notepad is A5 standard size, which means enough space for everything in one page. All purchases help us fund our projects."],
 			carouselOptions		= document.querySelectorAll('.carouselOption'),
 			carouselImages		= document.querySelector('.carouselImages');
+			
 
   	//functions
   
@@ -57,6 +61,11 @@
 			mainHeaderCon.style.top = '0';
 		}
 	   scrollTop = pageScroll;
+	}
+
+	function scrollToTop(e) {
+		e.preventDefault();
+		TweenLite.to(window, 1, {scrollTo:{y:0}});
 	}
 
 	function showLightBox() {
@@ -91,15 +100,23 @@
 		merchCopy.textContent = merchCopyArray[count];
 	}
 
+	function closeContactAnnouncement() {
+		contactRemind.style.display = 'none';
+	}
+
 
 	//events
 
 	hamburger.addEventListener('click', hamburgerMenu);
+	btnTop.addEventListener('click', scrollToTop);
+	closeContactRemind.addEventListener('click', closeContactAnnouncement);
 	galleryImage.addEventListener('click', showLightBox);
 	galleryArrowRight.addEventListener('click', function(e) { navigate(1); });
 	galleryArrowLeft.addEventListener('click', function(e) { navigate(-1); });
 	closeLightBox.addEventListener('click', hideLightBox);
 	thumbnail.forEach(img => {img.addEventListener('click', swapMerch);});
 	carouselOptions.forEach(option => option.addEventListener('click', animateCarousel));
+	
+
 
 })();
