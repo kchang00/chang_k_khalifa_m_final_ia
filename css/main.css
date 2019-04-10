@@ -1181,7 +1181,7 @@ img, embed, object, video {
 #form input:last-child {
 	margin-top: 40px;
 	color: #fff;
-	font-size: 18px;
+	font-size: 30px;
 	border: none;
 }
 
@@ -3440,6 +3440,7 @@ flex: 1 1 auto;
 		top: 700px;
 		left: 0px;
 		display: none;
+		z-index: 2;
 	}
 
 	.lightBoxImages {
@@ -3498,7 +3499,7 @@ flex: 1 1 auto;
 	.galleryArrow {
 		display: block;
 		font-size: 6em;
-		color: #587021;
+		color: #fff;
 		cursor: pointer;
 	}
 
