@@ -12,9 +12,9 @@
 			galleryArrowRight	= document.querySelector('#galleryArrowRight'),
 			galleryArrowLeft	= document.querySelector('#galleryArrowLeft'),
 			lightBoxImages		= document.querySelector('.lightBoxImages'),
-			lightBoxImagesCon	= document.querySelector('.lightBoxImagesCon');
+			lightBoxImagesCon	= document.querySelector('.lightBoxImagesCon'),
 			closeLightBox		= document.querySelector('#closeLightBox'),
-			lightBoxImagesArray	= lightBoxImages.querySelectorAll('img'),
+			lightBoxImagesArray	= document.querySelectorAll('.lightBoxImg'),
 			merchTitle			= document.querySelector('#merchDesc h3'),
 			merchSubTitle		= document.querySelector('#merchDesc h4'),
 			merchCopy			= document.querySelector('#merchDesc p'),
@@ -58,6 +58,7 @@
 		}
 	   scrollTop = pageScroll;
 	}
+
 	function showLightBox() {
 		lightBox.classList.add('showLightBox');
 	}
