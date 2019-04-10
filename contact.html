@@ -83,8 +83,10 @@
       
 			<div id="form">
 				<form id="contactForm" action="contact-form.php" method="post">
-					<input type="text" required id="nameContact" placeholder="name" size="30">
-					<input type="email" required id="email" placeholder="email" size="30">
+					<div class="nameEmailCon">
+						<input type="text" required id="nameContact" placeholder="name" size="30">
+						<input type="email" required id="email" placeholder="email" size="30">
+					</div>
 					<input type="text" required id="subject" placeholder="subject" size="30" list="subjectOptions">
 
 					<datalist id="subjectOptions">
@@ -95,10 +97,12 @@
 					</datalist>
 
 					<textarea id="message" required placeholder="leave a message" cols="32" rows="8"></textarea>
-					<div class="btnAnimateCon">
-						<input type="submit" value="SEND" class="btnLarge light">
-						<a href="#" class="btnAnimateOverlay"></a>
-						<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+					<div class="btnCon">
+						<div class="btnAnimateCon">
+							<input type="submit" value="SEND" class="btnLarge light">
+							<a href="#" class="btnAnimateOverlay"></a>
+							<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
+						</div>
 					</div>
 				</form>
 			</div>
