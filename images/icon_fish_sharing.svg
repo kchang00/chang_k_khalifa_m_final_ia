@@ -13,27 +13,10 @@
 			.cls-8,.cls-3,.cls-7{fill:#587021;}
 
 			#fish_sharing {fill: #587021;}
-
-			#sharing_fish_stripes, #sharing_fish_eye, #sharing_fish_fin_bottom, #sharing_fish_fin_top { display: none; }
-
-				@media screen and (min-width: 150px) {
-				#sharing_fish_stripes, #sharing_fish_eye, #sharing_fish_fin_bottom, #sharing_fish_fin_top { display: block; }
 		</style>
 		<clipPath id="clip-path">
 			<path id="sharing_fish_tail" class="cls-1" d="M10.24,39.21a27.92,27.92,0,0,0,8.85-5.54.34.34,0,0,0,0-.48,31.37,31.37,0,0,0-9.2-6.9,1.59,1.59,0,0,0-2.13.85,15.64,15.64,0,0,0-1,5.23,14,14,0,0,0,1.59,6.17A1.57,1.57,0,0,0,10.24,39.21Z"/>
 		</clipPath>
-	</defs>
-
-	<defs>
-		<script>
-			let icon_fish_sharing = document.querySelector("#fish_sharing");
-
-			function logId() {
-				console.log(this.id);
-			}
-
-			icon_fish_sharing.addEventListener("click", logId);
-		</script>
 	</defs>
 
 	<title>icon</title>

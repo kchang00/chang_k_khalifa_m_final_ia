@@ -1,6 +1,25 @@
 @charset "UTF-8";
 /*CSS Document*/
 
+/* video testing area */
+
+
+  video {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
+
+  #vidCon {
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	background-color: black;
+  	margin: 0 auto;
+  }
+
+/* end video testing area */
+
 body {
 	font-family: 'Lato', sans-serif;
 }
@@ -188,7 +207,7 @@ img, embed, object, video {
 	font-size: 6em;
 	color: #fff;
 	position: absolute;
-	top: 80%;
+	top: 75%;
 }
 
 /*Swing Button*/
@@ -361,6 +380,7 @@ img, embed, object, video {
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	margin: 0 auto;
 }
 
 .heroProjects {
@@ -399,7 +419,7 @@ img, embed, object, video {
 /* === HOME - MOBILE === */
 
 	#traaWelcome {
-		font-size: 60px;
+		font-size: 45px;
 		text-align: center;
 		text-transform: uppercase;
 		font-family: 'Abolition', sans-serif;
@@ -409,6 +429,17 @@ img, embed, object, video {
 		flex-wrap: wrap;
 		/* makes text wrap more nicely*/
 		padding: 0 50px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.welcomeGreen {
+		color: #92bd2f;
+		text-align: center;
+	}
+
+	.welcomeGreen:nth-child(odd) {
+		margin-left: 10px;
 	}
 
 	/* Carousel - MOBILE */
@@ -421,6 +452,7 @@ img, embed, object, video {
 	  	height: 408px;
 /*	  	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/home_hero_small.jpg);*/
 		overflow-x: auto;
+		background-color: #587021;
 	}
 
 	#carouselArrows {
@@ -463,6 +495,7 @@ img, embed, object, video {
 	.carouselImages {
 		display: flex;
 		overflow-x: auto;
+		margin: auto 0;
 	}
 
 	/* === HOME - WELCOME SECTION - MOBILE === */
@@ -471,6 +504,7 @@ img, embed, object, video {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
 	}
 
 	#welcomeDesc {
@@ -2515,8 +2549,8 @@ flex: 1 1 auto;
 		display: block;
 		overflow: hidden;
 		position: relative;
-		/* matches large button, not small button*/
-		border-radius: 25px;
+		/* matches largest button border radius (footer membership btn)*/
+		border-radius: 30px;
 		max-width: 200px;
 		transition: all .3s ease;
 		margin: 0px 12px;
@@ -2526,6 +2560,8 @@ flex: 1 1 auto;
 
 		/*effect works best on white background (putting it in container ensures white background)*/
 		background-color: #fff;
+
+		border: 1px #92bd2f solid;
 	}
 
 	.btnAnimateConTop {
@@ -2578,7 +2614,14 @@ flex: 1 1 auto;
 	/* === HOME - DESKTOP === */
 
 	#traaWelcome {
+		font-size: 58px;
 		margin-top: 60px;
+	}
+
+	/* Video - DESKTOP */
+	video {
+		max-height: 510px;
+		width: auto;
 	}
 
 	/* Carousel - DESKTOP */
@@ -3573,7 +3616,6 @@ flex: 1 1 auto;
 
 	#mainFooterLogo {
 		display: block;
-		width: 134px;
 		background-color: #fff;
 		padding: 8px;
 	}

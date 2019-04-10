@@ -7,16 +7,7 @@
 
 			#give_back {fill: #587021;}
 			#give_back .cls-1 {stroke: #587021;}
-
-			#give_fish_eye, #give_fish_fin_bottom, #give_fish_fin_top { display: none; }
-
-				@media screen and (min-width: 150px) {
-				#give_fish_eye, #give_fish_fin_bottom, #give_fish_fin_top { display: block; }
 		</style>
-	</defs>
-
-	<defs>
-		
 	</defs>
 
 	<title>icon</title>
