@@ -7,13 +7,14 @@
 			mainHeader			= document.querySelector('#mainHeader'), 
 			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
 			btnDownHero			= document.querySelectorAll('.downArrow'),
-			btnTop				= document.querySelector('.btnTop'),
+			closeContactRemind	= document.querySelector('#close'),
+			contactRemind 		= document.querySelector('#announcement'),
 	 	 	scrollTop = 0,
 			counter   = 0;
+			
 
   	//functions
   
-
 	function hamburgerMenu() {
 		mainNav.classList.toggle('slideToggle');
 		hamburger.classList.toggle('expanded');
@@ -47,11 +48,16 @@
 		
 	}
 
-	
+	function closeContactAnnouncement() {
+		contactRemind.style.display = 'none';
+	}
+
+
 	//events
 
 	hamburger.addEventListener('click', hamburgerMenu);
 	btnDownHero.forEach(button => {button.addEventListener('click', skipHero);});
-	btnTop.addEventListener('click', scrollToTop);
+	closeContactRemind.addEventListener('click', closeContactAnnouncement);
+
 
 })();
