@@ -867,8 +867,8 @@ img, embed, object, video {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 320px;
-	height: 250px;
+	max-width: 600px;
+	height: 350px;
 	flex: 1 1 300px;
 	cursor: pointer;
 }
@@ -879,19 +879,19 @@ img, embed, object, video {
 }
 
 #projectHatchery {
-	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_hatchery_small.jpg) no-repeat center;
+	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hatchery_small.jpg) no-repeat center;
 }
 
 #projectSalmonid {
-	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_salmonid_monitoring_small.jpg) no-repeat center;
+	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_salmonid_monitoring_small.jpg) no-repeat center;
 }
 
 #projectKomoka {
-	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_komoka_creek_small.jpg) no-repeat center;
+	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_komoka_creek_small.jpg) no-repeat center;
 }
 
 #projectBrownTrout {
-	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery_small.jpg) no-repeat center;
+	background: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_brown_trout_hatchery_small.jpg) no-repeat center;
 }
 
 #projectBrownTrout a{
@@ -1925,35 +1925,6 @@ flex: 1 1 auto;
 
  /* === MEDIA QUERIES === */
 
-@media screen and (min-width: 321px) {
-		
-	.project {
-		max-width: 480px;
-		min-width: 321px;
-		flex: 1;
-	}
-
-	#projectHatchery {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_hatchery.jpg);
-	}
-
-	#projectSalmonid {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_salmonid_monitoring.jpg);
-	}
-
-	#projectKomoka {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_komoka_creek.jpg);
-	}
-
-	#projectBrownTrout {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery.jpg);
-	}
-
-	.blogPostIcon {
-		margin-left: 42%;
-	}
-}
-
 @media screen and (min-width: 420px) {
 	#joinProcess {
 		top: 470px;
@@ -1975,15 +1946,15 @@ flex: 1 1 auto;
 		text-align: center;
 	}
 
-	.projectRow {
+/*	.projectRow {
 		flex-wrap: nowrap;
 	}
 	.project {
-		/* resetting 321px media query max-min widths*/
+		 resetting 321px media query max-min widths
 		max-width: inherit;
 		min-width: inherit;
 		flex: 1;
-	}
+	}*/
 
 	/* blog page category */
 
@@ -2005,6 +1976,7 @@ flex: 1 1 auto;
 }
 
 @media screen and (min-width: 518px) {
+
 	.nameEmailCon input[type="text"]{
 		margin-right: 15px;
 	}
@@ -2040,6 +2012,43 @@ flex: 1 1 auto;
 	.heroBlog {
 	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/blog_hero.jpg);
 	}
+
+	.project {
+		max-width: 683px;
+		/*min-width: px;*/
+		flex: 1;
+	}
+
+	#projectHatchery {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_hatchery.jpg);
+	}
+
+	#projectSalmonid {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_salmonid_monitoring.jpg);
+	}
+
+	#projectKomoka {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_komoka_creek.jpg);
+	}
+
+	#projectBrownTrout {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/projects_brown_trout_hatchery.jpg);
+	}
+
+	#projectSalmonid h3 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#projectKomoka h3 {
+		padding-right: 20px;
+		padding-left: 20px; 
+	}
+
+	.blogPostIcon {
+		margin-left: 42%;
+	}
+}
 }
 
 @media screen and (min-width: 699px) {
@@ -2959,10 +2968,11 @@ flex: 1 1 auto;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		width: 100%;
 	}
 
 	.project {
-	max-width: 600px;
+	max-width: 683px;
 	height: 500px;
 	flex: 1;
 	transition: all 1s ease;
@@ -2995,21 +3005,21 @@ flex: 1 1 auto;
 		height: 0%;
 	}
 	
-	#projectHatchery {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_hatchery_large.jpg);
+	/*#projectHatchery {
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_hatchery.jpg);
 	}
 
 	#projectSalmonid {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_salmonid_monitoring_large.jpg);
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_salmonid_monitoring.jpg);
 	}
 
 	#projectKomoka {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_komoka_creek_large.jpg);
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_komoka_creek.jpg);
 	}
 
 	#projectBrownTrout {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery_large.jpg);
-	}
+		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery.jpg);
+	}*/
 
 	#projectArchive {
 		box-sizing: border-box;
