@@ -7,7 +7,6 @@
 			mainHeader			= document.querySelector('#mainHeader'), 
 			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
 			btnDownHero			= document.querySelectorAll('.downArrow'),
-			btnTop				= document.querySelector('.btnTop'),
 	 	 	scrollTop = 0,
 			counter   = 0;
 
@@ -52,6 +51,5 @@
 
 	hamburger.addEventListener('click', hamburgerMenu);
 	btnDownHero.forEach(button => {button.addEventListener('click', skipHero);});
-	btnTop.addEventListener('click', scrollToTop);
 
 })();
