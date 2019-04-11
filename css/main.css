@@ -192,6 +192,7 @@ img, embed, object, video {
 	color: #fff;
 	position: absolute;
 	top: 75%;
+	cursor: pointer;
 }
 
 /*Swing Button*/
@@ -434,7 +435,7 @@ img, embed, object, video {
 	  	position: relative;
 	  	height: 408px;
 /*	  	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/home_hero_small.jpg);*/
-		overflow-x: hidden;
+		/*overflow-x: hidden;*/
 		background-color: #587021;
 	}
 
@@ -453,25 +454,25 @@ img, embed, object, video {
 	  }
 
 
-	#carouselImages {
+	/*#carouselImages {
 		display: flex;
 		flex-direction: row;
 		overflow-x: auto;
 		margin: auto 0;
 		flex: 0 0 auto;
-	}
+	}*/
 
-	#imagesCon {
+	/*/*#imagesCon {
 		display: flex;
 		flex: 0 0 auto;
 	}
 
 	#carouselArrows {
 		display: none;
-	}
+	}*?
 	
 	/* hides not only carousel, but events widget arrows */
-	.carouselArrow {
+	/*.carouselArrow {
 		display: none;
 	}
 
@@ -501,7 +502,7 @@ img, embed, object, video {
 
 	.carouselOption:active {
 		cursor: pointer;
-	}
+	}*/
 
 	/* === HOME - WELCOME SECTION - MOBILE === */
 

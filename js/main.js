@@ -28,19 +28,19 @@
 			currentImage 	= lightBoxImagesArray[0],
 			merchTitleArray		= ["Reel Decal Sticker Merch", "Rod Decal Sticker Merch", "Notepad Merch"],
 			merchSubTitleArray	= ["TRAA Logo On Reel Decal Sticker", "TRAA Logo On Rod Decal Sticker", "TRAA Logo On Notepad"],
-			merchCopyArray		= ["Decorate your rod reel with this decal sticker bearing our logo. The sticker is circular with a 30cm radius. All purchaces help fund our projects.", "Add character to your rod with this decal sticker bearing our logo. The sticker is circular with a radius of 10cm. All purchaces help fund our projects.", "A notepad for all your quick notes as well as important lists and reminders. The notepad is A5 standard size, which means enough space for everything in one page. All purchases help us fund our projects."],
-			carouselOptions		= document.querySelectorAll('.carouselOption'),
-			carouselImages		= document.querySelector('.carouselImages');
+			merchCopyArray		= ["Decorate your rod reel with this decal sticker bearing our logo. The sticker is circular with a 30cm radius. All purchaces help fund our projects.", "Add character to your rod with this decal sticker bearing our logo. The sticker is circular with a radius of 10cm. All purchaces help fund our projects.", "A notepad for all your quick notes as well as important lists and reminders. The notepad is A5 standard size, which means enough space for everything in one page. All purchases help us fund our projects."];
+			// carouselOptions		= document.querySelectorAll('.carouselOption'),
+			// carouselImages		= document.querySelector('.carouselImages');
 			
 
   	//functions
   
-  	function animateCarousel() {
-		const offSet = 1200; // width of one image
-		totalOffset = this.dataset.offset * offSet;
+ //  	function animateCarousel() {
+	// 	const offSet = 1200; // width of one image
+	// 	totalOffset = this.dataset.offset * offSet;
 
-		TweenMax.to(carouselImages, 0.8, {right: totalOffset});
-	}
+	// 	TweenMax.to(carouselImages, 0.8, {right: totalOffset});
+	// }
 
 	function hamburgerMenu() {
 		mainNav.classList.toggle('slideToggle');
@@ -128,7 +128,7 @@
 	galleryArrowLeft.addEventListener('click', function(e) { navigate(-1); });
 	closeLightBox.addEventListener('click', hideLightBox);
 	thumbnail.forEach(img => {img.addEventListener('click', swapMerch);});
-	carouselOptions.forEach(option => option.addEventListener('click', animateCarousel));
+	// carouselOptions.forEach(option => option.addEventListener('click', animateCarousel));
 	
 
 
