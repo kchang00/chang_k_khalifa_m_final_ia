@@ -387,6 +387,10 @@ img, embed, object, video {
 	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/blog_hero_small.jpg);
 }
 
+.heroProducts {
+	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/products_hero_small.jpg);
+}
+
 .heroImage {
 	position: absolute;
 	top: 0;
@@ -833,7 +837,7 @@ img, embed, object, video {
 	background-color: #587021;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%2392bd2f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 	background-attachment: fixed;
-	padding: 40px;
+	padding: 35px 10px;
 	flex-wrap: wrap;
 	text-align: center;
 	justify-content: center;
@@ -2013,6 +2017,11 @@ flex: 1 1 auto;
 	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/blog_hero.jpg);
 	}
 
+	.heroProducts {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/products_hero.jpg);
+	}
+
+
 	.project {
 		max-width: 683px;
 		/*min-width: px;*/
@@ -2301,17 +2310,34 @@ flex: 1 1 auto;
 	#mainNav ul li > ul
 	{
 		display: none;
+		top: 60%;
+	}
+
+	#mainNav ul li:nth-child(2) > ul {
+		margin-left: 20px;
 	}
 
 	#mainNav ul li:hover > ul
 	{
 		display: block;
 		position: absolute;
-		margin-top: 64px;
+/*		margin-top: 64px;*/
+		-webkit-animation: navSlide .6s ease-in-out 1 alternate forwards;
+	}
+
+	@-webkit-keyframes navSlide {
+		0% {
+			transform: translateY(0px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(60px);
+			opacity: 1;
+		}
 	}
 
 	#mainNav ul li:hover > ul li {
-		padding: 20px 30px;
+		padding: 20px 25px;
 		background-color: #92bd2f;
 		display: block;
 		text-align: center;
@@ -2527,6 +2553,12 @@ flex: 1 1 auto;
 		padding: 0px 40px;
 		margin: 0 auto;
 	}
+
+	/* === PROJECTS PAGE - TABLET */
+
+	#donateBanner {
+		padding: 40px;
+	}
 }
 
 /* === DESKTOP VERSION === */
@@ -2589,15 +2621,9 @@ flex: 1 1 auto;
 		display: none;
 	}
 
-	#donateBanner a{
-		/* value very close to large button width*/
-		flex: 1 1 145px;
-	}
-
 	.btnDonate {
-	margin-left: 40px;
-	margin-right: 40px;
-	margin-bottom: 0px;
+		margin-left: 40px !important;
+		margin-right: 40px !important;
 	}
 
 	.btnLarge:hover, .btnSmall:hover, .btnTopBg:hover, .subBut:hover, #navJoin:hover{
@@ -3004,22 +3030,6 @@ flex: 1 1 auto;
 		opacity: 0.5;
 		height: 0%;
 	}
-	
-	/*#projectHatchery {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_hatchery.jpg);
-	}
-
-	#projectSalmonid {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_salmonid_monitoring.jpg);
-	}
-
-	#projectKomoka {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_komoka_creek.jpg);
-	}
-
-	#projectBrownTrout {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery.jpg);
-	}*/
 
 	#projectArchive {
 		box-sizing: border-box;
