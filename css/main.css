@@ -543,6 +543,10 @@ img, embed, object, video {
 		color: #fff;
 	}
 
+	#eventsWidget i {
+		cursor: pointer;
+	}
+
 	#scrollWrap {
 		display: flex;
 		flex-direction: row;
@@ -556,6 +560,11 @@ img, embed, object, video {
 		overflow-x: auto;
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+
+	.eventsCon {
+		display: flex;
+		position: relative;
 	}
 
 	.event {

@@ -6,13 +6,12 @@
 			mainHeaderCon		= document.querySelector('#mainHeaderCon'),
 			mainHeader			= document.querySelector('#mainHeader'), 
 			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
-			btnTop				= document.querySelector('.btnTop'),
+			btnDownHero			= document.querySelectorAll('.downArrow'),
 	 	 	scrollTop = 0,
 			counter   = 0;
 
-
   	//functions
-
+  
 
 	function hamburgerMenu() {
 		mainNav.classList.toggle('slideToggle');
@@ -36,18 +35,21 @@
 	   scrollTop = pageScroll;
 	}
 
-
-	function scrollToTop(e) {
-		e.preventDefault();
-		TweenLite.to(window, 1, {scrollTo:{y:0}});
+	function skipHero(e) {
+		e.preventDefault;
+		if (mediaQuery1.matches) {
+			TweenLite.to(window, 1, {scrollTo:{y:740}});
+		}
+		else {
+			TweenLite.to(window, 1, {scrollTo:{y:430}});
+		}
+		
 	}
 
-
-
+	
 	//events
 
 	hamburger.addEventListener('click', hamburgerMenu);
-	btnTop.addEventListener('click', scrollToTop);
-
+	btnDownHero.forEach(button => {button.addEventListener('click', skipHero);});
 
 })();
