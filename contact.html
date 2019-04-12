@@ -112,14 +112,15 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.5518557793494!2d-81.22157848473451!3d42.94557367915192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef3b01c9e9983%3A0x84558efdb9f3a3a1!2s790+Southdale+Rd+E%2C+London%2C+ON+N6E+1A8!5e0!3m2!1sen!2sca!4v1549222596410" allowfullscreen></iframe>
 		</div>
 		
-				<section id="eventsWidget">
+		<section id="eventsWidget">
 		<h2>UPCOMING EVENTS</h2>
 
-			<div id="scrollWrap">
-				<!-- add JS to make arrows scroll?  -->
-				<img src="images/arrow_left_events.svg" alt="Left Arrow">
-				<section id="events">
-					<h3 class="hidden">Events Widget</h3>
+		<div id="scrollWrap">
+			<!-- add JS to make arrows scroll?  -->
+			<i id="eventsArrowLeft" class="fa fa-angle-left carouselArrow"></i>
+			<section id="events">
+				<h3 class="hidden">Events Widget</h3>
+				<div class="eventsCon">
 					<div class="event">
 						<div class="dateTitleCon">
 							<div class="date">
@@ -168,20 +169,13 @@
 							Did you know that the average size of the salmon we release is 40cm large?
 						</p>
 					</div>
-				</section>
-				<!-- add JS to make arrows scroll?  -->
-				<img src="images/arrow_right_events.svg" alt="Right Arrow">
-			</div>
-
-			<div class="btnCon">
-				<div class="btnAnimateCon">
-					<a href="#" class="btnSmall dark">View Calendar</a>
-					<a href="#" class="btnAnimateOverlay"></a>
-					<a href="#" class="btnAnimateOverlay btnAnimateOverlay2"></a>
 				</div>
-			</div>
+			</section>
+			<!-- add JS to make arrows scroll?  -->
+			<i id ="eventsArrowRight" class="fa fa-angle-right carouselArrow"></i>
+		</div>
 
-		</section> <!-- end events widget -->
+	</section> <!-- end events widget -->
 					
 
 	<footer id="mainFooter">
@@ -264,5 +258,6 @@
 	
 	<!-- JavaScript -->
 	<script src="js/contact.js"></script>
+	<script src="js/events_widget.js"></script>
 </body>
 </html>

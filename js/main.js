@@ -47,6 +47,11 @@
 		
 	}
 
+		function scrollToTop(e) {
+		e.preventDefault();
+		TweenLite.to(window, 1, {scrollTo:{y:0}});
+	}
+
 	
 	//events
 
