@@ -544,7 +544,7 @@ img, embed, object, video {
 	}
 
 	#eventsWidget i {
-		cursor: pointer;
+		display: none;
 	}
 
 	#scrollWrap {
@@ -557,9 +557,15 @@ img, embed, object, video {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		overflow-x: auto;
+		/*overflow-x: hidden;*/
 		margin-left: 20px;
 		margin-right: 20px;
+		overflow-x: scroll;
+		scrollbar-width: none;
+		scrollbar-height: none;
+		-ms-overflow-style: none;
+		-webkit-scrollbar { width: 0; height: 0;}
+		
 	}
 
 	.eventsCon {
@@ -1254,9 +1260,9 @@ img, embed, object, video {
 	height: 300px;
 }
 
-#eventsWidget {
+/*#eventsWidget {
 	display: none;
-}
+}*/
 
 /* === JOIN PAGE - MOBILE === */
 
@@ -2794,6 +2800,11 @@ flex: 1 1 auto;
 	#eventsWidget {
 		padding: 20px;
 		margin-bottom: 40px;
+	}
+
+	#eventsWidget i {
+		display: inline;
+		cursor: pointer;
 	}
 
 	.event {
