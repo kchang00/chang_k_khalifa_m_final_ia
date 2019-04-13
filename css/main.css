@@ -643,7 +643,6 @@ img, embed, object, video {
 		margin-left: 20px;
 		margin-right: 20px;
 		overflow-x: scroll;
-		scrollbar-width: none; /*Firefox*/
 		-ms-overflow-style: none;  /* IE 10+ */
 	}
 
@@ -2200,7 +2199,6 @@ flex: 1 1 auto;
 		margin-left: 42%;
 	}
 }
-}
 
 @media screen and (min-width: 699px) {
 
@@ -2536,7 +2534,7 @@ flex: 1 1 auto;
 		margin: 0 auto;
 /*		max-width: 1200px;*/
 		transition: all .5s ease;
-		transition-delay: top .3s ease;
+		transition-delay: .3s ease;
 	}
 
 	#mainHeaderCon {
