@@ -7,9 +7,8 @@
 			mainHeader			= document.querySelector('#mainHeader'), 
 			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
 			btnDownHero			= document.querySelectorAll('.downArrow'),
-			btnTop				= document.querySelector('.btnTop'),
-	 	 	scrollTop 			= 0,
-			counter   			= 0;
+	 	 	scrollTop = 0,
+			counter   = 0;
 
   	//functions
   
@@ -22,20 +21,18 @@
 	window.onscroll = function(){
 		var pageScroll = window.pageYOffset;  
 
-		if (pageScroll > 200) {
-			if (pageScroll > scrollTop && mediaQuery1.matches){
+		if (pageScroll > scrollTop && mediaQuery1.matches){
 			mainHeader.style.top = '-100%';
 			mainHeaderCon.style.top = '-100%';
-			}
-			else {
-				mainHeaderCon.style.top = '0';
-			}
-		   scrollTop = pageScroll;
 		}
-		else if (pageScroll < 50 && mediaQuery1.matches) {
+		else if (pageScroll === 0 && mediaQuery1.matches) {
 			mainHeader.style.top = '0';
 			mainHeaderCon.style.top = '52px';
 		}
+		else {
+			mainHeaderCon.style.top = '0';
+		}
+	   scrollTop = pageScroll;
 	}
 
 	function skipHero(e) {
@@ -49,16 +46,10 @@
 		
 	}
 
-		function scrollToTop(e) {
-		e.preventDefault();
-		TweenLite.to(window, 1, {scrollTo:{y:0}});
-	}
-
 	
 	//events
 
 	hamburger.addEventListener('click', hamburgerMenu);
 	btnDownHero.forEach(button => {button.addEventListener('click', skipHero);});
-	btnTop.addEventListener('click', scrollToTop);
 
 })();

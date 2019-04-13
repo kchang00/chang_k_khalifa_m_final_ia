@@ -46,16 +46,20 @@
 							</li>
  -->
 
-						<li><a href="about.html">WHO WE ARE</a>
+						<li>
+							<div class="menuBtnCon"><a href="about.html">WHO WE ARE</a>
+							<div class="subMenuArrow">></div></div>
 							<ul class="subMenu">
-								<li><a href="blog.html">BLOG</a></li>
+								<li class="subMenuItems"><a href="blog.html">BLOG</a></li>
 							</ul>
 						</li>
-						<li><a href="projects.html">OUR WORK</a>
+						<li>
+							<div class="menuBtnCon"><a href="projects.html">OUR WORK</a>
+							<div class="subMenuArrow">></div></div>
 							<ul class="subMenu">
-								<li><a href="products.html">PRODUCTS</a></li>
-								<li><a href="#">EVENTS</a></li>
-								<li><a href="#">EDUCATION</a></li>
+								<li class="subMenuItems"><a href="products.html">PRODUCTS</a></li>
+								<li class="subMenuItems"><a href="#">EVENTS</a></li>
+								<li class="subMenuItems"><a href="#">EDUCATION</a></li>
 							</ul>
 						</li>
 						<li><a href="contact.html">CONTACT</a></li>
@@ -120,60 +124,62 @@
 
 		<div id="scrollWrap">
 			<!-- add JS to make arrows scroll?  -->
-			<i class="fa fa-angle-left carouselArrow"></i>
+			<i id="eventsArrowLeft" class="fa fa-angle-left carouselArrow"></i>
 			<section id="events">
 				<h3 class="hidden">Events Widget</h3>
-				<div class="event">
-					<div class="dateTitleCon">
-						<div class="date">
-							<p class="day">JAN</p>
-							<p class="month">09</p>
+				<div class="eventsCon">
+					<div class="event">
+						<div class="dateTitleCon">
+							<div class="date">
+								<p class="day">JAN</p>
+								<p class="month">09</p>
+							</div>
+							<p class="title">General Meeting</p>
 						</div>
-						<p class="title">General Meeting</p>
+						<p class="eventDesc">
+							Happy New Year! We are meeting at 7:00pm at 790 Southdale Road to do awesome things.
+						</p>
 					</div>
-					<p class="eventDesc">
-						Happy New Year! We are meeting at 7:00pm at 790 Southdale Road to do awesome things.
-					</p>
-				</div>
-				<div class="event">
-					<div class="dateTitleCon">
-						<div class="date">
-							<p class="day">FEB</p>
-							<p class="month">06</p>
+					<div class="event">
+						<div class="dateTitleCon">
+							<div class="date">
+								<p class="day">FEB</p>
+								<p class="month">06</p>
+							</div>
+							<p class="title">Visit the hatchery</p>
 						</div>
-						<p class="title">Visit the hatchery</p>
+						<p class="eventDesc">
+							Come visit the hatchery from 10:00am to 3pm at 123 Fish Rd. and see our brown trout.
+						</p>
 					</div>
-					<p class="eventDesc">
-						Come visit the hatchery from 10:00am to 3pm at 123 Fish Rd. and see our brown trout.
-					</p>
-				</div>
-				<div class="event">
-					<div class="dateTitleCon">
-						<div class="date">
-							<p class="day">MAR</p>
-							<p class="month">08</p>
+					<div class="event">
+						<div class="dateTitleCon">
+							<div class="date">
+								<p class="day">MAR</p>
+								<p class="month">08</p>
+							</div>
+							<p class="title">Brown Trout Program</p>
 						</div>
-						<p class="title">Brown Trout Program</p>
+						<p class="eventDesc">
+							We are proud to announce our newest project: the release of our brown trout.
+						</p>
 					</div>
-					<p class="eventDesc">
-						We are proud to announce our newest project: the release of our brown trout.
-					</p>
-				</div>
-				<div class="event">
-					<div class="dateTitleCon">
-						<div class="date">
-							<p class="day">MAR</p>
-							<p class="month">26</p>
+					<div class="event">
+						<div class="dateTitleCon">
+							<div class="date">
+								<p class="day">MAR</p>
+								<p class="month">26</p>
+							</div>
+							<p class="title">Salmon Release</p>
 						</div>
-						<p class="title">Salmon Release</p>
+						<p class="eventDesc">
+							Did you know that the average size of the salmon we release is 40cm large?
+						</p>
 					</div>
-					<p class="eventDesc">
-						Did you know that the average size of the salmon we release is 40cm large?
-					</p>
 				</div>
 			</section>
 			<!-- add JS to make arrows scroll?  -->
-			<i class="fa fa-angle-right carouselArrow"></i>
+			<i id ="eventsArrowRight" class="fa fa-angle-right carouselArrow"></i>
 		</div>
 
 		<div class="btnCon">
@@ -482,5 +488,7 @@
 	</footer>
 	<!-- JavaScript -->
 	<script src="js/index.js"></script>
+	<script src="js/events_widget.js"></script>
+	<script src="js/subNav_mobile.js"></script>
 </body>
 </html>

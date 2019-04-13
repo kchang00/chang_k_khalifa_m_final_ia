@@ -339,12 +339,43 @@ img, embed, object, video {
 	color: #92bd2f;
 }
 
+.menuBtnCon {
+	display: flex;
+}
+
+.subMenuArrow {
+	color: #999;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1.5em;
+	margin-left: 20px;
+	transition: all .2s ease-in-out;
+}
+
+.subMenuArrow.rotated {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
 #mainNav ul li > ul{
 	display: none;
 }
 
 #mainNav ul li:hover > ul{
 	display: none;
+}
+
+#mainNav ul li > ul.expanded {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5px;
+	margin-bottom: 20px
+}
+
+.subMenuItems {
+	margin-bottom: 5px !important; 
+	margin-left: 20px;
 }
 
 .navOverlay {
@@ -552,6 +583,10 @@ img, embed, object, video {
 		color: #fff;
 	}
 
+	#eventsWidget i {
+		display: none;
+	}
+
 	#scrollWrap {
 		display: flex;
 		flex-direction: row;
@@ -564,9 +599,20 @@ img, embed, object, video {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		overflow-x: auto;
+		/*overflow-x: hidden;*/
 		margin-left: 20px;
 		margin-right: 20px;
+		overflow-x: scroll;
+		scrollbar-width: none;
+		scrollbar-height: none;
+		-ms-overflow-style: none;
+		-webkit-scrollbar { width: 0; height: 0;}
+		
+	}
+
+	.eventsCon {
+		display: flex;
+		position: relative;
 	}
 
 	.event {
@@ -1256,9 +1302,9 @@ img, embed, object, video {
 	height: 300px;
 }
 
-#eventsWidget {
+/*#eventsWidget {
 	display: none;
-}
+}*/
 
 /* === JOIN PAGE - MOBILE === */
 
@@ -2848,6 +2894,11 @@ flex: 1 1 auto;
 	#eventsWidget {
 		padding: 20px;
 		margin-bottom: 40px;
+	}
+
+	#eventsWidget i {
+		display: inline;
+		cursor: pointer;
 	}
 
 	.event {
