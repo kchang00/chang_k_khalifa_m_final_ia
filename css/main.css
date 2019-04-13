@@ -789,10 +789,6 @@ img, embed, object, video {
 		text-align: center;
 	}
 
-	.productImg {
-		margin: 0 auto;
-	}
-
 
 	/* === HOME - LATEST NEWS SECTION - MOBILE === */
 
@@ -2499,6 +2495,12 @@ flex: 1 1 auto;
 		padding-right: 40px;
 		padding-left: 40px;
 		margin: 0px;
+	}
+
+	/* === HOME - PRODUCTS SECTION - TABLET === */
+
+	#productsCon {
+	align-items: center;
 	}
 
 
