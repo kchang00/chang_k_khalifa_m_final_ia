@@ -5,7 +5,7 @@
 			mainNav 			= document.querySelector('#mainNav'),
 			mainHeaderCon		= document.querySelector('#mainHeaderCon'),
 			mainHeader			= document.querySelector('#mainHeader'), 
-			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
+			mediaQuery1 		= window.matchMedia('(min-width: 938px)'),
 			btnDownHero			= document.querySelectorAll('.downArrow'),
 	 	 	scrollTop = 0,
 			counter   = 0;
@@ -21,18 +21,20 @@
 	window.onscroll = function(){
 		var pageScroll = window.pageYOffset;  
 
-		if (pageScroll > scrollTop && mediaQuery1.matches){
+		if (pageScroll > 200 && mediaQuery1.matches) {
+			if (pageScroll > scrollTop){
 			mainHeader.style.top = '-100%';
 			mainHeaderCon.style.top = '-100%';
+			}
+			else {
+				mainHeaderCon.style.top = '0';
+			}
+		   scrollTop = pageScroll;
 		}
-		else if (pageScroll === 0 && mediaQuery1.matches) {
+		else if (pageScroll < 50 && mediaQuery1.matches) {
 			mainHeader.style.top = '0';
 			mainHeaderCon.style.top = '52px';
 		}
-		else {
-			mainHeaderCon.style.top = '0';
-		}
-	   scrollTop = pageScroll;
 	}
 
 	function skipHero(e) {

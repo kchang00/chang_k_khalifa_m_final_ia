@@ -5,8 +5,10 @@
 			mainNav 			= document.querySelector('#mainNav'),
 			mainHeaderCon		= document.querySelector('#mainHeaderCon'),
 			mainHeader			= document.querySelector('#mainHeader'), 
-			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
+			mediaQuery1 		= window.matchMedia('(min-width: 938px)'),
 			btnTop				= document.querySelector('.btnTop'),
+			video 				= document.querySelector('video'),
+			videoOverlay		= document.querySelector('.videoOverlay'),
 	 	 	scrollTop 			= 0,
 			counter   			= 0;
 
@@ -22,8 +24,8 @@
 	window.onscroll = function(){
 		var pageScroll = window.pageYOffset;  
 
-		if (pageScroll > 200) {
-			if (pageScroll > scrollTop && mediaQuery1.matches){
+		if (pageScroll > 200 && mediaQuery1.matches) {
+			if (pageScroll > scrollTop){
 			mainHeader.style.top = '-100%';
 			mainHeaderCon.style.top = '-100%';
 			}
@@ -38,10 +40,19 @@
 		}
 	}
 
-
 	function scrollToTop(e) {
 		e.preventDefault();
 		TweenLite.to(window, 1, {scrollTo:{y:0}});
+	}
+
+	function playPauseVideo() {
+		if (video.paused == true) {
+			videoOverlay.style.display = 'none';
+			video.load();
+			video.play();
+		} else {
+			video.pause();
+		}
 	}
 
 
@@ -50,5 +61,6 @@
 
 	hamburger.addEventListener('click', hamburgerMenu);
 	btnTop.addEventListener('click', scrollToTop);
+	videoOverlay.addEventListener('click', playPauseVideo);
 
 })();
