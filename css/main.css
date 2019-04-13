@@ -2499,9 +2499,12 @@ flex: 1 1 auto;
 
 	/* === HOME - PRODUCTS SECTION - TABLET === */
 
-	#productsCon {
-	align-items: center;
+/*	#productsCon {
+	 	align-items: center;
 	}
+		#productsCon a {
+		padding: 0 50px;
+	}*/
 
 
 	/* === HOME - LATEST NEWS SECTION - TABLET === */
