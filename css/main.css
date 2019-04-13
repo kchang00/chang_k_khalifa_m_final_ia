@@ -108,7 +108,10 @@ img, embed, object, video {
 	cursor: pointer;
 	border-radius: 30px;
 	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
-	height: 60px;
+/*	height: 60px;*/
+/* padding(2) + fontsize = final height*/
+/* 18(2) + 24 = 60px */
+	padding: 18px 0px;
 	margin: 10px;
 	font-size: 24px;
 }
@@ -117,7 +120,10 @@ img, embed, object, video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 60px;
+/*	height: 60px;*/
+/* padding(2) + fontsize = final height*/
+/* 15(2) + 30 = 60px */
+	padding: 15px 0px;
 	font-size: 30px;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -381,7 +387,7 @@ img, embed, object, video {
 .subMenuItems {
 	margin-bottom: 0px !important; 
 	margin-left: 20px;
-	padding: 15px 10px;
+	padding: 20px 20px;
 }
 
 .subMenuItems a {
@@ -2499,7 +2505,7 @@ flex: 1 1 auto;
 		background-color: #fff;
 		box-sizing: border-box;
 		transition: all 0.3s;
-		border-bottom: 1px solid #ccc;
+		border-bottom: none;
 
 		/*resets coded values for mobile*/
 		margin: 0 auto;
@@ -2657,7 +2663,7 @@ flex: 1 1 auto;
 			opacity: 0;
 		}
 		100% {
-			-webkit-transform: translateY(60px);
+			-webkit-transform: translateY(62px);
 			opacity: 1;
 		}
 	}
@@ -2668,13 +2674,13 @@ flex: 1 1 auto;
 			opacity: 0;
 		}
 		100% {
-			transform: translateY(63px);
+			transform: translateY(62px);
 			opacity: 1;
 		}
 	}
 
 	#mainNav ul li:hover > ul li {
-		padding: 20px 20px;
+/*		padding: 20px 20px;*/
 		background-color: #92bd2f;
 		display: block;
 		text-align: center;
@@ -2684,7 +2690,7 @@ flex: 1 1 auto;
 	}
 
 	#mainNav ul li:active > ul li {
-		padding: 20px 20px;
+/*		padding: 20px 20px;*/
 		background-color: #92bd2f;
 		display: block;
 		text-align: center;
@@ -2749,7 +2755,11 @@ flex: 1 1 auto;
 
 
 	.btnSmall {
-		height: 40px;
+		/*	height: 40px;*/
+/* padding(2) + fontsize = final height*/
+/* 8(2) + 24 = 40px */
+	padding: 8px 0px;
+	margin: 10px;
 		flex: 1;
 		max-width: 200px;
 		margin: 0px;
@@ -2757,7 +2767,10 @@ flex: 1 1 auto;
 	}
 
 	.btnLarge {
-		height: 60px;
+	/*	height: 60px;*/
+	/* padding(2) + fontsize = final height*/
+	/* 18(2) + 24 = 60px */
+	padding: 18px 0px;
 		flex: 1;
 		max-width: 200px;
 		font-size: 24px;
