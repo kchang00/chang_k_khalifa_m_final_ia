@@ -763,6 +763,37 @@ img, embed, object, video {
 		padding: 10px;
 	}
 
+	/* === HOME - PRODUCTS SECTION - MOBILE === */
+
+	#productsCon {
+		box-sizing: border-box;
+		max-width: 1000px;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-top: 60px;
+		/*align-items: center;*/
+		padding: 40px 20px;
+		box-shadow: 0px 3px 3.84px 0.16px rgba(31, 29, 30, 0.34);
+	}
+
+	#productsCon h2 {
+		margin-top: 40px;
+	}
+
+	#productsCon p {
+		margin-top: 35px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.productImg {
+		margin: 0 auto;
+	}
+
+
 	/* === HOME - LATEST NEWS SECTION - MOBILE === */
 
 	#latestNews {
@@ -2469,6 +2500,7 @@ flex: 1 1 auto;
 		padding-left: 40px;
 		margin: 0px;
 	}
+
 
 	/* === HOME - LATEST NEWS SECTION - TABLET === */
 
