@@ -2,14 +2,14 @@
 /*CSS Document*/
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 }
 
 h2 {
 	font-size: 36px;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 }
 
@@ -17,7 +17,7 @@ h3 {
 	font-size: 30px;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Abolition', sans-serif; 
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 }
 
@@ -25,7 +25,7 @@ h4 {
 	font-size: 24px;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 }
 
@@ -33,7 +33,7 @@ h5 {
 	font-size: 24px;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	color: #587021;
 }
 
@@ -48,7 +48,7 @@ input, textarea {
 }
 
 textarea {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 }
 
 a {
@@ -62,6 +62,11 @@ img, embed, object, video {
 
 .hidden {
 	display: none;
+}
+
+.preventScrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 #mainContainer {
@@ -102,7 +107,7 @@ img, embed, object, video {
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 30px;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	height: 60px;
 	margin: 10px;
 	font-size: 24px;
@@ -117,7 +122,7 @@ img, embed, object, video {
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 25px;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 }
 
 .dark {
@@ -325,7 +330,7 @@ img, embed, object, video {
 #mainNav.slideToggle a {
 	text-decoration: none;
 	font-size: 27px;
-	font-family: Abolition, sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 	transition: all ease;
 }
@@ -410,7 +415,7 @@ img, embed, object, video {
 		font-size: 45px;
 		text-align: center;
 		text-transform: uppercase;
-		font-family: 'Abolition', sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		color: #587021;
 		margin-top: 35px;
 		display: flex;
@@ -443,18 +448,18 @@ img, embed, object, video {
 		background-color: #587021;
 	}
 
-/*  video {
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-  }*/
+/*	  video {
+	    object-fit: cover;
+	    height: auto;
+	    width: 100%;
+	  }*/
 
 	  #vidCon {
 	  	display: flex;
 	  	align-items: center;
 	  	justify-content: center;
 	  	background-color: black;
-	  	margin: 0 auto;
+	  	margin: auto auto;
 	  }
 
 
@@ -551,6 +556,8 @@ img, embed, object, video {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		max-width: 1365px;
+		margin: 0 auto;
 	}
 
 	#events {
@@ -594,7 +601,7 @@ img, embed, object, video {
 	  	padding-right: 10px;
 	  	margin-right: 10px;
 	  	color: #587021;
-	  	font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	  	line-height: 40px;
 	}
 
@@ -609,7 +616,7 @@ img, embed, object, video {
 	.title {
 	  font-size: 18px;
 	  text-align: left;
-	  font-family: Lato, sans-serif;
+	  font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	  color: #587021;
 
 	}
@@ -768,13 +775,13 @@ img, embed, object, video {
 		background-image: url(../images/blog_date.svg);
 	}
 	.newsDate {
-		font-family: Lato, sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		font-size: 14px;
 		color: #587021;
 	}
 
 	.newsTitle {
-		font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		font-size: 24px;
 	/*	font-weight: bold;*/
 		text-transform: uppercase;
@@ -1057,7 +1064,7 @@ img, embed, object, video {
 	vertical-align: middle;
 	background-color: #ececec;
 	position: relative;
-	font-family: Abolition, sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 	font-size: 18px;
 }
@@ -1077,7 +1084,7 @@ img, embed, object, video {
 	background-color: #ececec;
 	position: relative;
 	padding: 20px;
-	font-family: Lato, Arial, sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	color: #666;
 	margin: 30px 0px 30px 10px;
 }
@@ -1151,7 +1158,7 @@ img, embed, object, video {
 
 .memberName p {
 	color: #fff;
-	font-family: Abolition, Arial, sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	font-size: 24px;
 	line-height: 30px;
 }
@@ -1284,7 +1291,7 @@ img, embed, object, video {
 	font-size: 60px;
 	text-align: center;
 	line-height: 100px;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	position: relative;
 	z-index: 1;
 	top: -100px;
@@ -1300,7 +1307,7 @@ img, embed, object, video {
 }
 
 #joinInfo p {
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
@@ -1351,11 +1358,11 @@ img, embed, object, video {
 	font-size: 16px;
 	line-height: 30px;
 	padding: 2px;
-	font-family: 'Abolition', sans-serif;   
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;  
 }
 
 .processOrder p {
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #4f641d;
 	text-align: center;
 	margin-top: 5px;
@@ -1385,7 +1392,7 @@ img, embed, object, video {
 
 #joinForm a {
 	color: #666;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	font-size: 18px;
 	text-align: right;
 	margin-right: 10px;
@@ -1510,7 +1517,7 @@ img, embed, object, video {
 	}
 
 	.postTags ul li {
-		font-family: Lato, sans-serif; 
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1572,7 +1579,7 @@ img, embed, object, video {
 	}
 
 	.post a {
-		font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		color: #587021;
 		font-size: 23px;
 		font-weight: bold;
@@ -1628,7 +1635,7 @@ img, embed, object, video {
 	}
 
 	#blogLinks a {
-		font-family: Lato, sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		text-decoration: none;
 		color: #666;
 		margin-top: 10px;
@@ -1681,6 +1688,20 @@ img, embed, object, video {
 		/* make it show only 1 image*/
 	}
 
+	.textZoomCon {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.zoomIcon {
+		font-size: 1em;
+		color: #666;
+		display: inline;
+		margin-left: 10px;
+	}
+
 	/*.galleryImagesCon {
 		display: flex;
 		flex-direction: row;
@@ -1698,19 +1719,20 @@ img, embed, object, video {
 	.galleryImage {
 		flex: 0 1 600px;
 		width: 100%;
+		cursor: pointer;
 	}
 
 
 	.galleryThumbnails {
 		margin-top: 20px;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: flex-start;
 	}
 
 	.galleryThumbnails img {
 		margin: 0px 10px;
 		background-color: skyblue;
-		height: 100px;
+		height: 50px;
 		flex: 0 0 auto;
 	}
 
@@ -1741,7 +1763,7 @@ img, embed, object, video {
 	}
 
 	#merchDesc h5 {
-		margin-right: 40px;
+		margin-bottom: 20px;
 	}
 
 	#merchDesc p {
@@ -1753,7 +1775,8 @@ img, embed, object, video {
 		display: flex;
 		flex: 1;
 /*		background-color: pink;*/
-		justify-content: center;
+		justify-content: flex-end;
+		margin-left: auto;
 	}
 
 	#merchForm input {
@@ -1773,7 +1796,7 @@ img, embed, object, video {
 		border-radius: 20px;
 		text-align: center;
 		font-size: 18px;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		box-sizing: border-box;
 	}
 
@@ -1817,7 +1840,7 @@ img, embed, object, video {
 }
 
 #mainFooterNav li a {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	color: #fff;
 	text-decoration: underline;
 	font-size: 18px;
@@ -1896,7 +1919,7 @@ flex: 1 1 auto;
 /* Bottom Footer - MOBILE */
 
 #mainFooterBottom {
-	font-family: Lato, sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	font-size: 14px;
 	color: #ccc;
 }
@@ -1940,7 +1963,7 @@ flex: 1 1 auto;
 
 	.galleryThumbnails img {
 		margin: 0px 10px;
-		height: 100px;
+		height: 70px;
 	}
 }
 
@@ -1990,7 +2013,7 @@ flex: 1 1 auto;
 
 	#carousel {
 /*		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/home_hero.jpg);*/
-		max-width: 1366px;
+/*		max-width: 1366px;*/
 	}
 
 	.hero {
@@ -2294,7 +2317,7 @@ flex: 1 1 auto;
 
 	#mainNav ul li a {
 		text-decoration: none;
-		font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		color: #587021;
 		transition: all .5s ease;
 		font-size: 24px;
@@ -2323,9 +2346,21 @@ flex: 1 1 auto;
 		position: absolute;
 /*		margin-top: 64px;*/
 		-webkit-animation: navSlide .6s ease-in-out 1 alternate forwards;
+		animation: navSlide .6s ease-in-out 1 alternate forwards;
 	}
 
 	@-webkit-keyframes navSlide {
+		0% {
+			-webkit-transform: translateY(0px);
+			opacity: 0;
+		}
+		100% {
+			-webkit-transform: translateY(60px);
+			opacity: 1;
+		}
+	}
+
+	@keyframes navSlide {
 		0% {
 			transform: translateY(0px);
 			opacity: 0;
@@ -2545,7 +2580,9 @@ flex: 1 1 auto;
 
 	/* === PRODUCTS PAGE - TABLET === */
 	#merchMainCon {
-		padding: 40px 40px 100px 40px
+		padding: 40px 40px 100px 40px;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
 	/* === JOIN PAGE - TABLET */
@@ -2911,13 +2948,13 @@ flex: 1 1 auto;
 		background-image: url(../images/blog_date.svg);
 	}
 	.newsDate {
-		font-family: Lato, sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		font-size: 14px;
 		color: #587021;
 	}
 
 	.newsTitle {
-		font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		font-size: 24px;
 	/*	font-weight: bold;*/
 		text-transform: uppercase;
@@ -2988,6 +3025,8 @@ flex: 1 1 auto;
 	#projectArea {
 		display: flex;
 		flex-direction: column;
+		margin: 0 auto;
+		max-width: 1365px;
 	}
 
 	.projectRow {
@@ -3605,7 +3644,7 @@ flex: 1 1 auto;
 	}
 
 	#closeLightBox {
-		font-family: 'Lato',sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		color: #fff;
 		font-size: 40px;
 		position: absolute;
@@ -3744,7 +3783,7 @@ flex: 1 1 auto;
 	}
 
 	#mainFooterNav li a {
-		font-family: 'Lato', sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		color: #fff;
 		text-decoration: underline;
 		font-size: 14px;
@@ -3781,7 +3820,7 @@ flex: 1 1 auto;
 	/* Bottom Footer - DESKTOP */
 
 	#mainFooterBottom {
-		font-family: Lato, sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		margin-top: 80px;
 		font-size: 14px;
 		color: #ccc;
@@ -3836,4 +3875,12 @@ flex: 1 1 auto;
 		margin: 20px 0;
 	}
 }
+
+@media screen and (min-width: 1165px) {
+	#merchDesc h5 {
+		margin-right: 40px;
+		margin-bottom: 0;
+	}
+}
+
 

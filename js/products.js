@@ -20,6 +20,7 @@
 			merchSubTitle		= document.querySelector('#merchDesc h4'),
 			merchCopy			= document.querySelector('#merchDesc p'),
 			merchPrice 			= document.querySelector('#merchDesc h5'),
+			body				= document.querySelector('body'),
 	 	 	scrollTop 			= 0,
 			counter   			= 0,
 			arrayLength	  		= lightBoxImagesArray.length,
@@ -70,6 +71,8 @@
 
 	function showLightBox() {
 		lightBox.classList.add('showLightBox');
+		body.classList.add('preventScrolling');
+		lightBox.scrollIntoView();
 	}
 
 	function navigate(direction) {
@@ -87,6 +90,7 @@
 
 	function hideLightBox() {
 		lightBox.classList.remove('showLightBox');
+		body.classList.remove('preventScrolling');
 	}
 
 	function swapMerch() {
