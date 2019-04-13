@@ -26,3 +26,6 @@ Remaking the Thames River Anglers Association site. The old version can be found
 - [ ] Created custom icons
 - [ ] SVG Tiled Background Pattern that can be found at https://www.heropatterns.com/
 
+## JS Logic: 
+
+A link to the logic used to create the JavaScript for our main header can be found in the [assets folder](assets/js_logic.txt).

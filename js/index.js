@@ -24,8 +24,8 @@
 	window.onscroll = function(){
 		var pageScroll = window.pageYOffset;  
 
-		if (pageScroll > 200) {
-			if (pageScroll > scrollTop && mediaQuery1.matches){
+		if (pageScroll > 200 && mediaQuery1.matches) {
+			if (pageScroll > scrollTop){
 			mainHeader.style.top = '-100%';
 			mainHeaderCon.style.top = '-100%';
 			}
@@ -39,7 +39,6 @@
 			mainHeaderCon.style.top = '52px';
 		}
 	}
-
 
 	function scrollToTop(e) {
 		e.preventDefault();
