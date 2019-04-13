@@ -1,6 +1,6 @@
 (()=>{
 	
-	let subMenuArrows = document.querySelectorAll('.subMenuArrow');
+	let subMenuArrows = document.querySelectorAll('.subMenuArrowMobile');
 
 
 	function expandSubMenu(e) {

@@ -5,8 +5,10 @@
 			mainNav 			= document.querySelector('#mainNav'),
 			mainHeaderCon		= document.querySelector('#mainHeaderCon'),
 			mainHeader			= document.querySelector('#mainHeader'), 
-			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
+			mediaQuery1 		= window.matchMedia('(min-width: 938px)'),
 			btnTop				= document.querySelector('.btnTop'),
+			video 				= document.querySelector('video'),
+			videoOverlay		= document.querySelector('.videoOverlay'),
 	 	 	scrollTop 			= 0,
 			counter   			= 0;
 
@@ -44,11 +46,22 @@
 		TweenLite.to(window, 1, {scrollTo:{y:0}});
 	}
 
+	function playPauseVideo() {
+		if (video.paused == true) {
+			videoOverlay.style.display = 'none';
+			video.load();
+			video.play();
+		} else {
+			video.pause();
+		}
+	}
+
 
 
 	//events
 
 	hamburger.addEventListener('click', hamburgerMenu);
 	btnTop.addEventListener('click', scrollToTop);
+	videoOverlay.addEventListener('click', playPauseVideo);
 
 })();
