@@ -1,0 +1,7 @@
+JS Logic - Main Header:
+
+Make sure the screen size matches the main desktop media query (size is at least 938px wide).
+
+Check if the user scrolls past the height of the main header (meaning the window offset value is greater than 200px). Check if the user is scrolling down (the window offset value is greater than 0) and hide the main navigation and social navigation (move it all up and off screen). Otherwise, meaning the user is scrolling up (the offset value is less than 0), fix only the main navigation to the top of the window. 
+
+Check if the user scrolls up almost to the top of the page (the window offset is less than 50px - the height of the social navigation). Move the social navigation to the top of the window and move the main navigation down enough to make room for the social navigation.
