@@ -2308,7 +2308,7 @@ flex: 1 1 auto;
 	#mainNav {
 		display: flex;
 		margin-left: auto;
-		margin-right: 20px;
+		/*margin-right: 20px;*/
 	}
 
 	#mainNav ul {
@@ -2367,7 +2367,7 @@ flex: 1 1 auto;
 		color: #587021;
 		transition: all .5s ease;
 		font-size: 24px;
-		padding: 70px 30px;
+		padding: 30px 30px;
 		border-radius: 40px;
 	}
 
@@ -2383,7 +2383,7 @@ flex: 1 1 auto;
 	}
 
 	#mainNav ul li:nth-child(2) > ul {
-		margin-left: 20px;
+		/*margin-left: 20px;*/
 	}
 
 	#mainNav ul li:hover > ul
@@ -2418,12 +2418,13 @@ flex: 1 1 auto;
 	}
 
 	#mainNav ul li:hover > ul li {
-		padding: 20px 25px;
+		padding: 20px 20px;
 		background-color: #92bd2f;
 		display: block;
 		text-align: center;
 		box-sizing: border-box;
 		border-bottom: 2px #587021 solid;
+		margin-bottom: 0 !important;
 	}
 
 	#mainNav ul li:hover > ul li:last-child {
@@ -2441,6 +2442,11 @@ flex: 1 1 auto;
 	.subMenu li a:hover {
 		color: #587021 !important;
 	}
+
+	.subMenuArrow {
+		display: none;
+	}
+
 
 	/* === HOME - ABOUT SECTION - TABLET === */
 
