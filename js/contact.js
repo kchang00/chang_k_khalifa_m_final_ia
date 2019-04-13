@@ -5,7 +5,7 @@
 			mainNav 			= document.querySelector('#mainNav'),
 			mainHeaderCon		= document.querySelector('#mainHeaderCon'),
 			mainHeader			= document.querySelector('#mainHeader'), 
-			mediaQuery1 		= window.matchMedia('(min-width: 768px)'),
+			mediaQuery1 		= window.matchMedia('(min-width: 938px)'),
 			btnDownHero			= document.querySelectorAll('.downArrow'),
 			closeContactRemind	= document.querySelector('#close'),
 			contactRemind 		= document.querySelector('#announcement'),
@@ -23,8 +23,8 @@
 	window.onscroll = function(){
 		var pageScroll = window.pageYOffset;  
 
-		if (pageScroll > 200) {
-			if (pageScroll > scrollTop && mediaQuery1.matches){
+		if (pageScroll > 200 && mediaQuery1.matches) {
+			if (pageScroll > scrollTop){
 			mainHeader.style.top = '-100%';
 			mainHeaderCon.style.top = '-100%';
 			}
