@@ -19,13 +19,16 @@
 			merchTitle			= document.querySelector('#merchDesc h3'),
 			merchSubTitle		= document.querySelector('#merchDesc h4'),
 			merchCopy			= document.querySelector('#merchDesc p'),
-	 	 	scrollTop = 0,
-			counter   = 0,
-			arrayLength	  	= lightBoxImagesArray.length,
-			currentImage 	= lightBoxImagesArray[0],
+			merchPrice 			= document.querySelector('#merchDesc h5'),
+			body				= document.querySelector('body'),
+	 	 	scrollTop 			= 0,
+			counter   			= 0,
+			arrayLength	  		= lightBoxImagesArray.length,
+			currentImage 		= lightBoxImagesArray[0],
 			merchTitleArray		= ["Reel Decal Sticker Merch", "Rod Decal Sticker Merch", "Notepad Merch"],
 			merchSubTitleArray	= ["TRAA Logo On Reel Decal Sticker", "TRAA Logo On Rod Decal Sticker", "TRAA Logo On Notepad"],
-			merchCopyArray		= ["Decorate your rod reel with this decal sticker bearing our logo. The sticker is circular with a 30cm radius. All purchaces help fund our projects.", "Add character to your rod with this decal sticker bearing our logo. The sticker is circular with a radius of 10cm. All purchaces help fund our projects.", "A notepad for all your quick notes as well as important lists and reminders. The notepad is A5 standard size, which means enough space for everything in one page. All purchases help us fund our projects."];
+			merchCopyArray		= ["Decorate your rod reel with this decal sticker bearing our logo. The sticker is circular with a 30cm radius. A great gift idea for your kid's fishing rods as well. All purchases help fund our projects.", "Add character to your rod with this decal sticker bearing our logo. The sticker is circular with a radius of 10cm. All purchases help fund our projects.", "A waterproof notepad for all your quick notes as well as important lists. Take it with you fishing, or on your boat, and your notes will stay dry! The notepad is A5 standard size. All purchases help us fund our projects."],
+			merchPriceArray		= ['Price: $5.00', 'Price: $4.00', 'Price: $8.00'];
 			
 
   	//functions
@@ -39,18 +42,20 @@
 	window.onscroll = function(){
 		var pageScroll = window.pageYOffset;  
 
-		if (pageScroll > scrollTop && mediaQuery1.matches){
+		if (pageScroll > 200) {
+			if (pageScroll > scrollTop && mediaQuery1.matches){
 			mainHeader.style.top = '-100%';
 			mainHeaderCon.style.top = '-100%';
+			}
+			else {
+				mainHeaderCon.style.top = '0';
+			}
+		   scrollTop = pageScroll;
 		}
-		else if (pageScroll === 0 && mediaQuery1.matches) {
+		else if (pageScroll < 50 && mediaQuery1.matches) {
 			mainHeader.style.top = '0';
 			mainHeaderCon.style.top = '52px';
 		}
-		else {
-			mainHeaderCon.style.top = '0';
-		}
-	   scrollTop = pageScroll;
 	}
 
 	function skipHero(e) {
@@ -66,6 +71,8 @@
 
 	function showLightBox() {
 		lightBox.classList.add('showLightBox');
+		body.classList.add('preventScrolling');
+		lightBox.scrollIntoView();
 	}
 
 	function navigate(direction) {
@@ -83,6 +90,7 @@
 
 	function hideLightBox() {
 		lightBox.classList.remove('showLightBox');
+		body.classList.remove('preventScrolling');
 	}
 
 	function swapMerch() {
@@ -94,6 +102,7 @@
 		merchTitle.textContent = merchTitleArray[count];
 		merchSubTitle.textContent = merchSubTitleArray[count];
 		merchCopy.textContent = merchCopyArray[count];
+		merchPrice.textContent = merchPriceArray[count];
 	}
 
 

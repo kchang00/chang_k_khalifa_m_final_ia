@@ -2,14 +2,14 @@
 /*CSS Document*/
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 }
 
 h2 {
 	font-size: 36px;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 }
 
@@ -17,7 +17,7 @@ h3 {
 	font-size: 30px;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Abolition', sans-serif; 
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 }
 
@@ -25,7 +25,7 @@ h4 {
 	font-size: 24px;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 }
 
@@ -33,7 +33,7 @@ h5 {
 	font-size: 24px;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	color: #587021;
 }
 
@@ -48,7 +48,7 @@ input, textarea {
 }
 
 textarea {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 }
 
 a {
@@ -62,6 +62,11 @@ img, embed, object, video {
 
 .hidden {
 	display: none;
+}
+
+.preventScrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 #mainContainer {
@@ -102,7 +107,7 @@ img, embed, object, video {
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 30px;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	height: 60px;
 	margin: 10px;
 	font-size: 24px;
@@ -117,7 +122,7 @@ img, embed, object, video {
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 25px;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 }
 
 .dark {
@@ -325,7 +330,7 @@ img, embed, object, video {
 #mainNav.slideToggle a {
 	text-decoration: none;
 	font-size: 27px;
-	font-family: Abolition, sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 	transition: all ease;
 }
@@ -418,6 +423,10 @@ img, embed, object, video {
 	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/blog_hero_small.jpg);
 }
 
+.heroProducts {
+	background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.3)), url(../images/products_hero_small.jpg);
+}
+
 .heroImage {
 	position: absolute;
 	top: 0;
@@ -437,7 +446,7 @@ img, embed, object, video {
 		font-size: 45px;
 		text-align: center;
 		text-transform: uppercase;
-		font-family: 'Abolition', sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		color: #587021;
 		margin-top: 35px;
 		display: flex;
@@ -470,18 +479,18 @@ img, embed, object, video {
 		background-color: #587021;
 	}
 
-/*  video {
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-  }*/
+/*	  video {
+	    object-fit: cover;
+	    height: auto;
+	    width: 100%;
+	  }*/
 
 	  #vidCon {
 	  	display: flex;
 	  	align-items: center;
 	  	justify-content: center;
 	  	background-color: black;
-	  	margin: 0 auto;
+	  	margin: auto auto;
 	  }
 
 
@@ -582,6 +591,8 @@ img, embed, object, video {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		max-width: 1365px;
+		margin: 0 auto;
 	}
 
 	#events {
@@ -636,7 +647,7 @@ img, embed, object, video {
 	  	padding-right: 10px;
 	  	margin-right: 10px;
 	  	color: #587021;
-	  	font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	  	line-height: 40px;
 	}
 
@@ -651,7 +662,7 @@ img, embed, object, video {
 	.title {
 	  font-size: 18px;
 	  text-align: left;
-	  font-family: Lato, sans-serif;
+	  font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	  color: #587021;
 
 	}
@@ -810,13 +821,13 @@ img, embed, object, video {
 		background-image: url(../images/blog_date.svg);
 	}
 	.newsDate {
-		font-family: Lato, sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		font-size: 14px;
 		color: #587021;
 	}
 
 	.newsTitle {
-		font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		font-size: 24px;
 	/*	font-weight: bold;*/
 		text-transform: uppercase;
@@ -879,7 +890,7 @@ img, embed, object, video {
 	background-color: #587021;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%2392bd2f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 	background-attachment: fixed;
-	padding: 40px;
+	padding: 35px 10px;
 	flex-wrap: wrap;
 	text-align: center;
 	justify-content: center;
@@ -1099,7 +1110,7 @@ img, embed, object, video {
 	vertical-align: middle;
 	background-color: #ececec;
 	position: relative;
-	font-family: Abolition, sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #587021;
 	font-size: 18px;
 }
@@ -1119,7 +1130,7 @@ img, embed, object, video {
 	background-color: #ececec;
 	position: relative;
 	padding: 20px;
-	font-family: Lato, Arial, sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	color: #666;
 	margin: 30px 0px 30px 10px;
 }
@@ -1193,7 +1204,7 @@ img, embed, object, video {
 
 .memberName p {
 	color: #fff;
-	font-family: Abolition, Arial, sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	font-size: 24px;
 	line-height: 30px;
 }
@@ -1326,7 +1337,7 @@ img, embed, object, video {
 	font-size: 60px;
 	text-align: center;
 	line-height: 100px;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	position: relative;
 	z-index: 1;
 	top: -100px;
@@ -1342,7 +1353,7 @@ img, embed, object, video {
 }
 
 #joinInfo p {
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
@@ -1393,11 +1404,11 @@ img, embed, object, video {
 	font-size: 16px;
 	line-height: 30px;
 	padding: 2px;
-	font-family: 'Abolition', sans-serif;   
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;  
 }
 
 .processOrder p {
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	color: #4f641d;
 	text-align: center;
 	margin-top: 5px;
@@ -1427,7 +1438,7 @@ img, embed, object, video {
 
 #joinForm a {
 	color: #666;
-	font-family: 'Abolition', sans-serif;
+	font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 	font-size: 18px;
 	text-align: right;
 	margin-right: 10px;
@@ -1552,7 +1563,7 @@ img, embed, object, video {
 	}
 
 	.postTags ul li {
-		font-family: Lato, sans-serif; 
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1614,7 +1625,7 @@ img, embed, object, video {
 	}
 
 	.post a {
-		font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		color: #587021;
 		font-size: 23px;
 		font-weight: bold;
@@ -1670,7 +1681,7 @@ img, embed, object, video {
 	}
 
 	#blogLinks a {
-		font-family: Lato, sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		text-decoration: none;
 		color: #666;
 		margin-top: 10px;
@@ -1723,6 +1734,20 @@ img, embed, object, video {
 		/* make it show only 1 image*/
 	}
 
+	.textZoomCon {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.zoomIcon {
+		font-size: 1em;
+		color: #666;
+		display: inline;
+		margin-left: 10px;
+	}
+
 	/*.galleryImagesCon {
 		display: flex;
 		flex-direction: row;
@@ -1740,19 +1765,20 @@ img, embed, object, video {
 	.galleryImage {
 		flex: 0 1 600px;
 		width: 100%;
+		cursor: pointer;
 	}
 
 
 	.galleryThumbnails {
 		margin-top: 20px;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: flex-start;
 	}
 
 	.galleryThumbnails img {
 		margin: 0px 10px;
 		background-color: skyblue;
-		height: 100px;
+		height: 50px;
 		flex: 0 0 auto;
 	}
 
@@ -1783,7 +1809,7 @@ img, embed, object, video {
 	}
 
 	#merchDesc h5 {
-		margin-right: 40px;
+		margin-bottom: 20px;
 	}
 
 	#merchDesc p {
@@ -1795,7 +1821,8 @@ img, embed, object, video {
 		display: flex;
 		flex: 1;
 /*		background-color: pink;*/
-		justify-content: center;
+		justify-content: flex-end;
+		margin-left: auto;
 	}
 
 	#merchForm input {
@@ -1815,7 +1842,7 @@ img, embed, object, video {
 		border-radius: 20px;
 		text-align: center;
 		font-size: 18px;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		box-sizing: border-box;
 	}
 
@@ -1859,7 +1886,7 @@ img, embed, object, video {
 }
 
 #mainFooterNav li a {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	color: #fff;
 	text-decoration: underline;
 	font-size: 18px;
@@ -1938,7 +1965,7 @@ flex: 1 1 auto;
 /* Bottom Footer - MOBILE */
 
 #mainFooterBottom {
-	font-family: Lato, sans-serif;
+	font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 	font-size: 14px;
 	color: #ccc;
 }
@@ -1982,7 +2009,7 @@ flex: 1 1 auto;
 
 	.galleryThumbnails img {
 		margin: 0px 10px;
-		height: 100px;
+		height: 70px;
 	}
 }
 
@@ -2032,7 +2059,7 @@ flex: 1 1 auto;
 
 	#carousel {
 /*		background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/home_hero.jpg);*/
-		max-width: 1366px;
+/*		max-width: 1366px;*/
 	}
 
 	.hero {
@@ -2058,6 +2085,11 @@ flex: 1 1 auto;
 	.heroBlog {
 	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/blog_hero.jpg);
 	}
+
+	.heroProducts {
+	    background-image: linear-gradient(rgba(79, 100, 29, 0.1), rgba(79, 100, 29, 0.2)), url(../images/products_hero.jpg);
+	}
+
 
 	.project {
 		max-width: 683px;
@@ -2331,7 +2363,7 @@ flex: 1 1 auto;
 
 	#mainNav ul li a {
 		text-decoration: none;
-		font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		color: #587021;
 		transition: all .5s ease;
 		font-size: 24px;
@@ -2347,17 +2379,46 @@ flex: 1 1 auto;
 	#mainNav ul li > ul
 	{
 		display: none;
+		top: 60%;
+	}
+
+	#mainNav ul li:nth-child(2) > ul {
+		margin-left: 20px;
 	}
 
 	#mainNav ul li:hover > ul
 	{
 		display: block;
 		position: absolute;
-		margin-top: 64px;
+/*		margin-top: 64px;*/
+		-webkit-animation: navSlide .6s ease-in-out 1 alternate forwards;
+		animation: navSlide .6s ease-in-out 1 alternate forwards;
+	}
+
+	@-webkit-keyframes navSlide {
+		0% {
+			-webkit-transform: translateY(0px);
+			opacity: 0;
+		}
+		100% {
+			-webkit-transform: translateY(60px);
+			opacity: 1;
+		}
+	}
+
+	@keyframes navSlide {
+		0% {
+			transform: translateY(0px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(60px);
+			opacity: 1;
+		}
 	}
 
 	#mainNav ul li:hover > ul li {
-		padding: 20px 30px;
+		padding: 20px 25px;
 		background-color: #92bd2f;
 		display: block;
 		text-align: center;
@@ -2565,13 +2626,21 @@ flex: 1 1 auto;
 
 	/* === PRODUCTS PAGE - TABLET === */
 	#merchMainCon {
-		padding: 40px 40px 100px 40px
+		padding: 40px 40px 100px 40px;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
 	/* === JOIN PAGE - TABLET */
 	#infoAndForm{
 		padding: 0px 40px;
 		margin: 0 auto;
+	}
+
+	/* === PROJECTS PAGE - TABLET */
+
+	#donateBanner {
+		padding: 40px;
 	}
 }
 
@@ -2635,15 +2704,9 @@ flex: 1 1 auto;
 		display: none;
 	}
 
-	#donateBanner a{
-		/* value very close to large button width*/
-		flex: 1 1 145px;
-	}
-
 	.btnDonate {
-	margin-left: 40px;
-	margin-right: 40px;
-	margin-bottom: 0px;
+		margin-left: 40px !important;
+		margin-right: 40px !important;
 	}
 
 	.btnLarge:hover, .btnSmall:hover, .btnTopBg:hover, .subBut:hover, #navJoin:hover{
@@ -2936,13 +2999,13 @@ flex: 1 1 auto;
 		background-image: url(../images/blog_date.svg);
 	}
 	.newsDate {
-		font-family: Lato, sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		font-size: 14px;
 		color: #587021;
 	}
 
 	.newsTitle {
-		font-family: Abolition, sans-serif;
+		font-family: 'Abolition', 'Arial Bold', 'Gill Sans', sans-serif;
 		font-size: 24px;
 	/*	font-weight: bold;*/
 		text-transform: uppercase;
@@ -3013,6 +3076,8 @@ flex: 1 1 auto;
 	#projectArea {
 		display: flex;
 		flex-direction: column;
+		margin: 0 auto;
+		max-width: 1365px;
 	}
 
 	.projectRow {
@@ -3055,22 +3120,6 @@ flex: 1 1 auto;
 		opacity: 0.5;
 		height: 0%;
 	}
-	
-	/*#projectHatchery {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_hatchery.jpg);
-	}
-
-	#projectSalmonid {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_salmonid_monitoring.jpg);
-	}
-
-	#projectKomoka {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_komoka_creek.jpg);
-	}
-
-	#projectBrownTrout {
-		background-image: linear-gradient(rgba(79, 100, 29, 0.2), rgba(79, 100, 29, 0.2)), url(../images/projects_brown_trout_hatchery.jpg);
-	}*/
 
 	#projectArchive {
 		box-sizing: border-box;
@@ -3646,7 +3695,7 @@ flex: 1 1 auto;
 	}
 
 	#closeLightBox {
-		font-family: 'Lato',sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		color: #fff;
 		font-size: 40px;
 		position: absolute;
@@ -3785,7 +3834,7 @@ flex: 1 1 auto;
 	}
 
 	#mainFooterNav li a {
-		font-family: 'Lato', sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		color: #fff;
 		text-decoration: underline;
 		font-size: 14px;
@@ -3822,7 +3871,7 @@ flex: 1 1 auto;
 	/* Bottom Footer - DESKTOP */
 
 	#mainFooterBottom {
-		font-family: Lato, sans-serif;
+		font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 		margin-top: 80px;
 		font-size: 14px;
 		color: #ccc;
@@ -3877,4 +3926,12 @@ flex: 1 1 auto;
 		margin: 20px 0;
 	}
 }
+
+@media screen and (min-width: 1165px) {
+	#merchDesc h5 {
+		margin-right: 40px;
+		margin-bottom: 0;
+	}
+}
+
 
