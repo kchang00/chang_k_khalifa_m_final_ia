@@ -819,6 +819,12 @@ img, embed, object, video {
 		box-shadow: 0px 3px 3.84px 0.16px rgba(31, 29, 30, 0.34);
 	}
 
+	#productsCon picture {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	#productsCon h2 {
 		margin-top: 40px;
 	}
