@@ -70,9 +70,11 @@
 	}
 
 	function showLightBox() {
-		lightBox.classList.add('showLightBox');
-		body.classList.add('preventScrolling');
-		lightBox.scrollIntoView();
+		if (mediaQuery1.matches) {
+			lightBox.classList.add('showLightBox');
+			body.classList.add('preventScrolling');
+			lightBox.scrollIntoView();
+		}
 	}
 
 	function navigate(direction) {

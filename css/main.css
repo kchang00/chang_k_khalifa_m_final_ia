@@ -1310,8 +1310,7 @@ img, embed, object, video {
 }
 
 #addresses {
-	display: flex;
-	flex-wrap: wrap;
+	display: block;
 	/*flex-direction: column;
 	vertical-align: center;*/
 }
@@ -2477,7 +2476,8 @@ flex: 1 1 auto;
 	}
 
 	#addresses {
-		flex-wrap: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
 	}
 
 	/* === BLOG PAGE - TABLET === */
@@ -3240,7 +3240,7 @@ flex: 1 1 auto;
 		text-align: center;
 		position: absolute;
 		z-index: 1;
-		top: 50%;
+/*		top: 50%;*/
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
@@ -3250,7 +3250,7 @@ flex: 1 1 auto;
 	/* positions brook trout tile properly in relation to btn*/
 	.project h3:last-child {
 		position: relative;
-		top: 50%;
+		top: 40%;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
@@ -3617,6 +3617,10 @@ flex: 1 1 auto;
 		margin-left: 0;
 		/* accounts for margin of 15px (25px + 15px = 40px)*/
 		margin-top: 25px;
+	}
+
+	#addresses {
+		flex-wrap: wrap;
 	}
 
 	/* === JOIN PAGE - DESKTOP === */
